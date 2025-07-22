@@ -1,6 +1,6 @@
 [
   {
-    "id": "K-01",
+    "id": "K01",
     "title": "Kotlin Grundlagen",
     "description": "Lernen Sie die Grundlagen der modernen Programmiersprache Kotlin. Von der Syntax bis zu fortgeschrittenen Konzepten wie Coroutines und funktionale Programmierung.",
     "goal": "Nach diesem Kurs beherrschen Sie die Kotlin-Syntax und können eigenständig Kotlin-Anwendungen entwickeln. Sie verstehen die Besonderheiten von Kotlin und können diese effektiv einsetzen.",
@@ -12,7 +12,7 @@
     "featured": true
   },
   {
-    "id": "J-01",
+    "id": "J01",
     "title": "Java für Fortgeschrittene",
     "description": "Vertiefen Sie Ihre Java-Kenntnisse mit modernen Features, Design Patterns und Performance-Optimierung. Ideal für erfahrene Entwickler.",
     "goal": "Sie lernen fortgeschrittene Java-Konzepte kennen und können diese in realen Projekten anwenden. Performance-Optimierung und Clean Code stehen im Fokus.",
@@ -24,7 +24,7 @@
     "featured": true
   },
   {
-    "id": "G-01",
+    "id": "G01",
     "title": "Go Programming Bootcamp",
     "description": "Steigen Sie ein in die Welt von Go. Lernen Sie die Philosophie und Konzepte einer der modernsten Programmiersprachen.",
     "goal": "Sie beherrschen die Go-Syntax und können eigenständig Go-Services entwickeln. Concurrency-Patterns und die Go-Toolchain sind Ihnen vertraut.",
@@ -36,7 +36,7 @@
     "featured": false
   },
   {
-    "id": "M-01",
+    "id": "M01",
     "title": "Maven Mastery",
     "description": "Meistern Sie das Build-Tool Maven für Java-Projekte. Von Grundlagen bis zu Advanced-Konfigurationen und Multi-Module-Projekten.",
     "goal": "Sie können Maven-Projekte von Grund auf konfigurieren und verwalten. Complex Build-Szenarien und Plugin-Entwicklung sind Ihnen vertraut.",
@@ -48,7 +48,7 @@
     "featured": false
   },
   {
-    "id": "I-01",
+    "id": "I01",
     "title": "IntelliJ IDEA Power User",
     "description": "Werden Sie zum IntelliJ IDEA Experten. Lernen Sie alle Shortcuts, Refactoring-Tools und Produktivitäts-Features kennen.",
     "goal": "Sie nutzen IntelliJ IDEA maximal effizient und kennen alle wichtigen Features. Ihre Entwicklungsgeschwindigkeit wird sich deutlich steigern.",
@@ -60,7 +60,7 @@
     "featured": false
   },
   {
-    "id": "G-02",
+    "id": "G02",
     "title": "Git Workflows & Collaboration",
     "description": "Lernen Sie professionelle Git-Workflows für Teams. Von Branching-Strategien bis zu Advanced-Techniken für große Projekte.",
     "goal": "Sie beherrschen komplexe Git-Workflows und können Teams bei der Einführung von Git-Standards unterstützen.",

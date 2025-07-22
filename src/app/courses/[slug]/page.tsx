@@ -1,3 +1,4 @@
+import React from 'react';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { getAllCourses, getCourseById } from '@/lib/courses';
@@ -15,8 +16,13 @@ function createEmailSubject(course: Course): string {
   return `Anfrage für Kurs: ${course.id} - ${course.title}`;
 }
 
-function formatOutline(outline: string): string {
-  return outline.replace(/\n/g, '<br/>');
+function formatOutline(outline: string): React.ReactNode {
+  return outline.split('\n').map((line, index) => (
+    <span key={index}>
+      {line}
+      {index < outline.split('\n').length - 1 && <br />}
+    </span>
+  ));
 }
 
 export async function generateStaticParams() {
@@ -76,10 +82,9 @@ export default async function CourseDetailPage({ params }: CourseDetailPageProps
 
             <section>
               <h2 className="text-2xl font-bold mb-4">Kursübersicht</h2>
-              <div 
-                className="prose prose-gray max-w-none"
-                dangerouslySetInnerHTML={{ __html: formatOutline(course.outline) }}
-              />
+              <div className="prose prose-gray max-w-none">
+                {formatOutline(course.outline)}
+              </div>
             </section>
           </div>
 

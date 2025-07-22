@@ -10,5 +10,5 @@ export function getFeaturedCourses(): Course[] {
 }
 
 export function getCourseById(id: string): Course | undefined {
-  return coursesData.find(course => course.id === id) as Course | undefined;
+  return coursesData.find(course => course.id.toLowerCase() === id.toLowerCase()) as Course | undefined;
 }
