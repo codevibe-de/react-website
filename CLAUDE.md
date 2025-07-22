@@ -36,6 +36,19 @@ This is a Next.js 15 project using the App Router architecture with TypeScript a
 - Next.js config is minimal (next.config.ts)
 - Tailwind v4 setup with @tailwindcss/postcss plugin
 
+## Style Guide
+
+### Colors
+
+- Page Background #ffffff
+- Section Background #37306B
+- Text #2A2557
+- Headings & Links #66347F
+
+### Logo
+
+- public/codevibe-logo.png
+
 ## Feature Requirements
 
 We are developing a website for a company called Codevibe, which offers courses for software developers.

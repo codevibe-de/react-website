@@ -41,7 +41,7 @@ export default function CoursesPage() {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      <div className="bg-blue-600 text-white py-12">
+      <div className="bg-eminence-800 text-white py-12">
         <div className="max-w-6xl mx-auto px-4">
           <h1 className="text-4xl font-bold mb-4">Unsere Kurse</h1>
           <p className="text-xl">

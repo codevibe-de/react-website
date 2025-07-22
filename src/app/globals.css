@@ -2,14 +2,44 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #2A2557;
+  --headings: #66347F;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-headings: var(--headings);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+
+  /* base #37306B -> 900 */
+  --color-jacarta-50: #f0f2fd;
+  --color-jacarta-100: #e3e7fc;
+  --color-jacarta-200: #ccd1f9;
+  --color-jacarta-300: #aeb4f3;
+  --color-jacarta-400: #8d8eec;
+  --color-jacarta-500: #7871e3;
+  --color-jacarta-600: #6756d5;
+  --color-jacarta-700: #5946bc;
+  --color-jacarta-800: #493b98;
+  --color-jacarta-900: #37306b;
+  --color-jacarta-950: #252046;
+
+  /* base ##66347F -> 800 */
+  --color-eminence-50: #faf6fd;
+  --color-eminence-100: #f4edfa;
+  --color-eminence-200: #e8d9f5;
+  --color-eminence-300: #d8bbec;
+  --color-eminence-400: #c193df;
+  --color-eminence-500: #a668cd;
+  --color-eminence-600: #8b49b0;
+  --color-eminence-700: #743a91;
+  --color-eminence-800: #66347f;
+  --color-eminence-900: #522c63;
+  --color-eminence-950: #32133f;
+
+
 }
 
 @media (prefers-color-scheme: dark) {
