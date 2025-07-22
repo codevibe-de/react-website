@@ -1,0 +1,74 @@
+[
+  {
+    "id": "K-01",
+    "title": "Kotlin Grundlagen",
+    "description": "Lernen Sie die Grundlagen der modernen Programmiersprache Kotlin. Von der Syntax bis zu fortgeschrittenen Konzepten wie Coroutines und funktionale Programmierung.",
+    "goal": "Nach diesem Kurs beherrschen Sie die Kotlin-Syntax und können eigenständig Kotlin-Anwendungen entwickeln. Sie verstehen die Besonderheiten von Kotlin und können diese effektiv einsetzen.",
+    "targetAudience": "Entwickler mit Java-Kenntnissen, die Kotlin erlernen möchten. Grundlegende Programmierkenntnisse werden vorausgesetzt.",
+    "outline": "## Tag 1\n- Kotlin Syntax und Grundlagen\n- Variablen, Datentypen und Funktionen\n- Null Safety\n\n## Tag 2\n- Objektorientierte Programmierung in Kotlin\n- Klassen, Interfaces und Vererbung\n- Extension Functions\n\n## Tag 3\n- Funktionale Programmierung\n- Coroutines und Asynchrone Programmierung\n- Best Practices",
+    "priceSingle": 1290,
+    "priceInhouse": 4900,
+    "duration": 3,
+    "featured": true
+  },
+  {
+    "id": "J-01",
+    "title": "Java für Fortgeschrittene",
+    "description": "Vertiefen Sie Ihre Java-Kenntnisse mit modernen Features, Design Patterns und Performance-Optimierung. Ideal für erfahrene Entwickler.",
+    "goal": "Sie lernen fortgeschrittene Java-Konzepte kennen und können diese in realen Projekten anwenden. Performance-Optimierung und Clean Code stehen im Fokus.",
+    "targetAudience": "Entwickler mit mindestens 2 Jahren Java-Erfahrung, die ihre Kenntnisse vertiefen möchten.",
+    "outline": "## Tag 1\n- Moderne Java Features (Records, Pattern Matching)\n- Stream API und funktionale Programmierung\n- Memory Management\n\n## Tag 2\n- Design Patterns in der Praxis\n- Multithreading und Concurrency\n- Testing Strategien\n\n## Tag 3\n- Performance Monitoring\n- JVM Tuning\n- Best Practices für Production",
+    "priceSingle": 1490,
+    "priceInhouse": 5400,
+    "duration": 3,
+    "featured": true
+  },
+  {
+    "id": "G-01",
+    "title": "Go Programming Bootcamp",
+    "description": "Steigen Sie ein in die Welt von Go. Lernen Sie die Philosophie und Konzepte einer der modernsten Programmiersprachen.",
+    "goal": "Sie beherrschen die Go-Syntax und können eigenständig Go-Services entwickeln. Concurrency-Patterns und die Go-Toolchain sind Ihnen vertraut.",
+    "targetAudience": "Entwickler mit Erfahrung in anderen Sprachen, die Go erlernen möchten. Backend-Entwickler profitieren besonders.",
+    "outline": "## Tag 1\n- Go Syntax und Grundlagen\n- Packages und Module\n- Error Handling\n\n## Tag 2\n- Structs, Interfaces und Methods\n- Goroutines und Channels\n- Testing in Go\n\n## Tag 3\n- HTTP Services mit Go\n- Database Integration\n- Deployment und Production",
+    "priceSingle": 1390,
+    "priceInhouse": 5100,
+    "duration": 3,
+    "featured": false
+  },
+  {
+    "id": "M-01",
+    "title": "Maven Mastery",
+    "description": "Meistern Sie das Build-Tool Maven für Java-Projekte. Von Grundlagen bis zu Advanced-Konfigurationen und Multi-Module-Projekten.",
+    "goal": "Sie können Maven-Projekte von Grund auf konfigurieren und verwalten. Complex Build-Szenarien und Plugin-Entwicklung sind Ihnen vertraut.",
+    "targetAudience": "Java-Entwickler und DevOps-Engineers, die ihre Build-Prozesse professionalisieren möchten.",
+    "outline": "## Tag 1\n- Maven Grundlagen und Projektstruktur\n- Dependencies und Repositories\n- Build Lifecycle\n\n## Tag 2\n- Multi-Module Projekte\n- Custom Plugins\n- Profiles und Properties\n\n## Tag 3\n- CI/CD Integration\n- Release Management\n- Best Practices",
+    "priceSingle": 990,
+    "priceInhouse": 3900,
+    "duration": 3,
+    "featured": false
+  },
+  {
+    "id": "I-01",
+    "title": "IntelliJ IDEA Power User",
+    "description": "Werden Sie zum IntelliJ IDEA Experten. Lernen Sie alle Shortcuts, Refactoring-Tools und Produktivitäts-Features kennen.",
+    "goal": "Sie nutzen IntelliJ IDEA maximal effizient und kennen alle wichtigen Features. Ihre Entwicklungsgeschwindigkeit wird sich deutlich steigern.",
+    "targetAudience": "Entwickler aller Erfahrungsstufen, die produktiver mit IntelliJ IDEA arbeiten möchten.",
+    "outline": "## Tag 1\n- Navigation und Search\n- Code Generation und Templates\n- Debugging Mastery\n\n## Refactoring Tools\n- Version Control Integration\n- Plugin Ecosystem\n\n## Database Tools\n- Testing Integration\n- Performance Profiling",
+    "priceSingle": 790,
+    "priceInhouse": 2900,
+    "duration": 2,
+    "featured": false
+  },
+  {
+    "id": "G-02",
+    "title": "Git Workflows & Collaboration",
+    "description": "Lernen Sie professionelle Git-Workflows für Teams. Von Branching-Strategien bis zu Advanced-Techniken für große Projekte.",
+    "goal": "Sie beherrschen komplexe Git-Workflows und können Teams bei der Einführung von Git-Standards unterstützen.",
+    "targetAudience": "Entwickler und Team Leads, die Git professionell in Teams einsetzen möchten.",
+    "outline": "## Branching Strategies\n- Feature Branches und Pull Requests\n- Merge vs. Rebase\n\n## Advanced Git\n- Git Hooks und Automation\n- Large File Handling\n- Troubleshooting",
+    "priceSingle": 690,
+    "priceInhouse": 2600,
+    "duration": 2,
+    "featured": true
+  }
+]
