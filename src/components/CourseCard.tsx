@@ -30,12 +30,9 @@ export default function CourseCard({ course }: CourseCardProps) {
           <p className="text-gray-600 mb-4">{course.description}</p>
         </div>
         
-        <div className="flex justify-between items-center mt-auto">
+        <div className="mt-auto">
           <div className="text-sm text-gray-500">
             {course.duration} {course.duration === 1 ? 'Tag' : 'Tage'}
-          </div>
-          <div className="text-lg font-bold text-blue-600">
-            €{course.priceSingle.toLocaleString()}
           </div>
         </div>
       </div>
