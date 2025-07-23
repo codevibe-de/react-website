@@ -1,6 +1,6 @@
 export enum CourseType {
   Seminar = 'Seminar',
-  Rave = 'Rave'
+  Rave = 'Rave',
 }
 
 export interface Course {
@@ -12,16 +12,6 @@ export interface Course {
   outline: string;
   priceSingle: number;
   priceInhouse: number;
-  duration: number;
-  featured: boolean;
-  type: CourseType;
-}
-
-export interface CoursePreview {
-  id: string;
-  title: string;
-  description: string;
-  priceSingle: number;
   duration: number;
   featured: boolean;
   type: CourseType;

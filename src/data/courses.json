@@ -5,7 +5,7 @@
     "description": "Lernen Sie die Grundlagen der modernen Programmiersprache Kotlin. Von der Syntax bis zu fortgeschrittenen Konzepten wie Coroutines und funktionale Programmierung.",
     "goal": "Nach diesem Kurs beherrschen Sie die Kotlin-Syntax und können eigenständig Kotlin-Anwendungen entwickeln. Sie verstehen die Besonderheiten von Kotlin und können diese effektiv einsetzen.",
     "targetAudience": "Entwickler mit Java-Kenntnissen, die Kotlin erlernen möchten. Grundlegende Programmierkenntnisse werden vorausgesetzt.",
-    "outline": "## Tag 1\n- Kotlin Syntax und Grundlagen\n- Variablen, Datentypen und Funktionen\n- Null Safety\n\n## Tag 2\n- Objektorientierte Programmierung in Kotlin\n- Klassen, Interfaces und Vererbung\n- Extension Functions\n\n## Tag 3\n- Funktionale Programmierung\n- Coroutines und Asynchrone Programmierung\n- Best Practices",
+    "outline": "### Tag 1\n- Kotlin Syntax und Grundlagen\n- Variablen, Datentypen und Funktionen\n- Null Safety\n\n### Tag 2\n- Objektorientierte Programmierung in Kotlin\n- Klassen, Interfaces und Vererbung\n- Extension Functions\n\n### Tag 3\n- Funktionale Programmierung\n- Coroutines und Asynchrone Programmierung\n- Best Practices",
     "priceSingle": 1290,
     "priceInhouse": 4900,
     "duration": 3,

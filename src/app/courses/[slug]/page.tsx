@@ -1,6 +1,7 @@
 import React from 'react';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
+import { marked } from 'marked';
 import { getAllCourses, getCourseById } from '@/lib/courses';
 import { Course } from '@/types/course';
 
@@ -16,13 +17,8 @@ function createEmailSubject(course: Course): string {
   return `Anfrage für Kurs: ${course.id} - ${course.title}`;
 }
 
-function formatOutline(outline: string): React.ReactNode {
-  return outline.split('\n').map((line, index) => (
-    <span key={index}>
-      {line}
-      {index < outline.split('\n').length - 1 && <br />}
-    </span>
-  ));
+async function formatOutline(outline: string): Promise<string> {
+  return await marked(outline);
 }
 
 export async function generateStaticParams() {
@@ -43,6 +39,7 @@ export default async function CourseDetailPage({ params }: CourseDetailPageProps
 
   const emailSubject = encodeURIComponent(createEmailSubject(course));
   const emailHref = `mailto:sales@codevibe.de?subject=${emailSubject}`;
+  const formattedOutline = await formatOutline(course.outline);
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -82,9 +79,10 @@ export default async function CourseDetailPage({ params }: CourseDetailPageProps
 
             <section>
               <h2 className="text-2xl font-bold mb-4">Kursübersicht</h2>
-              <div className="prose prose-gray max-w-none">
-                {formatOutline(course.outline)}
-              </div>
+              <div 
+                className="prose prose-gray max-w-none"
+                dangerouslySetInnerHTML={{ __html: formattedOutline }}
+              />
             </section>
           </div>
 
