@@ -107,5 +107,5 @@ A "Course" entity has the following attributes:
   - Company details
   - Location/training venues
 
-- Imprint (`/impring`)
+- Imprint (`/imprint`)
 - 
