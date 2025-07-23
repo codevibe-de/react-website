@@ -9,9 +9,9 @@ export default function CourseCard({ course }: CourseCardProps) {
   const courseSlug = `${course.id.toLowerCase()}-${course.title.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '')}`;
 
   return (
-    <Link href={`/courses/${courseSlug}`} className="block">
-      <div className="border border-gray-200 rounded-lg p-6 hover:shadow-xl hover:scale-105 hover:border-blue-300 transition-all duration-300 cursor-pointer bg-white hover:bg-blue-50">
-        <div className="mb-4">
+    <Link href={`/courses/${courseSlug}`} className="block h-full">
+      <div className="border border-gray-200 rounded-lg p-6 hover:shadow-xl hover:scale-105 hover:border-blue-300 transition-all duration-300 cursor-pointer bg-white hover:bg-blue-50 h-full flex flex-col">
+        <div className="flex-grow">
           <div className="flex gap-2 mb-2">
             <span className={`inline-block text-xs px-2 py-1 rounded-full ${
               course.type === CourseType.Seminar 
@@ -30,7 +30,7 @@ export default function CourseCard({ course }: CourseCardProps) {
           <p className="text-gray-600 mb-4">{course.description}</p>
         </div>
         
-        <div className="flex justify-between items-center">
+        <div className="flex justify-between items-center mt-auto">
           <div className="text-sm text-gray-500">
             {course.duration} {course.duration === 1 ? 'Tag' : 'Tage'}
           </div>
