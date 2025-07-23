@@ -9,7 +9,8 @@
     "priceSingle": 1290,
     "priceInhouse": 4900,
     "duration": 3,
-    "featured": true
+    "featured": true,
+    "type": "Seminar"
   },
   {
     "id": "J01",
@@ -21,7 +22,8 @@
     "priceSingle": 1490,
     "priceInhouse": 5400,
     "duration": 3,
-    "featured": true
+    "featured": true,
+    "type": "Rave"
   },
   {
     "id": "G01",
@@ -33,7 +35,8 @@
     "priceSingle": 1390,
     "priceInhouse": 5100,
     "duration": 3,
-    "featured": false
+    "featured": false,
+    "type": "Seminar"
   },
   {
     "id": "M01",
@@ -45,7 +48,8 @@
     "priceSingle": 990,
     "priceInhouse": 3900,
     "duration": 3,
-    "featured": false
+    "featured": false,
+    "type": "Rave"
   },
   {
     "id": "I01",
@@ -57,7 +61,8 @@
     "priceSingle": 790,
     "priceInhouse": 2900,
     "duration": 2,
-    "featured": false
+    "featured": false,
+    "type": "Seminar"
   },
   {
     "id": "G02",
@@ -69,6 +74,7 @@
     "priceSingle": 690,
     "priceInhouse": 2600,
     "duration": 2,
-    "featured": true
+    "featured": true,
+    "type": "Rave"
   }
 ]
