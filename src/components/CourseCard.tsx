@@ -13,11 +13,6 @@ export default function CourseCard({ course }: CourseCardProps) {
       <div className="border border-gray-200 rounded-lg p-6 hover:shadow-xl hover:scale-105 hover:border-blue-300 transition-all duration-300 cursor-pointer bg-white hover:bg-blue-50">
         <div className="mb-4">
           <div className="flex gap-2 mb-2">
-            {course.featured && (
-              <span className="inline-block bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full">
-                Featured
-              </span>
-            )}
             <span className={`inline-block text-xs px-2 py-1 rounded-full ${
               course.type === CourseType.Seminar 
                 ? 'bg-green-100 text-green-800' 
@@ -25,6 +20,11 @@ export default function CourseCard({ course }: CourseCardProps) {
             }`}>
               {course.type}
             </span>
+            {course.featured && (
+              <span className="inline-block bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full">
+                Featured
+              </span>
+            )}
           </div>
           <h3 className="text-xl font-semibold mb-2 text-gray-800 group-hover:text-blue-700 transition-colors">{course.title}</h3>
           <p className="text-gray-600 mb-4">{course.description}</p>
