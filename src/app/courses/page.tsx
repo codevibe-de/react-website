@@ -6,26 +6,11 @@ import CourseCard from '@/components/CourseCard';
 
 export default function CoursesPage() {
   const [searchTerm, setSearchTerm] = useState('');
-  const [selectedFilter, setSelectedFilter] = useState('all');
   
   const allCourses = getAllCourses();
   
   const filteredCourses = useMemo(() => {
     let courses = allCourses;
-    
-    // Apply category filter
-    if (selectedFilter !== 'all') {
-      courses = courses.filter(course => {
-        switch (selectedFilter) {
-          case 'languages':
-            return ['K-01', 'J-01', 'G-01'].includes(course.id);
-          case 'tools':
-            return ['M-01', 'I-01', 'G-02'].includes(course.id);
-          default:
-            return true;
-        }
-      });
-    }
     
     // Apply search filter
     if (searchTerm) {
@@ -37,7 +22,7 @@ export default function CoursesPage() {
     }
     
     return courses;
-  }, [allCourses, searchTerm, selectedFilter]);
+  }, [allCourses, searchTerm]);
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -51,27 +36,14 @@ export default function CoursesPage() {
       </div>
 
       <div className="max-w-6xl mx-auto px-4 py-8">
-        <div className="mb-8 flex flex-col md:flex-row gap-4">
-          <div className="flex-1">
-            <input
-              type="text"
-              placeholder="Suchen Sie nach Kursen..."
-              value={searchTerm}
-              onChange={(e) => setSearchTerm(e.target.value)}
-              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-            />
-          </div>
-          <div>
-            <select
-              value={selectedFilter}
-              onChange={(e) => setSelectedFilter(e.target.value)}
-              className="px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-            >
-              <option value="all">Alle Kategorien</option>
-              <option value="languages">Programmiersprachen</option>
-              <option value="tools">Dev Tools</option>
-            </select>
-          </div>
+        <div className="mb-8">
+          <input
+            type="text"
+            placeholder="Suchen Sie nach Kursen..."
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
+            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent max-w-md"
+          />
         </div>
 
         <div className="mb-4 text-gray-600">
