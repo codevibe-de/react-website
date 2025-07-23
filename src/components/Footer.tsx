@@ -6,9 +6,9 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto px-4">
         <div className="grid md:grid-cols-4 gap-8">
           <div>
-            <h3 className="text-xl font-bold mb-4">Codevibe</h3>
+            <h3 className="text-xl font-bold mb-4">Codevibe IT-Seminare</h3>
             <p className="text-gray-400">
-              Professionelle Schulungen für Softwareentwickler
+              Code Skills für die KI-Revolution
             </p>
           </div>
           
