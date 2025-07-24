@@ -5,6 +5,7 @@
   --background: #ffffff;
   --foreground: #2A2557;
   --headings: #66347F;
+  --navbar-height: 4rem;
 }
 
 @theme inline {

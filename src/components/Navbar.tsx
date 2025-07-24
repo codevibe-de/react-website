@@ -12,7 +12,7 @@ export default function Navbar({links}: NavbarProps) {
     return (
         <Disclosure as="nav" className="bg-white shadow-sm fixed top-0 inset-x-0 z-50">
             <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-                <div className="relative flex h-16 justify-between">
+                <div className="relative flex justify-between" style={{height: 'var(--navbar-height)'}}>
                     <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                         {/* Mobile menu button */}
                         <DisclosureButton

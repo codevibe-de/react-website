@@ -30,7 +30,9 @@ export default function RootLayout({
         className={`font-sans ${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Header />
-        {children}
+        <main style={{paddingTop: 'var(--navbar-height)'}}>
+          {children}
+        </main>
         <Footer />
       </body>
     </html>
