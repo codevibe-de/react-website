@@ -12,21 +12,10 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-headings: var(--headings);
+  --color-primary: var(--color-eminence-800);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-
-  /* base #37306B -> 900 */
-  --color-jacarta-50: #f0f2fd;
-  --color-jacarta-100: #e3e7fc;
-  --color-jacarta-200: #ccd1f9;
-  --color-jacarta-300: #aeb4f3;
-  --color-jacarta-400: #8d8eec;
-  --color-jacarta-500: #7871e3;
-  --color-jacarta-600: #6756d5;
-  --color-jacarta-700: #5946bc;
-  --color-jacarta-800: #493b98;
-  --color-jacarta-900: #37306b;
-  --color-jacarta-950: #252046;
+  --font-family-outfit: var(--font-outfit);
 
   /* base ##66347F -> 800 */
   --color-eminence-50: #faf6fd;

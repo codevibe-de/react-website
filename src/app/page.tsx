@@ -7,17 +7,20 @@ export default function Home() {
 
   return (
     <div className="min-h-screen">
-      <section className="text-white py-20" style={{background: 'linear-gradient(135deg, #37306B 0%, #66347F 100%)'}}>
-        <div className="max-w-6xl mx-auto px-4 text-center">
-          <h1 className="text-5xl font-bold mb-6">Codevibe</h1>
-          <p className="text-xl mb-8 max-w-3xl mx-auto">
-            Professionelle Schulungen für Softwareentwickler. Lernen Sie Java, Kotlin und Go 
-            effizient und mit Spaß. Dazu Trainings für Dev-Tools wie Maven, IntelliJ IDEA und Git.
+      <section 
+        className="py-20 relative bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: `url('/bg-waves-complete.png')`
+        }}
+      >
+        <div className="max-w-6xl mx-auto px-4 text-center relative z-10">
+          <h1 className="text-eminence-800 text-5xl mb-6 font-family-outfit">Code-Skills für die KI-Revolution</h1>
+          <p className="text-eminence-900 text-xl mb-8 max-w-3xl mx-auto">
+            Von den Grundlagen bis zur Expertenstufe – unsere modernen Kurse verbinden Coding Know-How mit KI-Tools für zeitgemäße Softwareentwicklung
           </p>
           <Link 
             href="/courses"
-            className="bg-white px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors inline-block"
-            style={{color: '#66347F'}}
+            className="bg-primary text-white px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors inline-block"
           >
             Alle Kurse ansehen
           </Link>
@@ -26,7 +29,7 @@ export default function Home() {
 
       <section className="py-16">
         <div className="max-w-6xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12" style={{color: '#66347F'}}>Featured Kurse</h2>
+          <h2 className="text-3xl font-bold text-center mb-12">Featured Kurse</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {featuredCourses.map(course => (
               <CourseCard key={course.id} course={course} />

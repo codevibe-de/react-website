@@ -35,7 +35,7 @@ export default function Navbar({links}: NavbarProps) {
                             {/* Current: "border-indigo-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" */}
                             {links.map((link) => (
                                 <Link href={link.href} key={link.href}
-                                   className="border-transparent text-gray-600 hover:border-gray-300 hover:text-gray-700 inline-flex items-center border-b-2 px-1 pt-1 text-sm font-medium">
+                                   className="border-transparent text-gray-600 hover:border-eminence-500 hover:text-gray-700 inline-flex items-center border-b-2 px-1 pt-1 text-sm font-medium">
                                     {link.label}
                                 </Link>
                             ))}

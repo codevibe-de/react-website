@@ -3,10 +3,9 @@ import { NavLink } from '@/types/NavLink';
 
 export default function Header() {
   const navLinks: NavLink[] = [
-    { label: 'Home', href: '/' },
     { label: 'Kurse', href: '/courses' },
     { label: 'Über uns', href: '/about' },
-    { label: 'Kontakt', href: '/contact' }
+    { label: '0931 / 730 40 586', href: 'tel:+4993173040586' }
   ];
 
   return (
