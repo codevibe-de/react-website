@@ -26,7 +26,7 @@ export default function Footer() {
             <ul className="space-y-2 text-gray-400">
               <li><Link href="/about" className="hover:text-white">Über uns</Link></li>
               <li><Link href="/contact" className="hover:text-white">Kontakt</Link></li>
-              <li><Link href="/imprint" className="hover:text-white">Impressum</Link></li>
+              <li><Link href="/impressum" className="hover:text-white">Impressum</Link></li>
             </ul>
           </div>
           
@@ -40,7 +40,7 @@ export default function Footer() {
         </div>
         
         <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-          <p>&copy; 2024 Codevibe. Alle Rechte vorbehalten.</p>
+          <p>&copy; 2025 Codevibe IT-Seminare. Alle Rechte vorbehalten.</p>
         </div>
       </div>
     </footer>
