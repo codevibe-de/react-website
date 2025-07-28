@@ -10,7 +10,9 @@ interface CourseDetailPageProps {
 }
 
 function extractCourseIdFromSlug(slug: string): string {
-  return slug.split('-')[0];
+  // Match course ID pattern like "j-01", "g-02", "k-01", etc. at the beginning of slug
+  const match = slug.match(/^([a-z]-\d+)/i);
+  return match ? match[1].toUpperCase() : slug.split('-')[0].toUpperCase();
 }
 
 function createEmailSubject(course: Course): string {
@@ -105,12 +107,14 @@ export default async function CourseDetailPage({ params }: CourseDetailPageProps
                   </span>
                 </div>
                 
-                <div>
-                  <span className="text-gray-600">Inhouse:</span>
-                  <span className="font-semibold ml-2 text-blue-600">
-                    €{course.priceInhouse.toLocaleString()}
-                  </span>
-                </div>
+                {course.priceInhouse && (
+                  <div>
+                    <span className="text-gray-600">Inhouse:</span>
+                    <span className="font-semibold ml-2 text-blue-600">
+                      €{course.priceInhouse.toLocaleString()}
+                    </span>
+                  </div>
+                )}
               </div>
 
               <a
