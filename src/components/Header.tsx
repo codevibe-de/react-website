@@ -1,4 +1,4 @@
-import Navbar from './Navbar';
+import NavbarRight from './NavbarRight';
 import { NavLink } from '@/types/NavLink';
 
 export default function Header() {
@@ -9,6 +9,6 @@ export default function Header() {
   ];
 
   return (
-    <Navbar links={navLinks} />
+    <NavbarRight links={navLinks} />
   );
 }
