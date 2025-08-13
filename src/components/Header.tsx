@@ -1,7 +1,11 @@
 import NavbarRight from './NavbarRight';
 import { NavLink } from '@/types/NavLink';
 
-export default function Header() {
+type HeaderProps = {
+    pushContentDown?: boolean; // if true, adds padding to the top of the content
+};
+
+export default function Header({pushContentDown}: HeaderProps) {
   const navLinks: NavLink[] = [
     { label: 'Kurse', href: '/courses' },
     { label: 'Über uns', href: '/about' },
@@ -9,6 +13,6 @@ export default function Header() {
   ];
 
   return (
-    <NavbarRight links={navLinks} />
+    <NavbarRight links={navLinks} pushContentDown={pushContentDown}/>
   );
 }

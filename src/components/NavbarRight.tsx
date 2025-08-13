@@ -1,16 +1,34 @@
+'use client';
+
 import {NavLink} from "@/types/NavLink";
 
 import {Disclosure, DisclosureButton, DisclosurePanel} from '@headlessui/react'
-import { FaBars, FaCircleXmark } from "react-icons/fa6";
+import {FaBars, FaCircleXmark} from "react-icons/fa6";
 import Link from "next/link";
+import {useEffect, useState} from "react";
 
 type NavbarProps = {
     links: NavLink[];
+    pushContentDown?: boolean; // if true, adds padding to the top of the content
 };
 
-export default function NavbarRight({links}: NavbarProps) {
+export default function NavbarRight({links, pushContentDown}: NavbarProps) {
+    const [scrolled, setScrolled] = useState(false);
+
+    useEffect(() => {
+        const onScroll = () => {
+            setScrolled(window.scrollY > 0); // turn white on very first scroll
+        };
+        window.addEventListener('scroll', onScroll);
+        return () => window.removeEventListener('scroll', onScroll);
+    }, []);
+
     return (
-        <Disclosure as="nav" className="bg-white shadow-sm fixed top-0 inset-x-0 z-50">
+        <Disclosure as="nav"
+                    className={`fixed top-0 inset-x-0 z-50 
+                    ${scrolled ? 'bg-white text-gray-900 shadow-sm' : 'bg-transparent text-white'} transition-colors duration-400
+                    ${pushContentDown ? 'sticky' : ''}
+        `}>
             <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
                 <div className="relative flex justify-between" style={{height: 'var(--navbar-height)'}}>
                     <div className="absolute inset-y-0 right-0 flex items-center sm:hidden">
@@ -27,7 +45,7 @@ export default function NavbarRight({links}: NavbarProps) {
                         <Link href="/" className="flex shrink-0 items-center">
                             <img
                                 alt="Codevibe Logo"
-                                src="/codevibe-logo.png"
+                                src={`${scrolled ? '/codevibe-logo.png' : '/codevibe-logo-white.png'}`}
                                 className="h-6 w-auto rounded"
                             />
                         </Link>
@@ -35,7 +53,7 @@ export default function NavbarRight({links}: NavbarProps) {
                             {/* Current: "border-indigo-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" */}
                             {links.map((link) => (
                                 <Link href={link.href} key={link.href}
-                                   className="border-transparent text-gray-600 hover:border-eminence-500 hover:text-gray-700 inline-flex items-center border-b-2 px-1 pt-1 text-sm font-medium">
+                                      className="border-transparent hover:border-eminence-500 inline-flex items-center border-b-2 px-1 pt-1 text-sm font-medium">
                                     {link.label}
                                 </Link>
                             ))}

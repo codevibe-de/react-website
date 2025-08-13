@@ -1,79 +1,84 @@
 'use client';
 
-import { useState, useMemo } from 'react';
-import { getAllCourses } from '@/lib/courses';
+import {useMemo, useState} from 'react';
+import {getAllCourses} from '@/lib/courses';
 import CourseCard from '@/components/CourseCard';
+import DefaultLayout from "@/layouts/DefaultLayout";
 
 export default function CoursesPage() {
-  const [searchTerm, setSearchTerm] = useState('');
-  
-  const allCourses = getAllCourses();
-  
-  const filteredCourses = useMemo(() => {
-    let courses = allCourses;
-    
-    // Apply search filter
-    if (searchTerm) {
-      const lowercaseSearch = searchTerm.toLowerCase();
-      courses = courses.filter(course =>
-        course.title.toLowerCase().includes(lowercaseSearch) ||
-        course.description.toLowerCase().includes(lowercaseSearch)
-      );
-    }
-    
-    return courses;
-  }, [allCourses, searchTerm]);
+    const [searchTerm, setSearchTerm] = useState('');
 
-  return (
-    <div className="min-h-screen bg-gray-50">
-      <div className="bg-eminence-800 text-white py-12">
-        <div className="max-w-6xl mx-auto px-4">
-          <h1 className="text-4xl font-bold mb-4">Unsere Kurse</h1>
-          <p className="text-xl">
-            Entdecken Sie unser umfassendes Angebot an Entwicklerschulungen
-          </p>
-        </div>
-      </div>
+    const allCourses = getAllCourses();
 
-      <div className="max-w-6xl mx-auto px-4 py-8">
-        <div className="mb-8 flex justify-center">
-          <div className="relative max-w-md w-full">
-            <input
-              type="text"
-              placeholder="Suchen Sie nach Kursen..."
-              value={searchTerm}
-              onChange={(e) => setSearchTerm(e.target.value)}
-              className="w-full px-4 py-2 pr-10 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white"
-            />
-            {searchTerm && (
-              <button
-                onClick={() => setSearchTerm('')}
-                className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-gray-600"
-              >
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                </svg>
-              </button>
-            )}
-          </div>
-        </div>
+    const filteredCourses = useMemo(() => {
+        let courses = allCourses;
 
-        <div className="mb-4 text-gray-600">
-          {filteredCourses.length} {filteredCourses.length === 1 ? 'Kurs gefunden' : 'Kurse gefunden'}
-        </div>
+        // Apply search filter
+        if (searchTerm) {
+            const lowercaseSearch = searchTerm.toLowerCase();
+            courses = courses.filter(course =>
+                course.title.toLowerCase().includes(lowercaseSearch) ||
+                course.description.toLowerCase().includes(lowercaseSearch)
+            );
+        }
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {filteredCourses.map(course => (
-            <CourseCard key={course.id} course={course} />
-          ))}
-        </div>
+        return courses;
+    }, [allCourses, searchTerm]);
 
-        {filteredCourses.length === 0 && (
-          <div className="text-center py-12">
-            <p className="text-gray-500 text-lg">Keine Kurse gefunden. Versuchen Sie andere Suchbegriffe.</p>
-          </div>
-        )}
-      </div>
-    </div>
-  );
+    return (
+        <DefaultLayout>
+            <div className="min-h-screen bg-gray-50">
+                <div className="bg-eminence-800 text-white py-12">
+                    <div className="max-w-6xl mx-auto px-4">
+                        <h1 className="text-4xl font-bold mb-4">Unsere Kurse</h1>
+                        <p className="text-xl">
+                            Entdecken Sie unser umfassendes Angebot an Entwicklerschulungen
+                        </p>
+                    </div>
+                </div>
+
+                <div className="max-w-6xl mx-auto px-4 py-8">
+                    <div className="mb-8 flex justify-center">
+                        <div className="relative max-w-md w-full">
+                            <input
+                                type="text"
+                                placeholder="Suchen Sie nach Kursen..."
+                                value={searchTerm}
+                                onChange={(e) => setSearchTerm(e.target.value)}
+                                className="w-full px-4 py-2 pr-10 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white"
+                            />
+                            {searchTerm && (
+                                <button
+                                    onClick={() => setSearchTerm('')}
+                                    className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-gray-600"
+                                >
+                                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
+                                              d="M6 18L18 6M6 6l12 12"/>
+                                    </svg>
+                                </button>
+                            )}
+                        </div>
+                    </div>
+
+                    <div className="mb-4 text-gray-600">
+                        {filteredCourses.length} {filteredCourses.length === 1 ? 'Kurs gefunden' : 'Kurse gefunden'}
+                    </div>
+
+                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        {filteredCourses.map(course => (
+                            <CourseCard key={course.id} course={course}/>
+                        ))}
+                    </div>
+
+                    {filteredCourses.length === 0 && (
+                        <div className="text-center py-12">
+                            <p className="text-gray-500 text-lg">Keine Kurse gefunden. Versuchen Sie andere
+                                Suchbegriffe.</p>
+                        </div>
+                    )}
+                </div>
+            </div>
+        </DefaultLayout>
+    );
 }
