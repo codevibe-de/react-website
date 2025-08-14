@@ -4,11 +4,13 @@ import {HeroContent} from "@/types/HeroContent";
 
 export default function DjiPage() {
     const heroContent:HeroContent = {
-        title: "DJI Kurse",
-        subtitle: "Entdecken Sie unsere spezialisierten Kurse für DJI Drohnen und Softwareentwicklung.",
+        title: "KI-getriebene Entwicklung",
+        subtitle: "NEU -- ein 2-stündiger Walkthrough mit Claude Code und Junie.",
         backgroundImageUrl: "/philip-oroni-8kpm32LzzCU-unsplash.jpg",
+        height: "80vh",
+        overlayTransparency: 30,
         cta: {
-            label: "Jetzt starten",
+            label: "Mehr erfahren",
             href: "#",
             classes: "bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
         }

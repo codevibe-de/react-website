@@ -1,5 +1,5 @@
 import type {Metadata} from "next";
-import {Geist, Geist_Mono, Outfit} from "next/font/google";
+import {Geist, Geist_Mono, Inter, Outfit} from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -17,6 +17,11 @@ const outfit = Outfit({
     subsets: ["latin"],
 });
 
+const inter = Inter({
+    variable: "--font-inter",
+    subsets: ["latin"],
+})
+
 export const metadata: Metadata = {
     title: "Codevibe - Professionelle Entwicklerschulungen",
     description: "Lernen Sie Java, Kotlin und Go effizient und mit Spaß. Dazu Trainings für Dev-Tools wie Maven, IntelliJ IDEA und Git.",
@@ -30,7 +35,7 @@ export default function RootLayout({
     return (
         <html lang="de">
         <body
-            className={`font-sans ${geistSans.variable} ${geistMono.variable} ${outfit.variable} antialiased`}
+            className={`font-sans ${inter.variable} ${outfit.variable} antialiased`}
         >
         {children}
         </body>

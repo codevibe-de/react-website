@@ -26,7 +26,7 @@ export default function CoursesPage() {
     }, [allCourses, searchTerm]);
 
     return (
-        <DefaultLayout>
+        <DefaultLayout pushContentDown={true}>
             <div className="min-h-screen bg-gray-50">
                 <div className="bg-eminence-800 text-white py-12">
                     <div className="max-w-6xl mx-auto px-4">

@@ -13,8 +13,7 @@
   --color-foreground: var(--foreground);
   --color-headings: var(--headings);
   --color-primary: var(--color-eminence-800);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-inter);
   --font-family-outfit: var(--font-outfit);
 
   /* base ##66347F -> 800 */
