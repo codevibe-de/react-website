@@ -11,10 +11,8 @@ export default function DefaultLayout({children, pushContentDown}: LayoutProps) 
     return (
 
         <>
-            <Header/>
-            <main
-                // style={{paddingTop: 'var(--navbar-height)'}}
-            >
+            <Header pushContentDown={pushContentDown}/>
+            <main>
                 {children}
             </main>
             <Footer/>

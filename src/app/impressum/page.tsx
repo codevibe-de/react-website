@@ -78,8 +78,8 @@ export default function ImpressumPage() {
           
           <h3 className="text-xl font-semibold mb-3 text-headings">Google Analytics</h3>
           <p className="mb-4">
-            Diese Website benutzt Google Analytics, einen Webanalysedienst der Google Inc. ("Google"). 
-            Google Analytics verwendet sog. "Cookies", Textdateien, die auf Ihrem Computer gespeichert 
+            Diese Website benutzt Google Analytics, einen Webanalysedienst der Google Inc. (&quot;Google&quot;).
+            Google Analytics verwendet sog. &quot;Cookies&quot;, Textdateien, die auf Ihrem Computer gespeichert
             werden und die eine Analyse der Benutzung der Website durch Sie ermöglichen. Die durch den 
             Cookie erzeugten Informationen über Ihre Benutzung dieser Website werden in der Regel an 
             einen Server von Google in den USA übertragen und dort gespeichert.

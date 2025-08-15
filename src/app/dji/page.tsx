@@ -1,9 +1,9 @@
 import DefaultLayout from "@/layouts/DefaultLayout";
-import Hero from "@/components/Hero";
 import {HeroContent} from "@/types/HeroContent";
+import Banner from "@/components/Banner";
 
 export default function DjiPage() {
-    const heroContent:HeroContent = {
+    const heroContent: HeroContent = {
         title: "KI-getriebene Entwicklung",
         subtitle: "NEU -- ein 2-stündiger Walkthrough mit Claude Code und Junie.",
         backgroundImageUrl: "/philip-oroni-8kpm32LzzCU-unsplash.jpg",
@@ -17,7 +17,9 @@ export default function DjiPage() {
     }
     return (
         <DefaultLayout pushContentDown={false}>
-            <Hero content={heroContent}/>
+            <Banner backgroundImageUrl={heroContent.backgroundImageUrl} height={heroContent.height}>
+                <h1 className="text-white text-4xl">KI-getriebene Entwicklung</h1>
+            </Banner>
             <div
                 className="h-[60vh] bg-gradient-to-bl from-[#37306B] to-[#9E4784] flex items-center justify-center text-center">
                 <div className="text-white px-4">
