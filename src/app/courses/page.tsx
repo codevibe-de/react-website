@@ -3,7 +3,7 @@
 import {useMemo, useState} from 'react';
 import {getAllCourses} from '@/lib/courses';
 import CourseCard from '@/components/CourseCard';
-import DefaultLayout from "@/layouts/DefaultLayout";
+import BlankPageLayout from "@/layouts/BlankPageLayout";
 
 export default function CoursesPage() {
     const [searchTerm, setSearchTerm] = useState('');
@@ -26,7 +26,7 @@ export default function CoursesPage() {
     }, [allCourses, searchTerm]);
 
     return (
-        <DefaultLayout pushContentDown={true}>
+        <BlankPageLayout navLinks={[]} footerLinks={[]} transparentNav={true}>
             <div className="min-h-screen bg-gray-50">
                 <div className="bg-eminence-800 text-white py-12">
                     <div className="max-w-6xl mx-auto px-4">
@@ -79,6 +79,6 @@ export default function CoursesPage() {
                     )}
                 </div>
             </div>
-        </DefaultLayout>
+        </BlankPageLayout>
     );
 }
