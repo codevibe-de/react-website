@@ -1,0 +1,33 @@
+{
+  "topNavLinks": [
+    {
+      "label": "Seminare",
+      "href": "/seminare"
+    },
+    {
+      "label": "Raves",
+      "href": "/raves"
+    },
+    {
+      "label": "0931 / 730 40 586",
+      "href": "tel:093173040586"
+    }
+  ],
+  "footerNavLinks": [
+    {
+      "label": "Seminare",
+      "href": "/seminare",
+      "section": "offerings"
+    },
+    {
+      "label": "Impressum",
+      "href": "/impressum",
+      "section": "company"
+    },
+    {
+      "label": "Datenschutz",
+      "href": "/datenschutz",
+      "section": "company"
+    }
+  ]
+}

@@ -3,7 +3,8 @@
     "allow": [
       "Bash(mkdir:*)",
       "WebFetch(domain:www.codevibe.de)",
-      "mcp__server-time__get_current_time"
+      "mcp__server-time__get_current_time",
+      "Bash(npm install:*)"
     ],
     "deny": []
   }

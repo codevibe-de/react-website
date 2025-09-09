@@ -1,21 +1,23 @@
 import {ReactNode} from 'react';
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import {NavLink} from "@/types/NavLink";
 
-interface LayoutProps {
+type DefaultLayoutProps = {
     children?: ReactNode;
-    pushContentDown?: boolean;
+    navLinks: NavLink[];
+    footerLinks: NavLink[];
+    transparentNav?: boolean;
 }
 
-export default function DefaultLayout({children, pushContentDown}: LayoutProps) {
+export default function DefaultLayout({children, transparentNav, navLinks, footerLinks}: DefaultLayoutProps) {
     return (
-
         <>
-            <Header pushContentDown={pushContentDown}/>
+            <Header navLinks={navLinks} transparentNav={transparentNav}/>
             <main>
                 {children}
             </main>
-            <Footer/>
+            <Footer navLinks={footerLinks}/>
         </>
     );
 }

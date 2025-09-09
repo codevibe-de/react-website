@@ -4,7 +4,7 @@ import MarkdownContent from '@/components/MarkdownContent';
 import BlankPageLayout from "@/layouts/BlankPageLayout";
 
 export default function DataPrivacyPage() {
-    const pageData = pageDataService.getPageData('/impressum')
+    const pageData = pageDataService.getPageData('/datenschutz')
     if (!pageData) {
         notFound();
     }

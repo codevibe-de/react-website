@@ -1,6 +1,11 @@
 import Link from 'next/link';
+import {NavLink} from "@/types/NavLink";
 
-export default function Footer() {
+type FooterProps = {
+    navLinks?: NavLink[];
+};
+
+export default function Footer({navLinks=[]}: FooterProps) {
   return (
     <footer className="bg-gray-900 text-white py-12">
       <div className="max-w-6xl mx-auto px-4">
@@ -15,18 +20,32 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold mb-4">Kurse</h4>
             <ul className="space-y-2 text-gray-400">
-              <li><Link href="/courses" className="hover:text-white">Alle Kurse</Link></li>
-              <li><Link href="/courses?filter=languages" className="hover:text-white">Programmiersprachen</Link></li>
-              <li><Link href="/courses?filter=tools" className="hover:text-white">Dev Tools</Link></li>
+                {navLinks
+                    .filter(link => link.section === 'offerings')
+                    .map(link => (
+                        <li key={link.href}>
+                            <Link href={link.href} className="hover:text-white">
+                                {link.label}
+                            </Link>
+                        </li>
+                    ))
+                }
             </ul>
           </div>
           
           <div>
             <h4 className="font-semibold mb-4">Unternehmen</h4>
             <ul className="space-y-2 text-gray-400">
-              <li><Link href="/about" className="hover:text-white">Über uns</Link></li>
-              <li><Link href="/contact" className="hover:text-white">Kontakt</Link></li>
-              <li><Link href="/impressum" className="hover:text-white">Impressum</Link></li>
+              {navLinks
+                .filter(link => link.section === 'company')
+                .map(link => (
+                  <li key={link.href}>
+                    <Link href={link.href} className="hover:text-white">
+                      {link.label}
+                    </Link>
+                  </li>
+                ))
+              }
             </ul>
           </div>
           
@@ -39,9 +58,6 @@ export default function Footer() {
           </div>
         </div>
         
-        <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-          <p>&copy; 2025 Codevibe IT-Seminare. Alle Rechte vorbehalten.</p>
-        </div>
       </div>
     </footer>
   );

@@ -8,16 +8,16 @@ import Link from "next/link";
 import {useEffect, useState} from "react";
 
 type NavbarProps = {
-    links: NavLink[];
-    pushContentDown?: boolean; // if true, adds padding to the top of the content
+    navLinks: NavLink[];
+    transparentNav?: boolean;
 };
 
-export default function NavbarRight({links, pushContentDown}: NavbarProps) {
-    const [scrolled, setScrolled] = useState(false);
-
+export default function NavbarRight({navLinks, transparentNav}: NavbarProps) {
+    // If true, the navbar starts transparent and becomes solid on scroll, otherwise it's always solid as if scrolled already
+    const [scrolled, setScrolled] = useState(!transparentNav);
     useEffect(() => {
         const onScroll = () => {
-            setScrolled(window.scrollY > 0); // turn white on very first scroll
+            setScrolled(window.scrollY > 0 || !transparentNav);
         };
         window.addEventListener('scroll', onScroll);
         return () => window.removeEventListener('scroll', onScroll);
@@ -27,18 +27,20 @@ export default function NavbarRight({links, pushContentDown}: NavbarProps) {
         <Disclosure as="nav"
                     className={`fixed top-0 inset-x-0 z-50 
                     ${scrolled ? 'bg-white text-gray-900 shadow-sm' : 'bg-transparent text-white'} transition-colors duration-400
-                    ${pushContentDown ? 'sticky' : ''}
+                    ${transparentNav ? '' : 'sticky'}
         `}>
             <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
                 <div className="relative flex justify-between" style={{height: 'var(--navbar-height)'}}>
                     <div className="absolute inset-y-0 right-0 flex items-center sm:hidden">
                         {/* Mobile menu button */}
                         <DisclosureButton
-                            className="group relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:ring-2 focus:ring-indigo-500 focus:outline-hidden focus:ring-inset">
+                            className={`group relative inline-flex items-center justify-center rounded-md p-2
+                            focus:ring-2 focus:outline-hidden focus:ring-inset
+                            ${scrolled ? 'text-gray-900 shadow-sm focus:ring-primary-200' : 'text-white focus:ring-gray-200'} transition-colors duration-400`}>
                             <span className="absolute -inset-0.5"/>
                             <span className="sr-only">Open main menu</span>
-                            <FaBars aria-hidden="true" className="block size-6 group-data-open:hidden"/>
-                            <FaCircleXmark aria-hidden="true" className="hidden size-6 group-data-open:block"/>
+                            <FaBars aria-hidden="true" className="block size-5 group-data-open:hidden"/>
+                            <FaCircleXmark aria-hidden="true" className="hidden size-5 group-data-open:block"/>
                         </DisclosureButton>
                     </div>
                     <div className="flex flex-1 items-center justify-between sm:items-stretch">
@@ -51,9 +53,9 @@ export default function NavbarRight({links, pushContentDown}: NavbarProps) {
                         </Link>
                         <div className="hidden sm:flex sm:space-x-8">
                             {/* Current: "border-indigo-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" */}
-                            {links.map((link) => (
+                            {navLinks.map((link) => (
                                 <Link href={link.href} key={link.href}
-                                      className="border-transparent hover:border-eminence-500 inline-flex items-center border-b-2 px-1 pt-1 text-sm font-medium">
+                                      className="border-transparent hover:border-primary inline-flex items-center border-b-2 px-1 pt-1 text-sm font-medium">
                                     {link.label}
                                 </Link>
                             ))}
@@ -65,7 +67,7 @@ export default function NavbarRight({links, pushContentDown}: NavbarProps) {
             <DisclosurePanel className="sm:hidden">
                 <div className="space-y-1 pt-2 pb-4 flex flex-col items-end">
                     {/* Current: "bg-indigo-50 border-indigo-500 text-indigo-700", Default: "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700" */}
-                    {links.map((link) => (
+                    {navLinks.map((link) => (
                         <DisclosureButton as={Link} href={link.href} key={link.href}
                                           className="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block border-r-4 py-2 pl-4 pr-3 text-base font-medium text-right"
                         >

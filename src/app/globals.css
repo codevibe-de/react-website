@@ -1,39 +1,67 @@
 @import "tailwindcss";
+
 @plugin "@tailwindcss/typography";
 
 :root {
-  --background: #ffffff;
-  --foreground: #2A2557;
-  --headings: #66347F;
-  --navbar-height: 4rem;
+    --background: #ffffff;
+    --foreground: var(--color-body);
+    --headings: #66347F;
+    --navbar-height: 4rem;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --color-headings: var(--headings);
-  --color-primary: var(--color-eminence-800);
-  --font-sans: var(--font-inter);
-  --font-family-outfit: var(--font-outfit);
+    --color-background: var(--background);
+    --color-foreground: var(--foreground);
+    --color-headings: var(--headings);
+    --font-sans: var(--font-inter);
+    --font-family-outfit: var(--font-outfit);
 
-  /* base ##66347F -> 800 */
-  --color-eminence-50: #faf6fd;
-  --color-eminence-100: #f4edfa;
-  --color-eminence-200: #e8d9f5;
-  --color-eminence-300: #d8bbec;
-  --color-eminence-400: #c193df;
-  --color-eminence-500: #a668cd;
-  --color-eminence-600: #8b49b0;
-  --color-eminence-700: #743a91;
-  --color-eminence-800: #66347f;
-  --color-eminence-900: #522c63;
-  --color-eminence-950: #32133f;
+    --color-primary: #252528;
+    --color-primary-50: #f4f6fa;
+    --color-primary-100: #e5eaf4;
+    --color-primary-200: #d2dbeb;
+    --color-primary-300: #b2c3de;
+    --color-primary-400: #8da5cd;
+    --color-primary-500: #7289bf;
+    --color-primary-600: #5c6faf;
+    --color-primary-700: #5462a1;
+    --color-primary-800: #495284;
+    --color-primary-900: #3e456a;
+    --color-primary-950: #292d42;
+
+    --color-body: #292d42;
+    --color-body-light: #393c4e;
 }
 
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  /*font-family: Arial, Helvetica, sans-serif;*/
+    background: var(--background);
+    color: var(--foreground);
+    /*font-family: Arial, Helvetica, sans-serif;*/
+}
+
+.prose h1 {
+    font-size: 2.5rem;
+    line-height: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.prose h2 {
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.prose p {
+    margin-top: 1rem;
+    margin-bottom: 0.25rem;
+}
+
+.prose ul {
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+.prose ul li {
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
 }
 
