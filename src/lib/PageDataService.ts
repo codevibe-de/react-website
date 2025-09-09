@@ -1,4 +1,4 @@
-import {HomePageData, PageData, SolutionPageData, SolutionsPageData} from "@/types/PageTypes";
+import {HomePageData, PageData} from "@/types/PageTypes";
 import homepageJson from '@/content/homepage.json';
 import commonPageDataJson from '@/content/commonPageData.json';
 import imprintPageData from '@/content/imprintPage.json' assert {type: 'json'};
