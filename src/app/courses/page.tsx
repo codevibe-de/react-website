@@ -1,6 +1,6 @@
 'use client';
 
-import {useMemo, useState, useEffect} from 'react';
+import {useMemo, useState, useEffect, Suspense} from 'react';
 import {useSearchParams} from 'next/navigation';
 import CourseCard from '@/components/CourseCard';
 import BlankPageLayout from "@/layouts/BlankPageLayout";
@@ -8,7 +8,7 @@ import Banner from "@/components/Banner";
 import BodyContainer from "@/layouts/BodyContainer";
 import {pageDataService} from "@/lib/PageDataService";
 
-export default function CoursesPage() {
+function CoursesPageContent() {
     const [searchTerm, setSearchTerm] = useState('');
     const searchParams = useSearchParams();
 
@@ -99,5 +99,19 @@ export default function CoursesPage() {
                 </div>
             </BodyContainer>
         </BlankPageLayout>
+    );
+}
+
+export default function CoursesPage() {
+    return (
+        <Suspense fallback={
+            <div className="min-h-screen bg-gray-50 flex items-center justify-center">
+                <div className="text-center">
+                    <div className="animate-pulse text-gray-500">Kurse werden geladen...</div>
+                </div>
+            </div>
+        }>
+            <CoursesPageContent />
+        </Suspense>
     );
 }
