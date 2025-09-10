@@ -21,12 +21,12 @@
     },
     {
       "label": "Mehrtägige Seminare",
-      "href": "/courses?filter=seminar",
+      "href": "/courses?filter=Seminar",
       "section": "offerings"
     },
     {
       "label": "Rave Mikroseminare",
-      "href": "/courses?filter=rave",
+      "href": "/courses?filter=Rave",
       "section": "offerings"
     },
     {

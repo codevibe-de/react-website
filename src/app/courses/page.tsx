@@ -1,6 +1,7 @@
 'use client';
 
-import {useMemo, useState} from 'react';
+import {useMemo, useState, useEffect} from 'react';
+import {useSearchParams} from 'next/navigation';
 import CourseCard from '@/components/CourseCard';
 import BlankPageLayout from "@/layouts/BlankPageLayout";
 import Banner from "@/components/Banner";
@@ -9,9 +10,18 @@ import {pageDataService} from "@/lib/PageDataService";
 
 export default function CoursesPage() {
     const [searchTerm, setSearchTerm] = useState('');
+    const searchParams = useSearchParams();
 
     const pageData = pageDataService.getCoursesPageData();
     const allCourses = pageData.courses;
+
+    // Initialize search term from URL parameters
+    useEffect(() => {
+        const filterParam = searchParams.get('filter');
+        if (filterParam) {
+            setSearchTerm(filterParam);
+        }
+    }, [searchParams]);
 
     const filteredCourses = useMemo(() => {
         let courses = allCourses;
@@ -30,7 +40,7 @@ export default function CoursesPage() {
     }, [allCourses, searchTerm]);
 
     return (
-        <BlankPageLayout navLinks={[]} footerLinks={[]} transparentNav={true}>
+        <BlankPageLayout navLinks={pageData.topNavLinks} footerLinks={pageData.footerNavLinks} transparentNav={false}>
             <Banner backgroundImageUrl={'/abstract-image-with-curved-shapes-blend-light-pink-hues-that-create-mesmerizing-background-generative-ai.jpg'}
                     topGradient={false} height={'30vh'} overlayTransparency={10}
 
@@ -44,8 +54,8 @@ export default function CoursesPage() {
             </Banner>
             <BodyContainer>
                 <div className="max-w-6xl mx-auto px-4 py-8">
-                    <div className="mb-8 flex justify-center">
-                        <div className="relative max-w-md w-full">
+                    <div className="mb-8 flex flex-col items-center">
+                        <div className="relative max-w-md w-full mb-2">
                             <input
                                 type="text"
                                 placeholder="Suchen Sie nach Kursen..."
@@ -65,6 +75,9 @@ export default function CoursesPage() {
                                 </button>
                             )}
                         </div>
+                        <p className="text-sm text-gray-500 text-center">
+                            Suche nach Stichworten im Titel, Typ oder Beschreibung.
+                        </p>
                     </div>
 
                     <div className="mb-4 text-gray-600">
