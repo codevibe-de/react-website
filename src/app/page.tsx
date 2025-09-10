@@ -27,7 +27,7 @@ export default function Home() {
         >
             <Banner backgroundImageUrl={heroContent.backgroundImageUrl} height={heroContent.height}
                     overlayTransparency={heroContent.overlayTransparency} topGradient={false}>
-                <div className="max-w-6xl mx-auto px-4 text-white text-center relative z-10">
+                <div className="max-w-6xl mx-auto px-4 pt-8 text-white text-center">
                     <h1 className="text-3xl sm:text-4xl md:text-5xl mb-6 font-family-outfit text-shadow-lg">
                         Code-Skills für die KI-Revolution
                     </h1>

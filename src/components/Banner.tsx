@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { ReactNode } from "react";
+import {ReactNode} from "react";
 
 type BannerProps = {
     backgroundImageUrl: string;
@@ -10,18 +10,18 @@ type BannerProps = {
 };
 
 export default function Banner({
-    backgroundImageUrl,
-    height,
-    overlayTransparency = 20,
-    topGradient = true,
-    children
-}: BannerProps) {
+                                   backgroundImageUrl,
+                                   height,
+                                   overlayTransparency = 20,
+                                   topGradient = true,
+                                   children
+                               }: BannerProps) {
     const overlayOpacity = overlayTransparency / 100;
 
     return (
-        <div 
+        <div
             className="relative isolate overflow-hidden py-10 sm:py-16 md:py-20 wave-transition flex items-center"
-            style={height ? { minHeight: height } : undefined}
+            style={height ? {minHeight: height} : undefined}
         >
             <Image
                 alt=""
@@ -33,7 +33,7 @@ export default function Banner({
             />
             <div
                 className="absolute inset-0 -z-10 bg-black"
-                style={{ opacity: overlayOpacity }}
+                style={{opacity: overlayOpacity}}
             />
             {topGradient && (
                 <div
@@ -43,9 +43,7 @@ export default function Banner({
                     }}
                 />
             )}
-            <div className="mx-auto max-w-7xl px-6 lg:px-8 flex items-center min-h-full">
-                {children}
-            </div>
+            {children}
         </div>
     );
 }
