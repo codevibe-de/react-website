@@ -20,8 +20,8 @@ export default function Banner({
 
     return (
         <div 
-            className="relative isolate overflow-hidden py-12 sm:py-18 wave-transition"
-            style={height ? { height } : undefined}
+            className="relative isolate overflow-hidden py-20 sm:py-24 md:py-28 wave-transition flex items-center"
+            style={height ? { minHeight: height } : undefined}
         >
             <Image
                 alt=""
