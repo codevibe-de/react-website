@@ -47,7 +47,7 @@ export default function NavbarRight({navLinks, transparentNav}: NavbarProps) {
                             <img
                                 alt="Codevibe Logo"
                                 src={`${scrolled ? '/codevibe-logo.png' : '/codevibe-logo-white.png'}`}
-                                className="h-6 w-auto rounded"
+                                className="h-5 w-auto rounded"
                             />
                         </Link>
                         <div className="hidden sm:flex sm:space-x-8">
