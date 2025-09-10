@@ -27,10 +27,11 @@ export default function Home() {
         >
             <Banner backgroundImageUrl={heroContent.backgroundImageUrl} height={heroContent.height}
                     overlayTransparency={heroContent.overlayTransparency} topGradient={false}>
-                <div className="max-w-6xl mx-auto px-4 text-center relative z-10">
-                    <h1 className="text-white text-5xl mb-6 font-family-outfit text-shadow-lg">Code-Skills für die
-                        KI-Revolution</h1>
-                    <p className="text-white text-2xl mb-8 max-w-3xl mx-auto text-shadow-md">
+                <div className="max-w-6xl mx-auto px-4 text-white text-center relative z-10">
+                    <h1 className="text-3xl sm:text-4xl md:text-5xl mb-6 font-family-outfit text-shadow-lg">
+                        Code-Skills für die KI-Revolution
+                    </h1>
+                    <p className="text-lg sm:text-xl md:text-2xl mb-8 max-w-3xl mx-auto text-shadow-md">
                         Von den Grundlagen bis zur Expertenstufe – unsere modernen Kurse verbinden Coding Know-How
                         mit KI-Tools für zeitgemäße Softwareentwicklung
                     </p>

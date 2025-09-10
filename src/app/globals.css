@@ -41,13 +41,13 @@ body {
 }
 
 .prose h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     line-height: 2rem;
     margin-bottom: 0.5rem;
 }
 
 .prose h2 {
-    margin-top: 1.5rem;
+    margin-top: 1.3rem;
     margin-bottom: 0.5rem;
 }
 
@@ -79,5 +79,23 @@ body {
     background: white;
     clip-path: ellipse(100% 100% at 50% 100%);
     z-index: 10;
+}
+
+.search-input::placeholder {
+    color: #d1d5db;
+    opacity: 1;
+}
+
+.search-input::-webkit-input-placeholder {
+    color: #d1d5db;
+}
+
+.search-input::-moz-placeholder {
+    color: #d1d5db;
+    opacity: 1;
+}
+
+.search-input:-ms-input-placeholder {
+    color: #d1d5db;
 }
 

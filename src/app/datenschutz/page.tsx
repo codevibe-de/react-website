@@ -12,7 +12,7 @@ export default function DataPrivacyPage() {
     return (
         <BlankPageLayout navLinks={pageData.topNavLinks} footerLinks={pageData.footerNavLinks} transparentNav={false}>
             <BodyContainer>
-                <MarkdownContent body={pageData.body} className="prose prose-lg max-w-none"/>
+                <MarkdownContent body={pageData.body} className="prose prose-lg max-w-none py-6"/>
             </BodyContainer>
         </BlankPageLayout>
     );

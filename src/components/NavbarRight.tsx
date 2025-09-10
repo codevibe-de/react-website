@@ -34,7 +34,7 @@ export default function NavbarRight({navLinks, transparentNav}: NavbarProps) {
                         {/* Mobile menu button */}
                         <DisclosureButton
                             className={`group relative inline-flex items-center justify-center rounded-md p-2
-                            focus:ring-2 focus:outline-hidden focus:ring-inset
+                            focus:ring-1 focus:outline-hidden focus:ring-inset
                             ${scrolled ? 'text-gray-900 shadow-sm focus:ring-primary-200' : 'text-white focus:ring-gray-200'} transition-colors duration-400`}>
                             <span className="absolute -inset-0.5"/>
                             <span className="sr-only">Open main menu</span>
@@ -43,7 +43,7 @@ export default function NavbarRight({navLinks, transparentNav}: NavbarProps) {
                         </DisclosureButton>
                     </div>
                     <div className="flex flex-1 items-center justify-between sm:items-stretch">
-                        <Link href="/" className="flex shrink-0 items-center">
+                        <Link href="/" className="flex shrink-0 items-center pl-2">
                             <img
                                 alt="Codevibe Logo"
                                 src={`${scrolled ? '/codevibe-logo.png' : '/codevibe-logo-white.png'}`}
@@ -63,7 +63,7 @@ export default function NavbarRight({navLinks, transparentNav}: NavbarProps) {
                 </div>
             </div>
 
-            <DisclosurePanel className="sm:hidden">
+            <DisclosurePanel className="sm:hidden bg-white shadow-lg">
                 <div className="space-y-1 pt-2 pb-4 flex flex-col items-end">
                     {/* Current: "bg-indigo-50 border-indigo-500 text-indigo-700", Default: "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700" */}
                     {navLinks.map((link) => (

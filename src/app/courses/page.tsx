@@ -46,22 +46,24 @@ function CoursesPageContent() {
 
             >
                 <div className="max-w-6xl mx-auto px-4 text-center text-white relative z-10">
-                    <h1 className="text-4xl mb-6 text-shadow-lg">Unsere Kurse</h1>
-                    <p className="text-xl max-w-3xl mx-auto text-shadow-md">
-                        Entdecken Sie unser umfassendes Angebot<br/>an Entwicklerschulungen
+                    <h1 className="text-3xl sm:text-4xl md:text-5xl mb-6 font-family-outfit text-shadow-lg">
+                        Unsere Kurse
+                    </h1>
+                    <p className="text-lg sm:text-xl md:text-2xl mb-8 max-w-3xl mx-auto text-shadow-md">
+                        Entdecken Sie unser umfassendes Angebot an Entwicklerschulungen
                     </p>
                 </div>
             </Banner>
             <BodyContainer>
-                <div className="max-w-6xl mx-auto px-4 py-8">
+                <div className="max-w-6xl mx-auto">
                     <div className="mb-8 flex flex-col items-center">
                         <div className="relative max-w-md w-full mb-2">
                             <input
                                 type="text"
-                                placeholder="Suchen Sie nach Kursen..."
+                                placeholder="Stichwortsuche..."
                                 value={searchTerm}
                                 onChange={(e) => setSearchTerm(e.target.value)}
-                                className="w-full px-4 py-2 pr-10 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white"
+                                className="search-input w-full px-4 py-2 pr-10 border border-gray-400 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent bg-white"
                             />
                             {searchTerm && (
                                 <button
@@ -75,8 +77,8 @@ function CoursesPageContent() {
                                 </button>
                             )}
                         </div>
-                        <p className="text-sm text-gray-500 text-center">
-                            Suche nach Stichworten im Titel, Typ oder Beschreibung.
+                        <p className="text-xs text-gray-500 text-center">
+                            Sucht nach Stichworten im Titel, Beschreibung oder Typ
                         </p>
                     </div>
 
