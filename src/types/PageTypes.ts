@@ -1,7 +1,7 @@
 import {NavLink} from "@/types/NavLink";
 import {BodyContent} from "@/types/BodyContent";
 import {HeroContent} from "@/types/HeroContent";
-import {PostContent, PostsContent} from "@/types/PostsContent";
+import {Course} from "@/types/Course";
 
 interface PageMeta {
     title: string;
@@ -18,13 +18,11 @@ export interface PageData {
 
 export interface HomePageData extends PageData {
     hero: HeroContent;
+    featuredCourses: Course[];
 }
 
-export interface SolutionsPageData extends PageData {
-    solutions: PostsContent;
-}
-
-export interface SolutionPageData extends PageData {
+export interface CoursesPageData extends PageData {
     hero: HeroContent;
-    solution: PostContent;
+    courses: Course[];
 }
+

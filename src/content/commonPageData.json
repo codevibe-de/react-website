@@ -1,12 +1,12 @@
 {
   "topNavLinks": [
     {
-      "label": "Seminare",
-      "href": "/seminare"
+      "label": "Home",
+      "href": "/"
     },
     {
-      "label": "Raves",
-      "href": "/raves"
+      "label": "Kurse",
+      "href": "/courses"
     },
     {
       "label": "0931 / 730 40 586",
@@ -15,8 +15,18 @@
   ],
   "footerNavLinks": [
     {
-      "label": "Seminare",
-      "href": "/seminare",
+      "label": "Alle Kurse",
+      "href": "/courses",
+      "section": "offerings"
+    },
+    {
+      "label": "Mehrtägige Seminare",
+      "href": "/courses?filter=seminar",
+      "section": "offerings"
+    },
+    {
+      "label": "Rave Mikroseminare",
+      "href": "/courses?filter=rave",
       "section": "offerings"
     },
     {

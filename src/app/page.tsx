@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import {getFeaturedCourses} from '@/lib/courses';
 import CourseCard from '@/components/CourseCard';
 import DefaultLayout from "@/layouts/DefaultLayout";
 import {HeroContent} from "@/types/HeroContent";
@@ -8,7 +7,6 @@ import {pageDataService} from "@/lib/PageDataService";
 
 export default function Home() {
     const homePageData = pageDataService.getHomePageData();
-    const featuredCourses = getFeaturedCourses();
     const heroContent: HeroContent = {
         title: "KI-getriebene Entwicklung",
         subtitle: "NEU -- ein 2-stündiger Walkthrough mit Claude Code und Junie.",
@@ -49,7 +47,7 @@ export default function Home() {
                     <div className="max-w-6xl mx-auto px-4">
                         <h2 className="text-3xl text-body-light font-bold text-center mb-12">Populär</h2>
                         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                            {featuredCourses.map(course => (
+                            {homePageData.featuredCourses.map(course => (
                                 <CourseCard key={course.id} course={course}/>
                             ))}
                         </div>

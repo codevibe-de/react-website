@@ -3,6 +3,11 @@ export enum CourseType {
   Rave = 'Rave',
 }
 
+export enum DurationUnit {
+  Hours = 'Hours',
+  Days = 'Days',
+}
+
 export interface Course {
   id: string;
   title: string;
@@ -13,6 +18,7 @@ export interface Course {
   priceSingle: number;
   priceInhouse: number;
   duration: number;
+  durationUnit?: DurationUnit;
   featured: boolean;
   type: CourseType;
 }

@@ -2,6 +2,7 @@ import {pageDataService} from "@/lib/PageDataService";
 import {notFound} from "next/navigation";
 import MarkdownContent from '@/components/MarkdownContent';
 import BlankPageLayout from "@/layouts/BlankPageLayout";
+import BodyContainer from "@/layouts/BodyContainer";
 
 export default function DataPrivacyPage() {
     const pageData = pageDataService.getPageData('/datenschutz')
@@ -10,7 +11,9 @@ export default function DataPrivacyPage() {
     }
     return (
         <BlankPageLayout navLinks={pageData.topNavLinks} footerLinks={pageData.footerNavLinks} transparentNav={false}>
-            <MarkdownContent body={pageData.body} className="prose prose-lg max-w-none"/>
+            <BodyContainer>
+                <MarkdownContent body={pageData.body} className="prose prose-lg max-w-none"/>
+            </BodyContainer>
         </BlankPageLayout>
     );
 }

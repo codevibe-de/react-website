@@ -1,14 +1,17 @@
 'use client';
 
 import {useMemo, useState} from 'react';
-import {getAllCourses} from '@/lib/courses';
 import CourseCard from '@/components/CourseCard';
 import BlankPageLayout from "@/layouts/BlankPageLayout";
+import Banner from "@/components/Banner";
+import BodyContainer from "@/layouts/BodyContainer";
+import {pageDataService} from "@/lib/PageDataService";
 
 export default function CoursesPage() {
     const [searchTerm, setSearchTerm] = useState('');
 
-    const allCourses = getAllCourses();
+    const pageData = pageDataService.getCoursesPageData();
+    const allCourses = pageData.courses;
 
     const filteredCourses = useMemo(() => {
         let courses = allCourses;
@@ -18,6 +21,7 @@ export default function CoursesPage() {
             const lowercaseSearch = searchTerm.toLowerCase();
             courses = courses.filter(course =>
                 course.title.toLowerCase().includes(lowercaseSearch) ||
+                course.type.toLowerCase().includes(lowercaseSearch) ||
                 course.description.toLowerCase().includes(lowercaseSearch)
             );
         }
@@ -27,16 +31,18 @@ export default function CoursesPage() {
 
     return (
         <BlankPageLayout navLinks={[]} footerLinks={[]} transparentNav={true}>
-            <div className="min-h-screen bg-gray-50">
-                <div className="bg-eminence-800 text-white py-12">
-                    <div className="max-w-6xl mx-auto px-4">
-                        <h1 className="text-4xl font-bold mb-4">Unsere Kurse</h1>
-                        <p className="text-xl">
-                            Entdecken Sie unser umfassendes Angebot an Entwicklerschulungen
-                        </p>
-                    </div>
-                </div>
+            <Banner backgroundImageUrl={'/abstract-image-with-curved-shapes-blend-light-pink-hues-that-create-mesmerizing-background-generative-ai.jpg'}
+                    topGradient={false} height={'30vh'} overlayTransparency={10}
 
+            >
+                <div className="max-w-6xl mx-auto px-4 text-center text-white relative z-10">
+                    <h1 className="text-4xl mb-6 text-shadow-lg">Unsere Kurse</h1>
+                    <p className="text-xl max-w-3xl mx-auto text-shadow-md">
+                        Entdecken Sie unser umfassendes Angebot<br/>an Entwicklerschulungen
+                    </p>
+                </div>
+            </Banner>
+            <BodyContainer>
                 <div className="max-w-6xl mx-auto px-4 py-8">
                     <div className="mb-8 flex justify-center">
                         <div className="relative max-w-md w-full">
@@ -78,7 +84,7 @@ export default function CoursesPage() {
                         </div>
                     )}
                 </div>
-            </div>
+            </BodyContainer>
         </BlankPageLayout>
     );
 }

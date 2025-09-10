@@ -2,8 +2,9 @@ import React from 'react';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { marked } from 'marked';
-import { getAllCourses, getCourseById } from '@/lib/courses';
-import { Course } from '@/types/course';
+import { getCourseById } from '@/lib/courses';
+import { Course, DurationUnit } from '@/types/Course';
+import {pageDataService} from "@/lib/PageDataService";
 
 interface CourseDetailPageProps {
   params: Promise<{ slug: string }>;
@@ -23,9 +24,10 @@ async function formatOutline(outline: string): Promise<string> {
   return await marked(outline);
 }
 
+const pageData = pageDataService.getCoursesPageData();
+
 export async function generateStaticParams() {
-  const courses = getAllCourses();
-  return courses.map((course) => ({
+  return pageData.courses.map((course) => ({
     slug: `${course.id}-${course.title.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '')}`,
   }));
 }
@@ -33,7 +35,7 @@ export async function generateStaticParams() {
 export default async function CourseDetailPage({ params }: CourseDetailPageProps) {
   const { slug } = await params;
   const courseId = extractCourseIdFromSlug(slug);
-  const course = getCourseById(courseId);
+  const course = getCourseById(pageData.courses, courseId);
 
   if (!course) {
     notFound();
@@ -55,7 +57,10 @@ export default async function CourseDetailPage({ params }: CourseDetailPageProps
           </Link>
           <h1 className="text-4xl font-bold mb-4">{course.title}</h1>
           <div className="flex items-center gap-6 text-blue-100">
-            <span>{course.duration} {course.duration === 1 ? 'Tag' : 'Tage'}</span>
+            <span>{course.duration} {course.durationUnit === DurationUnit.Hours 
+              ? (course.duration === 1 ? 'Stunde' : 'Stunden')
+              : (course.duration === 1 ? 'Tag' : 'Tage')
+            }</span>
             <span>Kurs-ID: {course.id}</span>
           </div>
         </div>
@@ -96,7 +101,10 @@ export default async function CourseDetailPage({ params }: CourseDetailPageProps
                 <div>
                   <span className="text-gray-600">Dauer:</span>
                   <span className="font-semibold ml-2">
-                    {course.duration} {course.duration === 1 ? 'Tag' : 'Tage'}
+                    {course.duration} {course.durationUnit === DurationUnit.Hours 
+                      ? (course.duration === 1 ? 'Stunde' : 'Stunden')
+                      : (course.duration === 1 ? 'Tag' : 'Tage')
+                    }
                   </span>
                 </div>
                 

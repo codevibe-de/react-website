@@ -19,9 +19,7 @@ export default function BlankPageLayout({
     return (
         <>
             <Header navLinks={navLinks} transparentNav={transparentNav}/>
-            <main className="px-6 lg:px-8 py-12">
-                {children}
-            </main>
+            {children}
             <Footer navLinks={footerLinks}/>
         </>
     );

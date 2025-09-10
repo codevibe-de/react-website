@@ -4,7 +4,8 @@
       "Bash(mkdir:*)",
       "WebFetch(domain:www.codevibe.de)",
       "mcp__server-time__get_current_time",
-      "Bash(npm install:*)"
+      "Bash(npm install:*)",
+      "Bash(npm run build:*)"
     ],
     "deny": []
   }

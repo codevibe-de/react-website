@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Course, CourseType } from '@/types/course';
+import { Course, CourseType, DurationUnit } from '@/types/Course';
 
 interface CourseCardProps {
   course: Course;
@@ -31,9 +31,12 @@ export default function CourseCard({ course }: CourseCardProps) {
         </div>
         
         <div className="mt-auto">
-          <div className="text-sm text-gray-500">
-            {course.duration} {course.duration === 1 ? 'Tag' : 'Tage'}
-          </div>
+            <div className="text-sm text-gray-500">
+                {course.duration} {course.durationUnit === DurationUnit.Hours
+                ? (course.duration === 1 ? 'Stunde' : 'Stunden')
+                : (course.duration === 1 ? 'Tag' : 'Tage')
+            }
+            </div>
         </div>
       </div>
     </Link>
