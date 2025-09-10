@@ -42,14 +42,14 @@ function CoursesPageContent() {
     return (
         <BlankPageLayout navLinks={pageData.topNavLinks} footerLinks={pageData.footerNavLinks} transparentNav={false}>
             <Banner backgroundImageUrl={'/abstract-image-with-curved-shapes-blend-light-pink-hues-that-create-mesmerizing-background-generative-ai.jpg'}
-                    topGradient={false} height={'30vh'} overlayTransparency={10}
+                    topGradient={false} height={'20vh'} overlayTransparency={10}
 
             >
-                <div className="max-w-6xl mx-auto px-4 text-center text-white relative z-10">
-                    <h1 className="text-3xl sm:text-4xl md:text-5xl mb-6 font-family-outfit text-shadow-lg">
+                <div className="max-w-6xl mx-auto px-4 text-center text-white">
+                    <h1 className="text-3xl sm:text-4xl md:text-5xl font-family-outfit text-shadow-lg">
                         Unsere Kurse
                     </h1>
-                    <p className="text-lg sm:text-xl md:text-2xl mb-8 max-w-3xl mx-auto text-shadow-md">
+                    <p className="text-lg sm:text-xl mt-4 md:text-2xl max-w-3xl mx-auto text-shadow-md">
                         Entdecken Sie unser umfassendes Angebot an Entwicklerschulungen
                     </p>
                 </div>

@@ -20,14 +20,14 @@ export default function Banner({
 
     return (
         <div 
-            className="relative isolate overflow-hidden py-20 sm:py-24 md:py-28 wave-transition flex items-center"
+            className="relative isolate overflow-hidden py-10 sm:py-16 md:py-20 wave-transition flex items-center"
             style={height ? { minHeight: height } : undefined}
         >
             <Image
                 alt=""
                 src={backgroundImageUrl}
                 fill
-                className="absolute inset-0 -z-10 object-cover object-left rounded-b-2xl"
+                className="absolute inset-0 -z-10 object-cover object-left"
                 priority={true}
                 quality={97}
             />
