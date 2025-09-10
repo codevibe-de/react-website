@@ -38,6 +38,16 @@
       "label": "Datenschutz",
       "href": "/datenschutz",
       "section": "company"
+    },
+    {
+      "label": "sales@codevibe.de",
+      "href": "mailto:sales@codevibe.de",
+      "section": "contact"
+    },
+    {
+      "label": "0931 / 730 40 586",
+      "href": "tel:093173040586",
+      "section": "contact"
     }
   ]
 }
