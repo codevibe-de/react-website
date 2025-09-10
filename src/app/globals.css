@@ -65,3 +65,19 @@ body {
     margin-bottom: 0.25rem;
 }
 
+.wave-transition {
+    position: relative;
+}
+
+.wave-transition::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    right: 0;
+    height: 50px;
+    background: white;
+    clip-path: ellipse(100% 100% at 50% 100%);
+    z-index: 10;
+}
+
