@@ -213,7 +213,8 @@
       "priceInhouse": null,
       "duration": 2,
       "featured": false,
-      "type": "Seminar"
+      "type": "Seminar",
+      "backgroundImageUrl": "/philip-oroni-8kpm32LzzCU-unsplash.jpg"
     }
   ]
 }

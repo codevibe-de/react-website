@@ -15,6 +15,7 @@
     --color-headings: var(--headings);
     --font-sans: var(--font-inter);
     --font-family-outfit: var(--font-outfit);
+    --font-hero: var(--font-hero);
 
     --color-primary: #5c6faf;
     --color-primary-50: #f4f6fa;

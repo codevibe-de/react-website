@@ -1,44 +1,72 @@
 import Link from 'next/link';
-import { Course, CourseType, DurationUnit } from '@/types/Course';
+import {Course, CourseType, DurationUnit} from '@/types/Course';
 
 interface CourseCardProps {
-  course: Course;
+    course: Course;
 }
 
-export default function CourseCard({ course }: CourseCardProps) {
-  const courseSlug = `${course.id.toLowerCase()}-${course.title.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '')}`;
+export default function CourseCard({course}: CourseCardProps) {
+    const courseSlug = `${course.id.toLowerCase()}-${course.title.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '')}`;
 
-  return (
-    <Link href={`/courses/${courseSlug}`} className="block h-full">
-      <div className="border border-gray-200 rounded-lg p-6 hover:shadow-xl hover:scale-105 hover:border-blue-300 transition-all duration-300 cursor-pointer bg-white hover:bg-blue-50 h-full flex flex-col">
-        <div className="flex-grow">
-          <div className="flex gap-2 mb-2">
-            <span className={`inline-block text-xs px-2 py-1 rounded-full ${
-              course.type === CourseType.Seminar 
-                ? 'bg-green-100 text-green-800' 
-                : 'bg-purple-100 text-purple-800'
-            }`}>
-              {course.type}
-            </span>
-            {course.featured && (
-              <span className="inline-block bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full">
-                Featured
-              </span>
-            )}
-          </div>
-          <h3 className="text-xl font-semibold mb-2 text-gray-800 group-hover:text-blue-700 transition-colors">{course.title}</h3>
-          <p className="text-gray-600 mb-4">{course.description}</p>
-        </div>
-        
-        <div className="mt-auto">
-            <div className="text-sm text-gray-500">
-                {course.duration} {course.durationUnit === DurationUnit.Hours
-                ? (course.duration === 1 ? 'Stunde' : 'Stunden')
-                : (course.duration === 1 ? 'Tag' : 'Tage')
-            }
+    return (
+        <Link href={`/courses/${courseSlug}`} className="block h-full">
+            <div className="border border-gray-200 rounded-lg hover:shadow-xl hover:scale-105 hover:border-blue-300 transition-all duration-300 cursor-pointer bg-white hover:bg-blue-50 h-full flex flex-col overflow-hidden">
+                {course.backgroundImageUrl && (
+                    <div 
+                        className="relative w-full h-16 rounded-t-lg flex items-start justify-start p-3"
+                        style={{
+                            backgroundImage: `url(${course.backgroundImageUrl})`,
+                            backgroundSize: 'cover',
+                            backgroundPosition: 'center',
+                            backgroundRepeat: 'no-repeat'
+                        }}
+                    >
+                        <span className={`inline-block text-xs px-2 py-1 rounded-full ${
+                            course.type === CourseType.Seminar
+                                ? 'bg-green-100 text-green-800'
+                                : 'bg-purple-100 text-purple-800'
+                        }`}>
+                          {course.type}
+                        </span>
+                        {course.featured && (
+                            <span className="inline-block bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full ml-2">
+                                Featured
+                            </span>
+                        )}
+                    </div>
+                )}
+                <div className="p-6 flex-1 flex flex-col">
+                <div className="flex-grow">
+                    {!course.backgroundImageUrl && (
+                        <div className="flex gap-2 mb-2">
+                            <span className={`inline-block text-xs px-2 py-1 rounded-full ${
+                                course.type === CourseType.Seminar
+                                    ? 'bg-green-100 text-green-800'
+                                    : 'bg-purple-100 text-purple-800'
+                            }`}>
+                              {course.type}
+                            </span>
+                            {course.featured && (
+                                <span className="inline-block bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full">
+                                    Featured
+                                </span>
+                            )}
+                        </div>
+                    )}
+                    <h3 className="text-xl font-semibold mb-2 text-gray-800 group-hover:text-blue-700 transition-colors">{course.title}</h3>
+                    <p className="text-gray-600 mb-4">{course.description}</p>
+                </div>
+
+                <div className="mt-auto">
+                    <div className="text-sm text-gray-500">
+                        {course.duration} {course.durationUnit === DurationUnit.Hours
+                        ? (course.duration === 1 ? 'Stunde' : 'Stunden')
+                        : (course.duration === 1 ? 'Tag' : 'Tage')
+                    }
+                    </div>
+                </div>
+                </div>
             </div>
-        </div>
-      </div>
-    </Link>
-  );
+        </Link>
+    );
 }

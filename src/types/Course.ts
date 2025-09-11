@@ -21,4 +21,5 @@ export interface Course {
   durationUnit?: DurationUnit;
   featured: boolean;
   type: CourseType;
+  backgroundImageUrl?: string;
 }

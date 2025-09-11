@@ -4,6 +4,8 @@ import DefaultLayout from "@/layouts/DefaultLayout";
 import {HeroContent} from "@/types/HeroContent";
 import Banner from "@/components/Banner";
 import {pageDataService} from "@/lib/PageDataService";
+import BodyContainer from "@/layouts/BodyContainer";
+import ContentWithImages from "@/components/ContentWithImages";
 
 export default function Home() {
     const homePageData = pageDataService.getHomePageData();
@@ -28,12 +30,11 @@ export default function Home() {
             <Banner backgroundImageUrl={heroContent.backgroundImageUrl} height={heroContent.height}
                     overlayTransparency={heroContent.overlayTransparency} topGradient={false}>
                 <div className="max-w-6xl mx-auto px-4 pt-8 text-white text-center">
-                    <h1 className="text-3xl sm:text-4xl md:text-5xl mb-6 font-family-outfit text-shadow-lg">
-                        Code-Skills für die KI-Revolution
+                    <h1 className="text-3xl sm:text-4xl md:text-5xl mb-6 font-hero leading-snug text-shadow-lg">
+                        Developer Skills für die KI&#8209;Revolution
                     </h1>
                     <p className="text-lg sm:text-xl md:text-2xl mb-8 max-w-3xl mx-auto text-shadow-md">
-                        Von den Grundlagen bis zur Expertenstufe – unsere modernen Kurse verbinden Coding Know-How
-                        mit KI-Tools für zeitgemäße Softwareentwicklung
+                        Unsere Trainings verbinden KI mit den Grundlagen und Konzepten moderner Programmiersprachen.
                     </p>
                     <Link
                         href="/courses"
@@ -43,17 +44,19 @@ export default function Home() {
                     </Link>
                 </div>
             </Banner>
-            <div className="min-h-screen">
-                <section className="py-16">
-                    <div className="max-w-6xl mx-auto px-4">
-                        <h2 className="text-3xl text-body-light font-bold text-center mb-12">Populär</h2>
-                        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                            {homePageData.featuredCourses.map(course => (
-                                <CourseCard key={course.id} course={course}/>
-                            ))}
-                        </div>
+
+            <BodyContainer>
+                <ContentWithImages>
+                </ContentWithImages>
+
+                <div className="max-w-6xl mx-auto px-4">
+                    <h2 className="text-3xl text-body-light font-bold text-center mb-12">Populär</h2>
+                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        {homePageData.featuredCourses.map(course => (
+                            <CourseCard key={course.id} course={course}/>
+                        ))}
                     </div>
-                </section>
+                </div>
 
                 <section className="bg-gray-50 py-16">
                     <div className="max-w-4xl mx-auto px-4 text-center">
@@ -92,8 +95,7 @@ export default function Home() {
                         </div>
                     </div>
                 </section>
-
-            </div>
+            </BodyContainer>
         </DefaultLayout>
     );
 }

@@ -1,5 +1,5 @@
 import type {Metadata} from "next";
-import {Inter, Outfit} from "next/font/google";
+import {Inter, Outfit, Rock_Salt, Rubik_Dirt, Rubik_Scribble, Sonsie_One} from "next/font/google";
 import "./globals.css";
 
 const outfit = Outfit({
@@ -10,6 +10,17 @@ const outfit = Outfit({
 const inter = Inter({
     variable: "--font-inter",
     subsets: ["latin"],
+})
+
+// const fontHero = Sonsie_One({
+//     variable: "--font-hero",
+//     subsets: ["latin"],
+//     weight: "400",
+// })
+const fontHero = Rock_Salt({
+    variable: "--font-hero",
+    subsets: ["latin"],
+    weight: "400",
 })
 
 export const metadata: Metadata = {
@@ -25,7 +36,7 @@ export default function RootLayout({
     return (
         <html lang="de">
         <body
-            className={`font-sans ${inter.variable} ${outfit.variable} antialiased`}
+            className={`font-sans ${inter.variable} ${outfit.variable} ${fontHero.variable} antialiased`}
         >
         {children}
         </body>

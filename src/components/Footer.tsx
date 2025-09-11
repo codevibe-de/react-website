@@ -13,7 +13,7 @@ export default function Footer({navLinks = []}: FooterProps) {
                     <div>
                         <h3 className="text-xl font-bold mb-4 text-white">Codevibe IT-Seminare</h3>
                         <p>
-                            Code Skills für die KI&#8209;Revolution
+                            Developer Skills für die KI&#8209;Revolution
                         </p>
                     </div>
 
