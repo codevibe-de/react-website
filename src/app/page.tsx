@@ -34,7 +34,7 @@ export default function Home() {
                         Developer Skills für die KI&#8209;Revolution
                     </h1>
                     <p className="text-lg sm:text-xl md:text-2xl mb-8 max-w-3xl mx-auto text-shadow-md">
-                        Unsere Trainings verbinden KI mit den Grundlagen und Konzepten moderner Programmiersprachen.
+                        Unsere Kurse verbinden KI mit den Grundlagen und Konzepten moderner Programmiersprachen.
                     </p>
                     <Link
                         href="/courses"
@@ -49,8 +49,8 @@ export default function Home() {
                 <ContentWithImages>
                 </ContentWithImages>
 
-                <div className="max-w-6xl mx-auto px-4">
-                    <h2 className="text-3xl text-body-light font-bold text-center mb-12">Populär</h2>
+                <div className="max-w-6xl py-12 mx-auto px-4">
+                    <h2 className="text-3xl text-body-light font-bold text-center mb-12">Populäre Kurse</h2>
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {homePageData.featuredCourses.map(course => (
                             <CourseCard key={course.id} course={course}/>

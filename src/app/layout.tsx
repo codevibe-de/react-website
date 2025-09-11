@@ -1,5 +1,5 @@
 import type {Metadata} from "next";
-import {Inter, Outfit, Rock_Salt, Rubik_Dirt, Rubik_Scribble, Sonsie_One} from "next/font/google";
+import {Inter, Outfit, Rock_Salt} from "next/font/google";
 import "./globals.css";
 
 const outfit = Outfit({
@@ -12,11 +12,6 @@ const inter = Inter({
     subsets: ["latin"],
 })
 
-// const fontHero = Sonsie_One({
-//     variable: "--font-hero",
-//     subsets: ["latin"],
-//     weight: "400",
-// })
 const fontHero = Rock_Salt({
     variable: "--font-hero",
     subsets: ["latin"],
@@ -28,16 +23,12 @@ export const metadata: Metadata = {
     description: "Lernen Sie Java, Kotlin und Go effizient und mit Spaß. Dazu Trainings für Dev-Tools wie Maven, IntelliJ IDEA und Git.",
 };
 
-export default function RootLayout({
-                                       children,
-                                   }: Readonly<{
+export default function RootLayout({children,}: Readonly<{
     children: React.ReactNode;
 }>) {
     return (
         <html lang="de">
-        <body
-            className={`font-sans ${inter.variable} ${outfit.variable} ${fontHero.variable} antialiased`}
-        >
+        <body className={`font-sans ${inter.variable} ${outfit.variable} ${fontHero.variable} antialiased`}>
         {children}
         </body>
         </html>

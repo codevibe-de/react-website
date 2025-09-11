@@ -61,7 +61,7 @@ export default function ContentWithImages() {
                                 className="aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10 dark:shadow-none dark:outline-white/10">
                                 <img
                                     alt=""
-                                    src="/claude-code3.png"
+                                    src="/claude-code4.png"
                                     className="block size-full object-cover"
                                 />
                             </div>
