@@ -16,7 +16,7 @@ export default function ContentWithImages() {
         <div className="overflow-hidden bg-white py-12 dark:bg-gray-900">
             <div className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
                 <div className="max-w-4xl">
-                    <h1 className="mt-2 text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl dark:text-white">
+                    <h1 className="mt-2 text-3xl sm:text-4xl font-semibold tracking-tight text-pretty text-gray-900  dark:text-white">
                         KI krempelt die Softwareentwicklung um
                     </h1>
                     <p className="mt-6 text-xl/8 text-balance text-gray-700 dark:text-gray-300">
@@ -24,7 +24,7 @@ export default function ContentWithImages() {
                         welche die Rollen und Prozesse neu definieren.
                     </p>
                 </div>
-                <section className="mt-20 grid grid-cols-1 lg:grid-cols-2 lg:gap-x-8 lg:gap-y-16">
+                <section className="mt-8 grid grid-cols-1 lg:grid-cols-2 lg:gap-x-8 lg:gap-y-16">
                     <div className="lg:pr-8">
                         <h2 className="text-2xl font-semibold tracking-tight text-pretty text-gray-900 dark:text-white">
                             Unser Ansatz
@@ -48,10 +48,8 @@ export default function ContentWithImages() {
                             </ul>
                             <p className="mt-2">
                                 Unsere Kurse geben Entwickler:innen genau diese Skills – für nachhaltige Lösungen in
-                                einer
-                                von KI geprägten Softwarewelt.
+                                einer von KI geprägten Softwarewelt.
                             </p>
-
                         </div>
                     </div>
                     <div className="pt-16 lg:row-span-2 lg:-mr-16 xl:mr-auto">
