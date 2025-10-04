@@ -34,6 +34,18 @@ export default function Home() {
             </Banner>
 
             <BodyContainer>
+
+                <div className="max-w-6xl py-12 mx-auto px-4">
+                    <h2 className="text-3xl text-body-light font-bold text-center mb-12">Populäre Kurse</h2>
+                    <div className="flex flex-wrap justify-center gap-8">
+                        {homePageData.featuredCourses.map(course => (
+                            <div key={course.id} className="w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.5rem)] max-w-sm">
+                                <CourseCard course={course}/>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+
                 <IllustratedText introText={homePageData.illustratedText.introText}
                                  headLine={homePageData.illustratedText.headLine}
                                  subHeadLine={homePageData.illustratedText.subHeadLine}
@@ -41,52 +53,6 @@ export default function Home() {
                                  imageUrls={homePageData.illustratedText.imageUrls}>
                 </IllustratedText>
 
-                <div className="max-w-6xl py-12 mx-auto px-4">
-                    <h2 className="text-3xl text-body-light font-bold text-center mb-12">Populäre Kurse</h2>
-                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        {homePageData.featuredCourses.map(course => (
-                            <CourseCard key={course.id} course={course}/>
-                        ))}
-                    </div>
-                </div>
-
-                <section className="bg-gray-50 py-16">
-                    <div className="max-w-4xl mx-auto px-4 text-center">
-                        <h2 className="text-3xl font-bold mb-8" style={{color: '#66347F'}}>Über Codevibe</h2>
-                        <p className="text-lg mb-8" style={{color: '#2A2557'}}>
-                            Wir sind ein Team erfahrener Softwareentwickler und Trainer, die ihr Wissen
-                            leidenschaftlich gerne weitergeben. Unsere Kurse sind praxisorientiert und
-                            helfen Entwicklern dabei, ihre Fähigkeiten gezielt zu erweitern.
-                        </p>
-                        <div className="grid md:grid-cols-3 gap-8 mt-12">
-                            <div className="text-center">
-                                <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
-                                     style={{backgroundColor: '#66347F20'}}>
-                                    <span className="text-2xl">👩‍💻</span>
-                                </div>
-                                <h3 className="font-semibold mb-2" style={{color: '#66347F'}}>Erfahrene Trainer</h3>
-                                <p style={{color: '#2A2557'}}>Professionelle Entwickler mit jahrelanger
-                                    Praxiserfahrung</p>
-                            </div>
-                            <div className="text-center">
-                                <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
-                                     style={{backgroundColor: '#66347F20'}}>
-                                    <span className="text-2xl">🎯</span>
-                                </div>
-                                <h3 className="font-semibold mb-2" style={{color: '#66347F'}}>Praxisorientiert</h3>
-                                <p style={{color: '#2A2557'}}>Hands-on Training mit realen Projekten und Use Cases</p>
-                            </div>
-                            <div className="text-center">
-                                <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
-                                     style={{backgroundColor: '#66347F20'}}>
-                                    <span className="text-2xl">🚀</span>
-                                </div>
-                                <h3 className="font-semibold mb-2" style={{color: '#66347F'}}>Moderne Technologien</h3>
-                                <p style={{color: '#2A2557'}}>Aktuelle Tools und Best Practices aus der Industrie</p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
             </BodyContainer>
         </DefaultLayout>
     );

@@ -11,33 +11,25 @@
     "backgroundImageUrl": "/blurry-background-new-darker.jpg"
   },
   "illustratedText": {
-    "headLine": "KI krempelt die Softwareentwicklung um",
+    "headLine": "KI krempelt die Software-Entwicklung um",
     "introText": "Wo früher klassisches Coding im Mittelpunkt stand, halten heute intelligente Tools Einzug, welche die Rollen und Prozesse neu definieren.",
     "subHeadLine": "Unser Ansatz",
     "mainText": [
       {
         "type": "paragraph",
-        "content": "Wir haben die Chance genutzt und unsere Trainings neu konzipiert – mit einem Ansatz, der den gesamten Entwicklungsprozess im Zeitalter von KI neu denkt."
+        "content": "Wir haben die Chance genutzt und unsere Trainings neu konzipiert – mit einem Ansatz, der den Entwicklungsprozess im Zeitalter von KI neu denkt."
       },
       {
         "type": "paragraph",
-        "content": "Der Kern bleibt dabei unverändert: Ein Kunde hat ein Problem, und am Ende muss eine verlässliche Software-Lösung verfügbar sein."
-      },
-      {
-        "type": "paragraph",
-        "content": "Was sich verändert, ist der Weg dorthin:"
+        "content": "Unsere Kurse geben Entwickler:innen die Skills, die für nachhaltige Lösungen in einer von KI geprägten Softwarewelt benötigt werden:"
       },
       {
         "type": "list",
-        "content": "KI als Partner im Entwicklungsalltag,\nmoderne Sprachkonzepte als stabiles Fundament,\nund neue Methoden, um Software schneller und besser bereitzustellen."
-      },
-      {
-        "type": "paragraph",
-        "content": "Unsere Kurse geben Entwickler:innen genau diese Skills – für nachhaltige Lösungen in einer von KI geprägten Softwarewelt."
+        "content": "KI Grundlagen\nAbstraktes Denken\nPrompt Engineering\nRequirements Engineering\nQualitätssicherung"
       }
     ],
     "imageUrls": [
-      "context-not-software-engineer.png",
+      "context-not-software-engineer_square.jpeg",
       "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=560&h=560&fit=crop&q=90",
       "ai-technology-innovation.jpg",
       "claude-code5.png"

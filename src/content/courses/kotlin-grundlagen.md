@@ -8,7 +8,7 @@ duration: 3
 durationUnit: "Days"
 featured: true
 type: "Seminar"
-backgroundImageUrl: "/philip-oroni-8kpm32LzzCU-unsplash.jpg"
+backgroundImageUrl: "/freepik_ai-gen.jpeg"
 ---
 
 ## Description

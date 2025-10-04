@@ -1,4 +1,5 @@
 import {TextBlock} from "@/types/TextBlock";
+import TextBlockRenderer from "@/components/TextBlockRenderer";
 
 type ContentWithImagesProps = {
     headLine: string;
@@ -16,40 +17,25 @@ export default function IllustratedText({
                                             imageUrls
                                         }: ContentWithImagesProps) {
     return (
-        <div className="overflow-hidden bg-white py-12 dark:bg-gray-900">
+        <div className="overflow-hidden bg-white py-12">
             <div className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
                 <div className="max-w-4xl">
-                    <h1 className="mt-2 text-3xl sm:text-4xl font-semibold tracking-tight text-pretty text-gray-900  dark:text-white">
+                    <h1 className="mt-2 text-3xl sm:text-4xl font-semibold tracking-tight text-pretty text-gray-900">
                         {headLine}
                     </h1>
-                    <p className="mt-6 text-xl/8 text-balance text-gray-700 dark:text-gray-300">
+                    <p className="mt-6 text-xl/8 text-balance text-gray-700">
                         {introText}
                     </p>
                 </div>
                 <section className="mt-8 grid grid-cols-1 lg:grid-cols-2 lg:gap-x-8 lg:gap-y-16">
                     <div className="lg:pr-8">
-                        <h2 className="text-2xl font-semibold tracking-tight text-pretty text-gray-900 dark:text-white">
+                        <h2 className="text-2xl font-semibold tracking-tight text-pretty text-gray-900">
                             {subHeadLine}
                         </h2>
-                        <div className="mt-6 text-base/7 text-gray-600 dark:text-gray-400">
-                            {mainText.map((block, index) => {
-                                switch (block.type) {
-                                    case 'paragraph':
-                                        return <p key={index}
-                                                  className={`mt-2 ${block.classes || ''}`}>{block.content}</p>;
-                                    case 'list':
-                                        return (
-                                            <ul key={index}
-                                                className={`mt-4 list-disc list-inside space-y-2 ${block.classes || ''}`}>
-                                                {block.content?.split('\n').map((item, i) => (
-                                                    <li key={i}>{item}</li>
-                                                ))}
-                                            </ul>
-                                        );
-                                    default:
-                                        return null;
-                                }
-                            })}
+                        <div className="mt-6 text-base/7 text-gray-600">
+                            {mainText.map((block, index) => (
+                                <TextBlockRenderer key={index} block={block} />
+                            ))}
                         </div>
                     </div>
                     <div className="pt-16 lg:row-span-2 lg:-mr-16 xl:mr-auto">
@@ -58,7 +44,7 @@ export default function IllustratedText({
                             {imageUrls.map((url, index) => (
                                 <div
                                     key={url}
-                                    className={`aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10 dark:shadow-none dark:outline-white/10 ${
+                                    className={`aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10 ${
                                         index % 2 === 1 ? '-mt-8 lg:-mt-40' : ''
                                     }`}>
                                     <img

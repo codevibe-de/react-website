@@ -33,7 +33,7 @@ const pageData = pageDataService.getCoursesPageData();
 
 export async function generateStaticParams() {
     return pageData.courses.map((course) => ({
-        slug: `${course.id}-${course.title.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '')}`,
+        slug: `${course.id.toLowerCase()}-${course.title.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '')}`,
     }));
 }
 
@@ -52,7 +52,9 @@ export default async function CourseDetailPage({params}: CourseDetailPageProps) 
 
     return (
         <BlankPageLayout navLinks={[]} footerLinks={[]}>
-            <Banner backgroundImageUrl={course.backgroundImageUrl || '/abstract-image-with-curved-shapes-blend-light-pink-hues-that-create-mesmerizing-background-generative-ai.jpg'}>
+            <Banner
+                backgroundImageUrl={course.backgroundImageUrl || '/abstract-image-with-curved-shapes-blend-light-pink-hues-that-create-mesmerizing-background-generative-ai.jpg'}
+                overlayTransparency={10}>
                 <div className="max-w-6xl mx-auto px-4 text-center text-white">
                     <h1 className="text-3xl sm:text-4xl md:text-5xl font-family-outfit text-shadow-lg">
                         {course.title}
@@ -68,17 +70,17 @@ export default async function CourseDetailPage({params}: CourseDetailPageProps) 
                     <div className="lg:col-span-2 space-y-8">
                         <section>
                             <h2 className="text-2xl font-bold mb-4">Beschreibung</h2>
-                            <MarkdownContent body={course.description} className="text-gray-700 leading-relaxed" />
+                            <MarkdownContent body={course.description} className="text-gray-700 leading-relaxed"/>
                         </section>
 
                         <section>
                             <h2 className="text-2xl font-bold mb-4">Lernziele</h2>
-                            <MarkdownContent body={course.goal} className="text-gray-700 leading-relaxed" />
+                            <MarkdownContent body={course.goal} className="text-gray-700 leading-relaxed"/>
                         </section>
 
                         <section>
                             <h2 className="text-2xl font-bold mb-4">Zielgruppe</h2>
-                            <MarkdownContent body={course.targetAudience} className="text-gray-700 leading-relaxed" />
+                            <MarkdownContent body={course.targetAudience} className="text-gray-700 leading-relaxed"/>
                         </section>
 
                         <section>
@@ -107,7 +109,7 @@ export default async function CourseDetailPage({params}: CourseDetailPageProps) 
 
                                 <div>
                                     <span className="text-gray-600">Einzelperson:</span>
-                                    <span className="font-semibold ml-2 text-blue-600">
+                                    <span className="font-semibold ml-2 text-primary">
                     €{course.priceSingle.toLocaleString()}
                   </span>
                                 </div>
@@ -115,7 +117,7 @@ export default async function CourseDetailPage({params}: CourseDetailPageProps) 
                                 {course.priceInhouse && (
                                     <div>
                                         <span className="text-gray-600">Inhouse:</span>
-                                        <span className="font-semibold ml-2 text-blue-600">
+                                        <span className="font-semibold ml-2 text-primary">
                       €{course.priceInhouse.toLocaleString()}
                     </span>
                                     </div>
@@ -124,7 +126,7 @@ export default async function CourseDetailPage({params}: CourseDetailPageProps) 
 
                             <a
                                 href={emailHref}
-                                className="w-full bg-blue-600 text-white py-3 px-4 rounded-lg font-semibold hover:bg-blue-700 transition-colors text-center block"
+                                className="w-full bg-primary text-white py-3 px-4 rounded-lg font-semibold hover:bg-primary-700 transition-colors text-center block"
                             >
                                 Kurs anfragen
                             </a>

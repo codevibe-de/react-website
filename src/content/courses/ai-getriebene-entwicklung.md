@@ -8,7 +8,7 @@ duration: 2
 durationUnit: "Hours"
 featured: true
 type: "Rave"
-backgroundImageUrl: "/ai-development-bg.jpg"
+backgroundImageUrl: "/3d-renders-technological-waves-with-purple-vibrant-colors-ai-generative.jpg"
 ---
 
 ## Description
