@@ -4,13 +4,13 @@ import Header from "@/components/Header";
 import {NavLink} from "@/types/NavLink";
 
 type DefaultLayoutProps = {
-    children?: ReactNode;
+    transparentNav?: boolean;
     navLinks: NavLink[];
     footerLinks: NavLink[];
-    transparentNav?: boolean;
+    children?: ReactNode;
 }
 
-export default function DefaultLayout({children, transparentNav, navLinks, footerLinks}: DefaultLayoutProps) {
+export default function DefaultLayout({transparentNav, navLinks, footerLinks, children}: DefaultLayoutProps) {
     return (
         <>
             <Header navLinks={navLinks} transparentNav={transparentNav}/>

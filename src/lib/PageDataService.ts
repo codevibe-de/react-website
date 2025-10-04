@@ -1,11 +1,13 @@
-import {CoursesPageData, HomePageData, PageData} from "@/types/PageTypes";
 import homepageJson from '@/content/homepage.json';
 import coursesPageJson from '@/content/coursesPage.json';
 import commonPageDataJson from '@/content/commonPageData.json';
 import imprintPageData from '@/content/imprintPage.json' assert {type: 'json'};
 import dataPrivacyPageData from '@/content/dataPrivacy.json' assert {type: 'json'};
-import {getFeaturedCourses} from "@/lib/courses";
+import coursesData from '@/content/courses.json' assert {type: 'json'};
+
+import {CoursesPageData, HomePageData, PageData} from "@/types/pageTypes";
 import {Course, CourseType, DurationUnit} from "@/types/Course";
+import {getFeaturedCourses} from "@/lib/courses";
 
 class PageDataService {
 
@@ -24,7 +26,7 @@ class PageDataService {
         const pageData = commonPageDataJson as HomePageData;
         pageData.title = homepageJson.title;
         pageData.hero = homepageJson.hero;
-        const convertedCourses = this.convertRawCourses(coursesPageJson.courses);
+        const convertedCourses = this.convertRawCourses(coursesData);
         pageData.featuredCourses = getFeaturedCourses(convertedCourses);
         return pageData;
     }
@@ -33,7 +35,7 @@ class PageDataService {
         const pageData = commonPageDataJson as CoursesPageData;
         pageData.title = coursesPageJson.title;
         pageData.hero = coursesPageJson.hero;
-        pageData.courses = this.convertRawCourses(coursesPageJson.courses);
+        pageData.courses = this.convertRawCourses(coursesData);
         return pageData;
     }
 

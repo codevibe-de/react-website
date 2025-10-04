@@ -1,8 +1,8 @@
 import ReactMarkdown from 'react-markdown';
-import {BodyContent} from '@/types/BodyContent';
+import {TextBlock} from '@/types/TextBlock';
 
 interface MarkdownContentProps {
-    body?: BodyContent;
+    body?: TextBlock;
     className?: string;
 }
 

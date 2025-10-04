@@ -12,7 +12,7 @@ type BannerProps = {
 export default function Banner({
                                    backgroundImageUrl,
                                    height,
-                                   overlayTransparency = 20,
+                                   overlayTransparency = 0,
                                    topGradient = true,
                                    children
                                }: BannerProps) {

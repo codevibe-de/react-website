@@ -13,8 +13,4 @@ export type HeroContent = {
      */
     overlayTransparency?: number;
     cta?: CallToAction;
-    stats?: {
-        value: string;
-        description: string;
-    }[];
 };

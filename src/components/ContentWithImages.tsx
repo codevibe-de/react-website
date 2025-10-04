@@ -1,14 +1,12 @@
 import {ReactNode} from "react";
+import {TextBlock} from "@/types/TextBlock";
 
 type ContentWithImagesProps = {
-    introLine: string;
     headLine: string;
     introText: string;
     subHeadLine: string;
-    mainText: string;
-    overlayTransparency?: number;
-    topGradient?: boolean;
-    children: ReactNode;
+    mainText: TextBlock[];
+    imageUrls: string[];
 };
 
 export default function ContentWithImages() {
@@ -17,9 +15,11 @@ export default function ContentWithImages() {
             <div className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
                 <div className="max-w-4xl">
                     <h1 className="mt-2 text-3xl sm:text-4xl font-semibold tracking-tight text-pretty text-gray-900  dark:text-white">
+                        {/*headLine*/}
                         KI krempelt die Softwareentwicklung um
                     </h1>
                     <p className="mt-6 text-xl/8 text-balance text-gray-700 dark:text-gray-300">
+                        {/*introText*/}
                         Wo früher klassisches Coding im Mittelpunkt stand, halten heute intelligente Tools Einzug,
                         welche die Rollen und Prozesse neu definieren.
                     </p>
@@ -27,9 +27,11 @@ export default function ContentWithImages() {
                 <section className="mt-8 grid grid-cols-1 lg:grid-cols-2 lg:gap-x-8 lg:gap-y-16">
                     <div className="lg:pr-8">
                         <h2 className="text-2xl font-semibold tracking-tight text-pretty text-gray-900 dark:text-white">
+                            {/*subHeadLine*/}
                             Unser Ansatz
                         </h2>
                         <div className="mt-6 text-base/7 text-gray-600 dark:text-gray-400">
+                            {/*mainText*/}
                             <p className="mt-2">
                                 Wir haben die Chance genutzt und unsere Trainings neu konzipiert – mit einem Ansatz, der
                                 den gesamten Entwicklungsprozess im Zeitalter von KI neu denkt.

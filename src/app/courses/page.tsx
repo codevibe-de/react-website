@@ -7,6 +7,7 @@ import BlankPageLayout from "@/layouts/BlankPageLayout";
 import Banner from "@/components/Banner";
 import BodyContainer from "@/layouts/BodyContainer";
 import {pageDataService} from "@/lib/PageDataService";
+import Badge from "@/components/Badge";
 
 function CoursesPageContent() {
     const [searchTerm, setSearchTerm] = useState('');
@@ -29,11 +30,13 @@ function CoursesPageContent() {
         // Apply search filter
         if (searchTerm) {
             const lowercaseSearch = searchTerm.toLowerCase();
-            courses = courses.filter(course =>
-                course.title.toLowerCase().includes(lowercaseSearch) ||
-                course.type.toLowerCase().includes(lowercaseSearch) ||
-                course.description.toLowerCase().includes(lowercaseSearch)
-            );
+            courses = courses.filter(course => {
+                const descriptionText = course.description.find(block => block.type === 'markdown')?.content || '';
+                return course.title.toLowerCase().includes(lowercaseSearch) ||
+                    course.type.toLowerCase().includes(lowercaseSearch) ||
+                    descriptionText.toLowerCase().includes(lowercaseSearch) ||
+                    (course.summary && course.summary.toLowerCase().includes(lowercaseSearch));
+            });
         }
 
         return courses;
@@ -77,9 +80,33 @@ function CoursesPageContent() {
                                 </button>
                             )}
                         </div>
+                        <Badge color='green'>Hello</Badge>
                         <p className="text-xs text-gray-500 text-center">
                             Sucht nach Stichworten im Titel, Beschreibung oder Typ
                         </p>
+                        <div className="text-xs text-gray-500 text-center mt-1">
+                            Beispiele: {' '}
+                            <button
+                                onClick={() => setSearchTerm('Git')}
+                                className="text-blue-600 hover:text-blue-800 underline cursor-pointer"
+                            >
+                                Git
+                            </button>
+                            {', '}
+                            <button
+                                onClick={() => setSearchTerm('Spring Boot')}
+                                className="text-blue-600 hover:text-blue-800 underline cursor-pointer"
+                            >
+                                Spring Boot
+                            </button>
+                            {', '}
+                            <button
+                                onClick={() => setSearchTerm('Rave AI')}
+                                className="text-blue-600 hover:text-blue-800 underline cursor-pointer"
+                            >
+                                Rave AI
+                            </button>
+                        </div>
                     </div>
 
                     <div className="mb-4 text-gray-600">

@@ -9,39 +9,28 @@ import ContentWithImages from "@/components/ContentWithImages";
 
 export default function Home() {
     const homePageData = pageDataService.getHomePageData();
-    const heroContent: HeroContent = {
-        title: "KI-getriebene Entwicklung",
-        subtitle: "NEU -- ein 2-stündiger Walkthrough mit Claude Code und Junie.",
-        backgroundImageUrl: "/blurry-background-new-darker.jpg",
-        height: "60vh",
-        overlayTransparency: 0,
-        cta: {
-            label: "Mehr erfahren",
-            href: "#",
-            classes: "bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
-        }
-    }
     return (
         <DefaultLayout
             navLinks={homePageData.topNavLinks}
             footerLinks={homePageData.footerNavLinks}
             transparentNav={true}
         >
-            <Banner backgroundImageUrl={heroContent.backgroundImageUrl} height={heroContent.height}
-                    overlayTransparency={heroContent.overlayTransparency} topGradient={false}>
+            <Banner backgroundImageUrl={homePageData.hero.backgroundImageUrl} height="60vh">
                 <div className="max-w-6xl mx-auto px-4 pt-8 text-white text-center">
                     <h1 className="text-3xl sm:text-4xl md:text-5xl mb-6 font-hero leading-snug text-shadow-lg">
-                        Developer Skills für die KI&#8209;Revolution
+                        {homePageData.hero.title}
                     </h1>
                     <p className="text-lg sm:text-xl md:text-2xl mb-8 max-w-3xl mx-auto text-shadow-md">
-                        Unsere Kurse verbinden KI mit den Grundlagen und Konzepten moderner Programmiersprachen.
+                        {homePageData.hero.subtitle}
                     </p>
-                    <Link
-                        href="/courses"
-                        className="bg-primary hover:bg-primary-500 text-white px-8 py-3 rounded-lg font-semibold transition-colors inline-block"
-                    >
-                        Alle Kurse ansehen
-                    </Link>
+                    {homePageData.hero.cta && (
+                        <Link
+                            href={homePageData.hero.cta.href}
+                            className="bg-primary hover:bg-primary-500 text-white px-8 py-3 rounded-lg font-semibold transition-colors inline-block"
+                        >
+                            {homePageData.hero.cta.label}
+                        </Link>
+                    )}
                 </div>
             </Banner>
 

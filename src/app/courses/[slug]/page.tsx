@@ -3,9 +3,11 @@ import {notFound} from 'next/navigation';
 import {marked} from 'marked';
 import {getCourseById} from '@/lib/courses';
 import {Course, DurationUnit} from '@/types/Course';
+import {TextBlock} from '@/types/TextBlock';
 import {pageDataService} from "@/lib/PageDataService";
 import BlankPageLayout from "@/layouts/BlankPageLayout";
 import Banner from "@/components/Banner";
+import MarkdownContent from '@/components/MarkdownContent';
 
 interface CourseDetailPageProps {
     params: Promise<{ slug: string }>;
@@ -21,8 +23,10 @@ function createEmailSubject(course: Course): string {
     return `Anfrage für Kurs: ${course.id} - ${course.title}`;
 }
 
-async function formatOutline(outline: string): Promise<string> {
-    return await marked(outline);
+async function formatOutline(outline: TextBlock): Promise<string> {
+    if (!outline || outline.length === 0) return '';
+    const markdownContent = outline.find(block => block.type === 'markdown')?.content || '';
+    return await marked(markdownContent);
 }
 
 const pageData = pageDataService.getCoursesPageData();
@@ -64,17 +68,17 @@ export default async function CourseDetailPage({params}: CourseDetailPageProps) 
                     <div className="lg:col-span-2 space-y-8">
                         <section>
                             <h2 className="text-2xl font-bold mb-4">Beschreibung</h2>
-                            <p className="text-gray-700 leading-relaxed">{course.description}</p>
+                            <MarkdownContent body={course.description} className="text-gray-700 leading-relaxed" />
                         </section>
 
                         <section>
                             <h2 className="text-2xl font-bold mb-4">Lernziele</h2>
-                            <p className="text-gray-700 leading-relaxed">{course.goal}</p>
+                            <MarkdownContent body={course.goal} className="text-gray-700 leading-relaxed" />
                         </section>
 
                         <section>
                             <h2 className="text-2xl font-bold mb-4">Zielgruppe</h2>
-                            <p className="text-gray-700 leading-relaxed">{course.targetAudience}</p>
+                            <MarkdownContent body={course.targetAudience} className="text-gray-700 leading-relaxed" />
                         </section>
 
                         <section>

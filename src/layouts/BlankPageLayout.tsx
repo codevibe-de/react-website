@@ -3,18 +3,18 @@ import Header from "@/components/Header";
 import {NavLink} from "@/types/NavLink";
 
 type BlankPageLayoutProps = {
-    children: React.ReactNode;
+    transparentNav?: boolean;
     navLinks: NavLink[];
     footerLinks: NavLink[];
-    transparentNav?: boolean;
+    children: React.ReactNode;
 };
 
 
 export default function BlankPageLayout({
-                                            children,
                                             transparentNav = false,
                                             navLinks,
-                                            footerLinks
+                                            footerLinks,
+                                            children
                                         }: BlankPageLayoutProps) {
     return (
         <>

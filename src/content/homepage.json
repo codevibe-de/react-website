@@ -1,13 +1,13 @@
 {
   "title": "The Great Home Page",
   "hero": {
-    "title": "Grow together",
-    "subtitle": "Sicher, vernetzt und digital -- Professionelle Software für Anbauvereinigungen",
+    "title": "Developer Skills für die KI-Revolution",
+    "subtitle": "Unsere Kurse verbinden KI mit den Grundlagen und Konzepten moderner Programmiersprachen.",
     "cta": {
-      "label": "Jetzt ausprobieren",
+      "label": "Alle Kurse",
       "href": "https://demo.localeaf.de/#/club-master/create-club",
       "classes": "bg-blue-600 text-white hover:bg-indigo-700 focus:ring-black-500"
     },
-    "backgroundImageUrl": "/bg/grow-room2.jpg"
+    "backgroundImageUrl": "/blurry-background-new-darker.jpg"
   }
 }

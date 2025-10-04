@@ -54,7 +54,7 @@ export default function CourseCard({course}: CourseCardProps) {
                         </div>
                     )}
                     <h3 className="text-xl font-semibold mb-2 text-gray-800 group-hover:text-blue-700 transition-colors">{course.title}</h3>
-                    <p className="text-gray-600 mb-4">{course.description}</p>
+                    <p className="text-gray-600 mb-4">{course.summary || 'Kurs verfügbar'}</p>
                 </div>
 
                 <div className="mt-auto">
