@@ -3,4 +3,4 @@ export type TextBlock = {
     content?: string;
     file?: string;
     classes?: string;
-}[];
+};

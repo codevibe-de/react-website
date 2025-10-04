@@ -9,5 +9,38 @@
       "classes": "bg-blue-600 text-white hover:bg-indigo-700 focus:ring-black-500"
     },
     "backgroundImageUrl": "/blurry-background-new-darker.jpg"
+  },
+  "illustratedText": {
+    "headLine": "KI krempelt die Softwareentwicklung um",
+    "introText": "Wo früher klassisches Coding im Mittelpunkt stand, halten heute intelligente Tools Einzug, welche die Rollen und Prozesse neu definieren.",
+    "subHeadLine": "Unser Ansatz",
+    "mainText": [
+      {
+        "type": "paragraph",
+        "content": "Wir haben die Chance genutzt und unsere Trainings neu konzipiert – mit einem Ansatz, der den gesamten Entwicklungsprozess im Zeitalter von KI neu denkt."
+      },
+      {
+        "type": "paragraph",
+        "content": "Der Kern bleibt dabei unverändert: Ein Kunde hat ein Problem, und am Ende muss eine verlässliche Software-Lösung verfügbar sein."
+      },
+      {
+        "type": "paragraph",
+        "content": "Was sich verändert, ist der Weg dorthin:"
+      },
+      {
+        "type": "list",
+        "content": "KI als Partner im Entwicklungsalltag,\nmoderne Sprachkonzepte als stabiles Fundament,\nund neue Methoden, um Software schneller und besser bereitzustellen."
+      },
+      {
+        "type": "paragraph",
+        "content": "Unsere Kurse geben Entwickler:innen genau diese Skills – für nachhaltige Lösungen in einer von KI geprägten Softwarewelt."
+      }
+    ],
+    "imageUrls": [
+      "context-not-software-engineer.png",
+      "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=560&h=560&fit=crop&q=90",
+      "ai-technology-innovation.jpg",
+      "claude-code5.png"
+    ]
   }
 }

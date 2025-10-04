@@ -2,6 +2,7 @@ import {NavLink} from "@/types/NavLink";
 import {BodyContent} from "@/types/BodyContent";
 import {HeroContent} from "@/types/HeroContent";
 import {Course} from "@/types/Course";
+import {IllustratedTextContent} from "@/types/IllustratedTextContent";
 
 interface PageMeta {
     title: string;
@@ -19,6 +20,7 @@ export interface PageData {
 export interface HomePageData extends PageData {
     hero: HeroContent;
     featuredCourses: Course[];
+    illustratedText: IllustratedTextContent;
 }
 
 export interface CoursesPageData extends PageData {

@@ -28,6 +28,7 @@ class PageDataService {
         pageData.hero = homepageJson.hero;
         const convertedCourses = this.convertRawCourses(coursesData);
         pageData.featuredCourses = getFeaturedCourses(convertedCourses);
+        pageData.illustratedText = homepageJson.illustratedText;
         return pageData;
     }
 

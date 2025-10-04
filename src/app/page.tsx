@@ -1,11 +1,10 @@
 import Link from 'next/link';
 import CourseCard from '@/components/CourseCard';
 import DefaultLayout from "@/layouts/DefaultLayout";
-import {HeroContent} from "@/types/HeroContent";
 import Banner from "@/components/Banner";
 import {pageDataService} from "@/lib/PageDataService";
 import BodyContainer from "@/layouts/BodyContainer";
-import ContentWithImages from "@/components/ContentWithImages";
+import IllustratedText from "@/components/IllustratedText";
 
 export default function Home() {
     const homePageData = pageDataService.getHomePageData();
@@ -35,8 +34,12 @@ export default function Home() {
             </Banner>
 
             <BodyContainer>
-                <ContentWithImages>
-                </ContentWithImages>
+                <IllustratedText introText={homePageData.illustratedText.introText}
+                                 headLine={homePageData.illustratedText.headLine}
+                                 subHeadLine={homePageData.illustratedText.subHeadLine}
+                                 mainText={homePageData.illustratedText.mainText}
+                                 imageUrls={homePageData.illustratedText.imageUrls}>
+                </IllustratedText>
 
                 <div className="max-w-6xl py-12 mx-auto px-4">
                     <h2 className="text-3xl text-body-light font-bold text-center mb-12">Populäre Kurse</h2>
