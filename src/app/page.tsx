@@ -36,8 +36,10 @@ export default function Home() {
             <BodyContainer>
 
                 <div className="max-w-6xl py-12 mx-auto px-4">
-                    <h2 className="text-3xl text-body-light font-bold text-center mb-12">Populäre Kurse</h2>
-                    <div className="flex flex-wrap justify-center gap-8">
+                    <h2 className="mt-2 text-3xl sm:text-4xl font-semibold tracking-tight text-pretty text-body-light text-center">
+                        Populäre Kurse
+                    </h2>
+                    <div className="flex flex-wrap justify-center gap-8 mt-12">
                         {homePageData.featuredCourses.map(course => (
                             <div key={course.id} className="w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.5rem)] max-w-sm">
                                 <CourseCard course={course}/>

@@ -20,9 +20,9 @@ export default function IllustratedText({
         <div className="overflow-hidden bg-white py-12">
             <div className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
                 <div className="max-w-4xl">
-                    <h1 className="mt-2 text-3xl sm:text-4xl font-semibold tracking-tight text-pretty text-gray-900">
+                    <h2 className="mt-2 text-3xl sm:text-4xl font-semibold tracking-tight text-pretty text-body-light">
                         {headLine}
-                    </h1>
+                    </h2>
                     <p className="mt-6 text-xl/8 text-balance text-gray-700">
                         {introText}
                     </p>
