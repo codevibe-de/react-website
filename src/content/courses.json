@@ -3,30 +3,22 @@
     "id": "T-101",
     "title": "KI-getriebene Entwicklung",
     "summary": "Kompakte Tech-Tour der KI-gestützten Entwicklung mit Claude Code und Codex",
-    "description": [
-      {
-        "type": "markdown",
-        "content": "In diesem Rave (Mikroseminar) erhalten Sie eine kompakte Tour durch die aktuelle Technologielandschaft der KI-gestützten\nSoftwareentwicklung – mit besonderem Fokus auf agentische Entwicklungs-Tools.\n\nNach einem kurzen Überblick über die Grundlagen von Sprachmodellen sowie bisheriger Tools und Entwicklungsumgebungen\nsteigen wir direkt in die Praxis ein: Sie lernen den Einsatz der aktuell populärsten Werkzeuge wie Claude Code \n(Anthropic) und Codex (OpenAI) kennen.\n\nEin weiterer Schwerpunkt liegt auf dem Thema Context Engineering mit MCP-Servern. Hier zeigen wir, mit welchen Strategien sich\n„AI-driven Development“ effektiv gestalten lässt – und wie sich diese Ansätze in Richtung autonomes, kreatives Coding\nweiterentwickeln."
-      }
-    ],
-    "goal": [
-      {
-        "type": "markdown",
-        "content": "Nach diesem Seminar sind die Teilnehmer in der Lage:\n\n- Moderne KI-Tools zur deutlichen Beschleunigung der Entwicklungsarbeit zu nutzen\n- Die Qualität ihres Codes durch KI-Unterstützung zu steigern\n- Mehr Freude am Entwickeln durch intelligente KI-Assistenz zu haben\n- Claude Code und Codex professionell zu verwenden\n- Das Model Context Protocol zu verstehen und anzuwenden"
-      }
-    ],
-    "targetAudience": [
-      {
-        "type": "markdown",
-        "content": "Dieser Kurs richtet sich an:\n\n- Software-Entwickler:innen aller Erfahrungsstufen\n- Entwicklungsteams, die ihre Produktivität steigern möchten\n- Tech-Leads, die KI-Tools in ihre Workflows integrieren wollen\n- Alle, die neugierig auf die Zukunft der Softwareentwicklung sind\n\nGrundkenntnisse in der Softwareentwicklung sind von Vorteil, aber nicht zwingend erforderlich."
-      }
-    ],
-    "outline": [
-      {
-        "type": "markdown",
-        "content": "- **Einführung (30 Minuten)**\n    - Motivation, Chancen und Risiken\n    - Überblick über aktuelle Sprachmodelle\n    - Geschichte der KI-gestützten Entwicklung\n    - Chat-basierte vs. agentive Tools\n\n- **Claude Code (45 Minuten)**\n    - Überblick und Funktionsweise\n    - Installation & Setup\n    - Praktische Anwendungsbeispiele\n    - Best Practices\n\n- **Model Context Protocol (20 Minuten)**\n    - Grundlagen und Konzepte\n    - Setup und Verwendung in Claude Code\n    - Erweiterte Konfigurationsmöglichkeiten\n\n- **Codex (25 Minuten)**\n    - Überblick und Einsatzgebiete\n    - Installation & Setup\n    - Praktische Verwendung\n    - Integration in bestehende Workflows\n\n**Im Kurspreis enthalten:**\n\n- Teilnahmegebühr\n- Elektronische Handout-Version\n- Praxisnahe Beispiele und Übungen"
-      }
-    ],
+    "description": {
+      "type": "markdown",
+      "content": "In diesem Rave (Mikroseminar) erhalten Sie eine kompakte Tour durch die aktuelle Technologielandschaft der KI-gestützten\nSoftwareentwicklung – mit besonderem Fokus auf agentische Entwicklungs-Tools.\n\nNach einem kurzen Überblick über die Grundlagen von Sprachmodellen sowie bisheriger Tools und Entwicklungsumgebungen\nsteigen wir direkt in die Praxis ein: Sie lernen den Einsatz der aktuell populärsten Werkzeuge wie Claude Code \n(Anthropic) und Codex (OpenAI) kennen.\n\nEin weiterer Schwerpunkt liegt auf dem Thema Context Engineering mit MCP-Servern. Hier zeigen wir, mit welchen Strategien sich\n„AI-driven Development“ effektiv gestalten lässt – und wie sich diese Ansätze in Richtung autonomes, kreatives Coding\nweiterentwickeln."
+    },
+    "goal": {
+      "type": "markdown",
+      "content": "Nach diesem Seminar sind die Teilnehmer in der Lage:\n\n- Moderne KI-Tools zur deutlichen Beschleunigung der Entwicklungsarbeit zu nutzen\n- Die Qualität ihres Codes durch KI-Unterstützung zu steigern\n- Mehr Freude am Entwickeln durch intelligente KI-Assistenz zu haben\n- Claude Code und Codex professionell zu verwenden\n- Das Model Context Protocol zu verstehen und anzuwenden"
+    },
+    "targetAudience": {
+      "type": "markdown",
+      "content": "Dieser Kurs richtet sich an:\n\n- Software-Entwickler:innen aller Erfahrungsstufen\n- Entwicklungsteams, die ihre Produktivität steigern möchten\n- Tech-Leads, die KI-Tools in ihre Workflows integrieren wollen\n- Alle, die neugierig auf die Zukunft der Softwareentwicklung sind\n\nGrundkenntnisse in der Softwareentwicklung sind von Vorteil, aber nicht zwingend erforderlich."
+    },
+    "outline": {
+      "type": "markdown",
+      "content": "- **Einführung (30 Minuten)**\n    - Motivation, Chancen und Risiken\n    - Überblick über aktuelle Sprachmodelle\n    - Geschichte der KI-gestützten Entwicklung\n    - Chat-basierte vs. agentive Tools\n\n- **Claude Code (45 Minuten)**\n    - Überblick und Funktionsweise\n    - Installation & Setup\n    - Praktische Anwendungsbeispiele\n    - Best Practices\n\n- **Model Context Protocol (20 Minuten)**\n    - Grundlagen und Konzepte\n    - Setup und Verwendung in Claude Code\n    - Erweiterte Konfigurationsmöglichkeiten\n\n- **Codex (25 Minuten)**\n    - Überblick und Einsatzgebiete\n    - Installation & Setup\n    - Praktische Verwendung\n    - Integration in bestehende Workflows\n\n**Im Kurspreis enthalten:**\n\n- Teilnahmegebühr\n- Elektronische Handout-Version\n- Praxisnahe Beispiele und Übungen"
+    },
     "priceSingle": 140,
     "priceInhouse": 690,
     "duration": 2,
@@ -39,30 +31,22 @@
     "id": "G-01",
     "title": "Git Version Control",
     "summary": "Meistern Sie Git - das bevorzugte Tool für Versionskontrolle von Quellcode",
-    "description": [
-      {
-        "type": "markdown",
-        "content": "Git ist das bevorzugte Tool für die Versionskontrolle von Quellcode. Es punktet mit einem leichtgewichtigen Branching-Modell und verteilten Repositories.\n\nIn diesem intensiven 2-tägigen Seminar lernen Sie Git von Grund auf kennen und verstehen die vier Kernschichten, die Git zu einem so mächtigen Werkzeug machen. Sie werden nicht nur die Grundbefehle beherrschen, sondern auch komplexe Workflows und Best Practices verstehen.\n\nDer Kurs kombiniert theoretisches Verständnis mit praktischen Übungen und bereitet Sie darauf vor, Git professionell in Ihren Projekten einzusetzen."
-      }
-    ],
-    "goal": [
-      {
-        "type": "markdown",
-        "content": "Nach Abschluss dieses Kurses sind die Teilnehmer in der Lage:\n\n- Die vier Kernschichten von Git zu verstehen und zu nutzen\n- Sicher mit Branches, Tags und Remotes zu arbeiten\n- Gängige Git-Workflows in der Praxis anzuwenden\n- Komplexe Versionskontroll-Szenarien zu bewältigen\n- Git optimal für Ihre Entwicklungsumgebung zu konfigurieren\n- Effizient mit verteilten Teams zu arbeiten"
-      }
-    ],
-    "targetAudience": [
-      {
-        "type": "markdown",
-        "content": "Dieser Kurs richtet sich an:\n\n- Software-Entwickler, die Git noch nicht umfassend genutzt haben\n- Entwickler, die nur Grundbefehle wie pull, commit und push kennen\n- Teams, die das volle Potenzial von Git verstehen und nutzen möchten\n- Projektleiter, die Git-basierte Workflows implementieren wollen\n\nGrundkenntnisse in der Software-Entwicklung werden vorausgesetzt. Erste Erfahrungen mit Versionskontrolle sind hilfreich, aber nicht zwingend erforderlich."
-      }
-    ],
-    "outline": [
-      {
-        "type": "markdown",
-        "content": "- **Tag 1: Git Grundlagen und Kernkonzepte**\n  - Überblick und Einführung\n  - Erste Schritte mit Git\n  - Layer #1 – \"Persistent Map\"\n    - Objects verstehen\n    - Hash-Mechanismus\n  - Layer #2 – \"Content Tracker\"\n  - Layer #3 – \"Revision Control System\"\n\n- **Tag 2: Erweiterte Konzepte und Workflows**\n  - Layer #4 – \"Distributed Revision Control System\"\n  - Konfiguration und Anpassung\n  - Git Flows und Branching-Strategien\n  - Clients und Server-Setup\n  - Zusätzliche Themen:\n    - Stashing\n    - Reset-Strategien\n    - Git Hooks\n  - Best Practices und Troubleshooting\n\n**Im Kurspreis enthalten:**\n- Vollständige Verpflegung\n- Elektronische Kursmaterialien\n- Fachbuch zum Nachschlagen\n- Bis zu 60 Minuten Remote-Coaching nach dem Training"
-      }
-    ],
+    "description": {
+      "type": "markdown",
+      "content": "Git ist das bevorzugte Tool für die Versionskontrolle von Quellcode. Es punktet mit einem leichtgewichtigen Branching-Modell und verteilten Repositories.\n\nIn diesem intensiven 2-tägigen Seminar lernen Sie Git von Grund auf kennen und verstehen die vier Kernschichten, die Git zu einem so mächtigen Werkzeug machen. Sie werden nicht nur die Grundbefehle beherrschen, sondern auch komplexe Workflows und Best Practices verstehen.\n\nDer Kurs kombiniert theoretisches Verständnis mit praktischen Übungen und bereitet Sie darauf vor, Git professionell in Ihren Projekten einzusetzen."
+    },
+    "goal": {
+      "type": "markdown",
+      "content": "Nach Abschluss dieses Kurses sind die Teilnehmer in der Lage:\n\n- Die vier Kernschichten von Git zu verstehen und zu nutzen\n- Sicher mit Branches, Tags und Remotes zu arbeiten\n- Gängige Git-Workflows in der Praxis anzuwenden\n- Komplexe Versionskontroll-Szenarien zu bewältigen\n- Git optimal für Ihre Entwicklungsumgebung zu konfigurieren\n- Effizient mit verteilten Teams zu arbeiten"
+    },
+    "targetAudience": {
+      "type": "markdown",
+      "content": "Dieser Kurs richtet sich an:\n\n- Software-Entwickler, die Git noch nicht umfassend genutzt haben\n- Entwickler, die nur Grundbefehle wie pull, commit und push kennen\n- Teams, die das volle Potenzial von Git verstehen und nutzen möchten\n- Projektleiter, die Git-basierte Workflows implementieren wollen\n\nGrundkenntnisse in der Software-Entwicklung werden vorausgesetzt. Erste Erfahrungen mit Versionskontrolle sind hilfreich, aber nicht zwingend erforderlich."
+    },
+    "outline": {
+      "type": "markdown",
+      "content": "- **Tag 1: Git Grundlagen und Kernkonzepte**\n  - Überblick und Einführung\n  - Erste Schritte mit Git\n  - Layer #1 – \"Persistent Map\"\n    - Objects verstehen\n    - Hash-Mechanismus\n  - Layer #2 – \"Content Tracker\"\n  - Layer #3 – \"Revision Control System\"\n\n- **Tag 2: Erweiterte Konzepte und Workflows**\n  - Layer #4 – \"Distributed Revision Control System\"\n  - Konfiguration und Anpassung\n  - Git Flows und Branching-Strategien\n  - Clients und Server-Setup\n  - Zusätzliche Themen:\n    - Stashing\n    - Reset-Strategien\n    - Git Hooks\n  - Best Practices und Troubleshooting\n\n**Im Kurspreis enthalten:**\n- Vollständige Verpflegung\n- Elektronische Kursmaterialien\n- Fachbuch zum Nachschlagen\n- Bis zu 60 Minuten Remote-Coaching nach dem Training"
+    },
     "priceSingle": 1100,
     "priceInhouse": 7500,
     "duration": 2,
@@ -75,33 +59,25 @@
     "id": "J-01",
     "title": "Java Grundlagen",
     "summary": "Dieses Seminar führt Entwickler:innen in die Welt der Anwendungsentwicklung mit Java ein.",
-    "description": [
-      {
-        "type": "markdown",
-        "content": "Dieses Seminar führt Entwickler:innen in die Welt der Anwendungsentwicklung mit Java ein."
-      }
-    ],
-    "goal": [
-      {
-        "type": "markdown",
-        "content": "Nach Abschluss dieses Kurses sind die Teilnehmer in der Lage:\n\n- Einfache Anwendungen eigenständig zu starten\n- Komplexere Anwendungen weiterzuentwickeln\n- Bestehenden Code zu testen und zu debuggen"
-      }
-    ],
-    "targetAudience": [
-      {
-        "type": "markdown",
-        "content": "Dieser Kurs richtet sich an:\n\n- Anwendungsentwickler:innen mit wenig Java-Erfahrung aber grundlegenden Programmierkenntnissen\n- Entwickler, die in die Java-Programmierung einsteigen möchten"
-      }
-    ],
-    "outline": [
-      {
-        "type": "markdown",
-        "content": "- **Einführung**\n  - Java-Geschichte und -Architektur\n  - Installation\n  - Dateiorganisation und Packages\n\n- **Grundlagen**\n  - Primitive Datentypen\n  - Variablen und Konstanten\n  - Operatoren und Ausdrücke\n  - Kontrollstrukturen (if, else, switch, Schleifen)\n\n- **Objektorientiertes Design**\n  - Klassen und Objekte\n  - Methoden und Konstruktoren\n  - Vererbung und Polymorphie\n  - Interfaces\n  - Exception Handling\n\n- **Erweiterte Themen**\n  - Collections (List, Set, Map)\n  - Enums und Annotations\n  - Dateiverarbeitung\n  - Datumsverwaltung\n  - Sortierung"
-      }
-    ],
-    "priceSingle": 2190,
-    "priceInhouse": 7100,
-    "duration": 5,
+    "description": {
+      "type": "markdown",
+      "content": "Dieses Seminar führt Entwickler:innen in die Welt der Anwendungsentwicklung mit Java ein.\n\nTheoretische Blöcke werden durch zahlreiche Übungen und die Arbeit an einem durchgehenden Kleinprojekt aufgelockert und somit nachhaltiges Können aufgebaut."
+    },
+    "goal": {
+      "type": "markdown",
+      "content": "Nach Abschluss dieses Kurses sind die Teilnehmer in der Lage:\n\n- Einfache Anwendungen eigenständig zu starten\n- Komplexere Anwendungen weiterzuentwickeln\n- Bestehenden Code zu testen und zu debuggen"
+    },
+    "targetAudience": {
+      "type": "markdown",
+      "content": "Dieser Kurs richtet sich an:\n\n- Anwendungsentwickler:innen mit wenig Java-Erfahrung aber grundlegenden Programmierkenntnissen\n- Entwickler, die in die Java-Programmierung einsteigen möchten"
+    },
+    "outline": {
+      "type": "markdown",
+      "content": "- **Einführung**\n  - Java-Geschichte und -Architektur\n  - Installation\n  - Dateiorganisation und Packages\n\n- **Grundlagen**\n  - Primitive Datentypen\n  - Variablen und Konstanten\n  - Operatoren und Ausdrücke\n  - Kontrollstrukturen (if, else, switch, Schleifen)\n\n- **Objektorientiertes Design**\n  - Klassen und Objekte\n  - Methoden und Konstruktoren\n  - Vererbung und Polymorphie\n  - Interfaces\n  - Exception Handling\n\n- **Erweiterte Themen**\n  - Collections (List, Set, Map)\n  - Enums und Annotations\n  - Dateiverarbeitung\n  - Datumsverwaltung\n  - Sortierung"
+    },
+    "priceSingle": 1790,
+    "priceInhouse": 6290,
+    "duration": 4,
     "durationUnit": "Days",
     "featured": false,
     "type": "Seminar",
@@ -111,30 +87,22 @@
     "id": "K-01",
     "title": "Kotlin Grundlagen",
     "summary": "Erlernen Sie die Grundlagen der modernen Programmiersprache Kotlin",
-    "description": [
-      {
-        "type": "markdown",
-        "content": "Kotlin ist eine moderne, statisch typisierte Programmiersprache, die 100% interoperabel mit Java ist. In diesem Kurs lernen Sie alle wichtigen Grundlagen von Kotlin kennen - von der Syntax über objektorientierte Programmierung bis hin zu funktionalen Konzepten.\n\nDer Kurs kombiniert theoretisches Wissen mit praktischen Übungen und bietet Ihnen die Möglichkeit, Kotlin in realistischen Szenarien anzuwenden."
-      }
-    ],
-    "goal": [
-      {
-        "type": "markdown",
-        "content": "Nach Abschluss dieses Kurses sind die Teilnehmer in der Lage:\n\n- Kotlin-Programme zu entwickeln und zu strukturieren\n- Die Unterschiede zwischen Kotlin und Java zu verstehen und zu nutzen\n- Moderne Kotlin-Features wie Coroutines, Extension Functions und Data Classes einzusetzen\n- Bestehende Java-Projekte schrittweise auf Kotlin zu migrieren\n- Idiomatischen Kotlin-Code zu schreiben"
-      }
-    ],
-    "targetAudience": [
-      {
-        "type": "markdown",
-        "content": "Dieser Kurs richtet sich an:\n\n- Java-Entwickler, die Kotlin erlernen möchten\n- Software-Entwickler mit Grundkenntnissen in objektorientierten Programmiersprachen\n- Entwickler, die moderne Android-Entwicklung betreiben möchten\n- Teams, die ihre bestehende Java-Codebasis erweitern oder migrieren wollen\n\nGrundkenntnisse in Java oder einer ähnlichen Programmiersprache werden vorausgesetzt."
-      }
-    ],
-    "outline": [
-      {
-        "type": "markdown",
-        "content": "- **Tag 1: Kotlin Basics**\n  - Kotlin-Syntax und Grundlagen\n  - Variablen, Datentypen und Null Safety\n  - Control Flow (if, when, Schleifen)\n  - Funktionen und Lambda-Expressions\n\n- **Tag 2: Objektorientierte Programmierung**\n  - Klassen und Objekte\n  - Properties und Backing Fields\n  - Vererbung und Interfaces\n  - Data Classes und Sealed Classes\n\n- **Tag 3: Erweiterte Konzepte**\n  - Extension Functions und Properties\n  - Generics und Type Inference\n  - Collections und Functional Programming\n  - Coroutines Grundlagen\n  - Java-Interoperabilität"
-      }
-    ],
+    "description": {
+      "type": "markdown",
+      "content": "Kotlin ist eine moderne, statisch typisierte Programmiersprache, die 100% interoperabel mit Java ist. In diesem Kurs lernen Sie alle wichtigen Grundlagen von Kotlin kennen - von der Syntax über objektorientierte Programmierung bis hin zu funktionalen Konzepten.\n\nDer Kurs kombiniert theoretisches Wissen mit praktischen Übungen und bietet Ihnen die Möglichkeit, Kotlin in realistischen Szenarien anzuwenden."
+    },
+    "goal": {
+      "type": "markdown",
+      "content": "Nach Abschluss dieses Kurses sind die Teilnehmer in der Lage:\n\n- Kotlin-Programme zu entwickeln und zu strukturieren\n- Die Unterschiede zwischen Kotlin und Java zu verstehen und zu nutzen\n- Moderne Kotlin-Features wie Coroutines, Extension Functions und Data Classes einzusetzen\n- Bestehende Java-Projekte schrittweise auf Kotlin zu migrieren\n- Idiomatischen Kotlin-Code zu schreiben"
+    },
+    "targetAudience": {
+      "type": "markdown",
+      "content": "Dieser Kurs richtet sich an:\n\n- Java-Entwickler, die Kotlin erlernen möchten\n- Software-Entwickler mit Grundkenntnissen in objektorientierten Programmiersprachen\n- Entwickler, die moderne Android-Entwicklung betreiben möchten\n- Teams, die ihre bestehende Java-Codebasis erweitern oder migrieren wollen\n\nGrundkenntnisse in Java oder einer ähnlichen Programmiersprache werden vorausgesetzt."
+    },
+    "outline": {
+      "type": "markdown",
+      "content": "- **Tag 1: Kotlin Basics**\n  - Kotlin-Syntax und Grundlagen\n  - Variablen, Datentypen und Null Safety\n  - Control Flow (if, when, Schleifen)\n  - Funktionen und Lambda-Expressions\n\n- **Tag 2: Objektorientierte Programmierung**\n  - Klassen und Objekte\n  - Properties und Backing Fields\n  - Vererbung und Interfaces\n  - Data Classes und Sealed Classes\n\n- **Tag 3: Erweiterte Konzepte**\n  - Extension Functions und Properties\n  - Generics und Type Inference\n  - Collections und Functional Programming\n  - Coroutines Grundlagen\n  - Java-Interoperabilität"
+    },
     "priceSingle": 1490,
     "priceInhouse": 5595,
     "duration": 3,

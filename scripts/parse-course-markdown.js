@@ -55,12 +55,12 @@ function extractSections(markdown) {
 }
 
 function markdownToTextBlock(markdown) {
-  if (!markdown) return [{ type: 'text', content: '' }];
+  if (!markdown) return { type: 'text', content: '' };
 
-  return [{
+  return {
     type: 'markdown',
     content: markdown.trim()
-  }];
+  };
 }
 
 function parseCourseMd(filePath) {

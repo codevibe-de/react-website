@@ -5,7 +5,7 @@ import {Course, DurationUnit} from '@/types/Course';
 import {pageDataService} from "@/lib/PageDataService";
 import BlankPageLayout from "@/layouts/BlankPageLayout";
 import Banner from "@/components/Banner";
-import MarkdownContent from '@/components/MarkdownContent';
+import TextBlockComponent from '@/components/TextBlockComponent';
 
 interface CourseDetailPageProps {
     params: Promise<{ slug: string }>;
@@ -61,22 +61,22 @@ export default async function CourseDetailPage({params}: CourseDetailPageProps) 
                     <div className="lg:col-span-2 space-y-8">
                         <section>
                             <h2 className="text-2xl font-bold mb-4">Beschreibung</h2>
-                            <MarkdownContent body={course.description} className="text-gray-700 leading-relaxed"/>
+                            <TextBlockComponent textBlock={course.description} className="text-gray-700 leading-relaxed"/>
                         </section>
 
                         <section>
                             <h2 className="text-2xl font-bold mb-4">Lernziele</h2>
-                            <MarkdownContent body={course.goal} className="text-gray-700 leading-relaxed"/>
+                            <TextBlockComponent textBlock={course.goal} className="text-gray-700 leading-relaxed"/>
                         </section>
 
                         <section>
                             <h2 className="text-2xl font-bold mb-4">Zielgruppe</h2>
-                            <MarkdownContent body={course.targetAudience} className="text-gray-700 leading-relaxed"/>
+                            <TextBlockComponent textBlock={course.targetAudience} className="text-gray-700 leading-relaxed"/>
                         </section>
 
                         <section>
                             <h2 className="text-2xl font-bold mb-4">Kursübersicht</h2>
-                            <MarkdownContent body={course.outline} className="text-gray-700 leading-relaxed"/>
+                            <TextBlockComponent textBlock={course.outline} className="text-gray-700 leading-relaxed"/>
                         </section>
                     </div>
 
