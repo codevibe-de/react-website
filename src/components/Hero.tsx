@@ -30,18 +30,6 @@ export default function Hero({content}: HeroProps) {
                     </div>
                 )}
             </div>
-            {content.stats &&
-                <div className="mx-auto mt-10 max-w-2xl">
-                    <dl className="mt-16 grid grid-cols-2 gap-8 sm:mt-20 lg:grid-cols-4">
-                        {content.stats.map((stat) => (
-                            <div key={stat.description} className="flex flex-col-reverse gap-1">
-                                <dt className="text-base/7 text-gray-300">{stat.description}</dt>
-                                <dd className="text-3xl font-semibold tracking-tight text-white">{stat.value}</dd>
-                            </div>
-                        ))}
-                    </dl>
-                </div>
-            }
         </Banner>
     )
 }

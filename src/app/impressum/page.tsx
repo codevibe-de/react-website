@@ -12,7 +12,11 @@ export default function DataPrivacyPage() {
     return (
         <BlankPageLayout navLinks={pageData.topNavLinks} footerLinks={pageData.footerNavLinks} transparentNav={false}>
             <BodyContainer>
-                <TextBlockComponent textBlock={pageData.body} className="prose prose-lg max-w-none py-6"/>
+                {pageData.body?.map((block, i) => (
+                    <TextBlockComponent
+                        textBlock={block} className="prose prose-lg max-w-none py-6"
+                        key={i}/>
+                ))};
             </BodyContainer>
         </BlankPageLayout>
     );
