@@ -1,9 +1,7 @@
 import React from 'react';
 import {notFound} from 'next/navigation';
-import {marked} from 'marked';
 import {getCourseById} from '@/lib/courses';
 import {Course, DurationUnit} from '@/types/Course';
-import {TextBlock} from '@/types/TextBlock';
 import {pageDataService} from "@/lib/PageDataService";
 import BlankPageLayout from "@/layouts/BlankPageLayout";
 import Banner from "@/components/Banner";
@@ -23,19 +21,13 @@ function createEmailSubject(course: Course): string {
     return `Anfrage für Kurs: ${course.id} - ${course.title}`;
 }
 
-async function formatOutline(outline: TextBlock): Promise<string> {
-    if (!outline || outline.length === 0) return '';
-    const markdownContent = outline.find(block => block.type === 'markdown')?.content || '';
-    return await marked(markdownContent);
-}
-
 const pageData = pageDataService.getCoursesPageData();
 
-export async function generateStaticParams() {
-    return pageData.courses.map((course) => ({
-        slug: `${course.id.toLowerCase()}-${course.title.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '')}`,
-    }));
-}
+// export async function generateStaticParams() {
+//     return pageData.courses.map((course) => ({
+//         slug: `${course.id.toLowerCase()}-${course.title.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '')}`,
+//     }));
+// }
 
 export default async function CourseDetailPage({params}: CourseDetailPageProps) {
     const {slug} = await params;
@@ -48,13 +40,12 @@ export default async function CourseDetailPage({params}: CourseDetailPageProps) 
 
     const emailSubject = encodeURIComponent(createEmailSubject(course));
     const emailHref = `mailto:sales@codevibe.de?subject=${emailSubject}`;
-    const formattedOutline = await formatOutline(course.outline);
 
     return (
-        <BlankPageLayout navLinks={[]} footerLinks={[]}>
+        <BlankPageLayout navLinks={pageData.topNavLinks} footerLinks={pageData.footerNavLinks}>
             <Banner
                 backgroundImageUrl={course.backgroundImageUrl || '/abstract-image-with-curved-shapes-blend-light-pink-hues-that-create-mesmerizing-background-generative-ai.jpg'}
-                overlayTransparency={10}>
+                overlayTransparency={8}>
                 <div className="max-w-6xl mx-auto px-4 text-center text-white">
                     <h1 className="text-3xl sm:text-4xl md:text-5xl font-family-outfit text-shadow-lg">
                         {course.title}
@@ -85,10 +76,7 @@ export default async function CourseDetailPage({params}: CourseDetailPageProps) 
 
                         <section>
                             <h2 className="text-2xl font-bold mb-4">Kursübersicht</h2>
-                            <div
-                                className="prose prose-gray max-w-none"
-                                dangerouslySetInnerHTML={{__html: formattedOutline}}
-                            />
+                            <MarkdownContent body={course.outline} className="text-gray-700 leading-relaxed"/>
                         </section>
                     </div>
 
@@ -109,24 +97,23 @@ export default async function CourseDetailPage({params}: CourseDetailPageProps) 
 
                                 <div>
                                     <span className="text-gray-600">Einzelperson:</span>
-                                    <span className="font-semibold ml-2 text-primary">
-                    €{course.priceSingle.toLocaleString()}
-                  </span>
+                                    <span className="font-semibold ml-2">
+                                        {course.priceSingle.toLocaleString()} €
+                                    </span>
                                 </div>
 
                                 {course.priceInhouse && (
                                     <div>
                                         <span className="text-gray-600">Inhouse:</span>
-                                        <span className="font-semibold ml-2 text-primary">
-                      €{course.priceInhouse.toLocaleString()}
-                    </span>
+                                        <span className="font-semibold ml-2">
+                                          {course.priceInhouse.toLocaleString()} €
+                                        </span>
                                     </div>
                                 )}
                             </div>
 
-                            <a
-                                href={emailHref}
-                                className="w-full bg-primary text-white py-3 px-4 rounded-lg font-semibold hover:bg-primary-700 transition-colors text-center block"
+                            <a href={emailHref}
+                               className="w-full bg-primary text-white py-3 px-4 rounded-lg font-semibold hover:bg-primary-700 transition-colors text-center block"
                             >
                                 Kurs anfragen
                             </a>

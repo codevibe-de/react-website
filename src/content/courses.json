@@ -33,7 +33,7 @@
     "durationUnit": "Hours",
     "featured": true,
     "type": "Rave",
-    "backgroundImageUrl": "/3d-renders-technological-waves-with-purple-vibrant-colors-ai-generative.jpg"
+    "backgroundImageUrl": "/gradient_background_a_3_24.jpg"
   },
   {
     "id": "G-01",
@@ -69,7 +69,43 @@
     "durationUnit": "Days",
     "featured": false,
     "type": "Seminar",
-    "backgroundImageUrl": "/abstract-image-with-curved-shapes-blend-light-pink-hues-that-create-mesmerizing-background-generative-ai.jpg"
+    "backgroundImageUrl": "/OAK41G0.jpg"
+  },
+  {
+    "id": "J-01",
+    "title": "Java Grundlagen",
+    "summary": "Dieses Seminar führt Entwickler:innen in die Welt der Anwendungsentwicklung mit Java ein.",
+    "description": [
+      {
+        "type": "markdown",
+        "content": "Dieses Seminar führt Entwickler:innen in die Welt der Anwendungsentwicklung mit Java ein."
+      }
+    ],
+    "goal": [
+      {
+        "type": "markdown",
+        "content": "Nach Abschluss dieses Kurses sind die Teilnehmer in der Lage:\n\n- Einfache Anwendungen eigenständig zu starten\n- Komplexere Anwendungen weiterzuentwickeln\n- Bestehenden Code zu testen und zu debuggen"
+      }
+    ],
+    "targetAudience": [
+      {
+        "type": "markdown",
+        "content": "Dieser Kurs richtet sich an:\n\n- Anwendungsentwickler:innen mit wenig Java-Erfahrung aber grundlegenden Programmierkenntnissen\n- Entwickler, die in die Java-Programmierung einsteigen möchten"
+      }
+    ],
+    "outline": [
+      {
+        "type": "markdown",
+        "content": "- **Einführung**\n  - Java-Geschichte und -Architektur\n  - Installation\n  - Dateiorganisation und Packages\n\n- **Grundlagen**\n  - Primitive Datentypen\n  - Variablen und Konstanten\n  - Operatoren und Ausdrücke\n  - Kontrollstrukturen (if, else, switch, Schleifen)\n\n- **Objektorientiertes Design**\n  - Klassen und Objekte\n  - Methoden und Konstruktoren\n  - Vererbung und Polymorphie\n  - Interfaces\n  - Exception Handling\n\n- **Erweiterte Themen**\n  - Collections (List, Set, Map)\n  - Enums und Annotations\n  - Dateiverarbeitung\n  - Datumsverwaltung\n  - Sortierung"
+      }
+    ],
+    "priceSingle": 2190,
+    "priceInhouse": 7100,
+    "duration": 5,
+    "durationUnit": "Days",
+    "featured": false,
+    "type": "Seminar",
+    "backgroundImageUrl": "/v960-ning-05.jpg"
   },
   {
     "id": "K-01",
@@ -99,12 +135,12 @@
         "content": "- **Tag 1: Kotlin Basics**\n  - Kotlin-Syntax und Grundlagen\n  - Variablen, Datentypen und Null Safety\n  - Control Flow (if, when, Schleifen)\n  - Funktionen und Lambda-Expressions\n\n- **Tag 2: Objektorientierte Programmierung**\n  - Klassen und Objekte\n  - Properties und Backing Fields\n  - Vererbung und Interfaces\n  - Data Classes und Sealed Classes\n\n- **Tag 3: Erweiterte Konzepte**\n  - Extension Functions und Properties\n  - Generics und Type Inference\n  - Collections und Functional Programming\n  - Coroutines Grundlagen\n  - Java-Interoperabilität"
       }
     ],
-    "priceSingle": 1200,
-    "priceInhouse": 8000,
+    "priceSingle": 1490,
+    "priceInhouse": 5595,
     "duration": 3,
     "durationUnit": "Days",
     "featured": true,
     "type": "Seminar",
-    "backgroundImageUrl": "/freepik_ai-gen.jpeg"
+    "backgroundImageUrl": "/blue-grainy-gradient-background-soft-transitions-cover-pc-wallpapers-brands-social-media-horizontal.jpg"
   }
 ]

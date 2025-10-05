@@ -8,7 +8,7 @@ duration: 2
 durationUnit: "Days"
 featured: false
 type: "Seminar"
-backgroundImageUrl: "/abstract-image-with-curved-shapes-blend-light-pink-hues-that-create-mesmerizing-background-generative-ai.jpg"
+backgroundImageUrl: "/OAK41G0.jpg"
 ---
 
 ## Description

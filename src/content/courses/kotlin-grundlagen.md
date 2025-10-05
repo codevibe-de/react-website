@@ -2,13 +2,13 @@
 id: "K-01"
 title: "Kotlin Grundlagen"
 summary: "Erlernen Sie die Grundlagen der modernen Programmiersprache Kotlin"
-priceSingle: 1200
-priceInhouse: 8000
+priceSingle: 1490
+priceInhouse: 5595
 duration: 3
 durationUnit: "Days"
 featured: true
 type: "Seminar"
-backgroundImageUrl: "/freepik_ai-gen.jpeg"
+backgroundImageUrl: "/blue-grainy-gradient-background-soft-transitions-cover-pc-wallpapers-brands-social-media-horizontal.jpg"
 ---
 
 ## Description

@@ -29,13 +29,21 @@ function CoursesPageContent() {
 
         // Apply search filter
         if (searchTerm) {
-            const lowercaseSearch = searchTerm.toLowerCase();
+            const searchParts = searchTerm.split(/\s+/).map(part => part.trim().toLowerCase()).filter(part => part.length > 0);
+
             courses = courses.filter(course => {
-                const descriptionText = course.description.find(block => block.type === 'markdown')?.content || '';
-                return course.title.toLowerCase().includes(lowercaseSearch) ||
-                    course.type.toLowerCase().includes(lowercaseSearch) ||
-                    descriptionText.toLowerCase().includes(lowercaseSearch) ||
-                    (course.summary && course.summary.toLowerCase().includes(lowercaseSearch));
+                const descriptionText = course.description.content || '';
+                const searchableText = [
+                    course.title.toLowerCase(),
+                    course.type.toLowerCase(),
+                    descriptionText.toLowerCase(),
+                    (course.summary || '').toLowerCase()
+                ];
+
+                // All search parts must match at least one searchable field
+                return searchParts.every(part =>
+                    searchableText.some(text => text.includes(part))
+                );
             });
         }
 
@@ -80,7 +88,6 @@ function CoursesPageContent() {
                                 </button>
                             )}
                         </div>
-                        <Badge color='green'>Hello</Badge>
                         <p className="text-xs text-gray-500 text-center">
                             Sucht nach Stichworten im Titel, Beschreibung oder Typ
                         </p>
@@ -101,10 +108,10 @@ function CoursesPageContent() {
                             </button>
                             {', '}
                             <button
-                                onClick={() => setSearchTerm('Rave AI')}
+                                onClick={() => setSearchTerm('Rave KI')}
                                 className="text-blue-600 hover:text-blue-800 underline cursor-pointer"
                             >
-                                Rave AI
+                                Rave KI
                             </button>
                         </div>
                     </div>

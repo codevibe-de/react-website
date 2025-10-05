@@ -8,7 +8,7 @@ duration: 2
 durationUnit: "Hours"
 featured: true
 type: "Rave"
-backgroundImageUrl: "/3d-renders-technological-waves-with-purple-vibrant-colors-ai-generative.jpg"
+backgroundImageUrl: "/gradient_background_a_3_24.jpg"
 ---
 
 ## Description
