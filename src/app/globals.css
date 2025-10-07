@@ -57,6 +57,15 @@ body {
     margin-bottom: 0.25rem;
 }
 
+.prose a {
+    color: var(--color-primary-700);
+    text-decoration: underline;
+}
+.prose a:hover {
+    color: var(--color-primary-800);
+    text-decoration: underline;
+}
+
 .prose ul {
     margin-top: 0.25rem;
     margin-bottom: 0.25rem;
@@ -98,5 +107,23 @@ body {
 
 .search-input:-ms-input-placeholder {
     color: #d1d5db;
+}
+
+@keyframes pan-right {
+    from {
+        background-position: 0% center;
+    }
+    to {
+        background-position: 100% center;
+    }
+}
+
+.course-card-bg {
+    animation: pan-right 5s ease-in-out forwards;
+    animation-play-state: paused;
+}
+
+.group:hover .course-card-bg {
+    animation-play-state: running;
 }
 
