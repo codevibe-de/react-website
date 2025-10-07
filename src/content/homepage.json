@@ -5,7 +5,7 @@
     "subtitle": "Unsere Kurse verbinden KI mit den Grundlagen und Konzepten moderner Programmiersprachen.",
     "cta": {
       "label": "Alle Kurse",
-      "href": "https://demo.localeaf.de/#/club-master/create-club",
+      "href": "/courses",
       "classes": "bg-blue-600 text-white hover:bg-indigo-700 focus:ring-black-500"
     },
     "backgroundImageUrl": "/blurry-background-new-darker.jpg"
