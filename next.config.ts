@@ -1,7 +1,10 @@
-import type { NextConfig } from "next";
+import type {NextConfig} from "next";
+import redirects from './url-mappings.json';
 
-const nextConfig: NextConfig = {
-  /* config options here */
+const config: NextConfig = {
+    async redirects() {
+        return redirects;
+    },
 };
 
-export default nextConfig;
+export default config;
