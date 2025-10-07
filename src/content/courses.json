@@ -135,6 +135,34 @@
     "priceInhouse": 5595,
     "duration": 3,
     "durationUnit": "Days",
+    "featured": false,
+    "type": "Seminar",
+    "backgroundImageUrl": "/bg-spring.jpg"
+  },
+  {
+    "id": "S-04",
+    "title": "Spring AI",
+    "summary": "Moderne KI-Anwendungen mit dem Spring-Ökosystem.",
+    "description": {
+      "type": "markdown",
+      "content": "Spring AI ist ein praxisorientierter Einführungskurs für Softwareentwicklerinnen und -entwickler, die moderne\nKI-Anwendungen mit dem Spring-Ökosystem entwickeln möchten.\n\nDer Kurs vermittelt fundiertes Wissen über das neue Spring-AI-Framework und zeigt, wie sich etablierte Spring / Spring-Boot Konzepte\nund Technologien auf die KI-Domäne übertragen lassen."
+    },
+    "goal": {
+      "type": "markdown",
+      "content": "Im Mittelpunkt steht die Integration von Unternehmensdaten und APIs mit modernen KI-Modellen.\n\nTeilnehmer:innen lernen, wie sich KI-Funktionalitäten effizient, transparent und wartbar in Spring-Anwendungen\nintegrieren lassen – ganz im Sinne der bewährten Prinzipien der Spring-Architektur."
+    },
+    "targetAudience": {
+      "type": "markdown",
+      "content": "- Software-Entwickler:innen mit guten Kenntnissen in Java und Spring"
+    },
+    "outline": {
+      "type": "markdown",
+      "content": "1. Einführung in KI\n    - Zentrale Technologien\n    - Terminologie\n2. Einführung in Spring AI:\n    - Architektur und Ziele\n    - Integration mit Spring Boot\n    - Vergleich mit bestehenden KI-Frameworks\n3. Modellanbindung & API-Design:\n    - Unterstützung für gängige KI-Modelle (OpenAI, Anthropic, Microsoft, Amazon, Google, Ollama)\n    - Typen: Chat Completion, Embeddings, Text2Image, Speech, Moderation\n4. Vektordatenbanken & RAG:\n    - Anbindung an Vektorspeicher wie Chroma, Weaviate, PGVector, Redis etc.\n    - Nutzung der SQL-ähnlichen Filter-API für Metadatenabfragen\n5. Structured Outputs:\n    - Abbildung von KI-Ausgaben auf Java-POJOs\n    - Nutzung von ChatClient und Advisors API\n6. Tool- & Function Calling:\n    - Ausführung externer Funktionen auf Anfrage des KI-Modells\n    - Zugriff auf Live-Daten und Geschäftslogik\n7. Beobachtbarkeit und Evaluierung:\n    - Logging und Metriken für KI-Operationen\n    - Schutz vor Halluzinationen und inkonsistentem Output\n8. Anwendungsfälle:\n    - Chatbot über Dokumentation\n    - semantische Suche & Q&A\n    - Sprach- und Bildgenerierung\n    - Dokumenten-Injektion und ETL"
+    },
+    "priceSingle": 1190,
+    "priceInhouse": 3880,
+    "duration": 2,
+    "durationUnit": "Days",
     "featured": true,
     "type": "Seminar",
     "backgroundImageUrl": "/bg-spring.jpg"

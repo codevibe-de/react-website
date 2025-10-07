@@ -22,10 +22,10 @@
       }
     ],
     "imageUrls": [
-      "context-not-software-engineer_square.jpeg",
+      "/context-not-software-engineer_square.jpeg",
       "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=560&h=560&fit=crop&q=90",
-      "ai-technology-innovation.jpg",
-      "claude-code5.png"
+      "/ai-technology-innovation.jpg",
+      "/claude-code5.png"
     ]
   }
 }

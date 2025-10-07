@@ -6,7 +6,7 @@ priceSingle: 1490
 priceInhouse: 5595
 duration: 3
 durationUnit: "Days"
-featured: true
+featured: false
 type: "Seminar"
 backgroundImageUrl: "/bg-spring.jpg"
 ---
