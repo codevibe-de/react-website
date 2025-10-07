@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import {Course, CourseType, DurationUnit} from '@/types/Course';
+import Badge from "@/components/Badge";
 
 interface CourseCardProps {
     course: Course;
@@ -10,7 +11,7 @@ export default function CourseCard({course}: CourseCardProps) {
 
     return (
         <Link href={`/courses/${courseSlug}`} className="block h-full">
-            <div className="border border-gray-200 rounded-lg hover:shadow-xl hover:scale-105 hover:border-blue-300 transition-all duration-300 cursor-pointer bg-white hover:bg-blue-50 h-full flex flex-col overflow-hidden">
+            <div className="border border-gray-200 rounded-lg shadow-lg hover:shadow-xl hover:border-gray-400 transition-all duration-300 cursor-pointer bg-white h-full flex flex-col overflow-hidden">
                 {course.backgroundImageUrl && (
                     <div 
                         className="relative w-full h-16 rounded-t-lg flex items-start justify-start p-3"
@@ -21,17 +22,14 @@ export default function CourseCard({course}: CourseCardProps) {
                             backgroundRepeat: 'no-repeat'
                         }}
                     >
-                        <span className={`inline-block text-xs px-2 py-1 rounded-full ${
-                            course.type === CourseType.Seminar
-                                ? 'bg-green-100 text-green-800'
-                                : 'bg-purple-100 text-purple-800'
-                        }`}>
-                          {course.type}
-                        </span>
+                        {course.type === CourseType.Seminar && (
+                            <Badge color={"green"}>{course.type}</Badge>
+                        )}
+                        {course.type === CourseType.Rave && (
+                            <Badge color={"purple"}>{course.type}</Badge>
+                        )}
                         {course.featured && (
-                            <span className="inline-block bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full ml-2">
-                                Featured
-                            </span>
+                            <Badge color={"red"}>NEU</Badge>
                         )}
                     </div>
                 )}
