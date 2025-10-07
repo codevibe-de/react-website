@@ -1,13 +1,12 @@
 'use client';
 
-import {useMemo, useState, useEffect, Suspense} from 'react';
+import {Suspense, useEffect, useMemo, useState} from 'react';
 import {useSearchParams} from 'next/navigation';
 import CourseCard from '@/components/CourseCard';
 import BlankPageLayout from "@/layouts/BlankPageLayout";
 import Banner from "@/components/Banner";
 import BodyContainer from "@/layouts/BodyContainer";
 import {pageDataService} from "@/lib/PageDataService";
-import Badge from "@/components/Badge";
 
 function CoursesPageContent() {
     const [searchTerm, setSearchTerm] = useState('');
@@ -52,8 +51,9 @@ function CoursesPageContent() {
 
     return (
         <BlankPageLayout navLinks={pageData.topNavLinks} footerLinks={pageData.footerNavLinks} transparentNav={false}>
-            <Banner backgroundImageUrl={'/abstract-image-with-curved-shapes-blend-light-pink-hues-that-create-mesmerizing-background-generative-ai.jpg'}
-                    topGradient={false} height={'20vh'} overlayTransparency={10}
+            <Banner
+                backgroundImageUrl={'/abstract-image-with-curved-shapes-blend-light-pink-hues-that-create-mesmerizing-background-generative-ai.jpg'}
+                topGradient={false} height={'20vh'} overlayTransparency={10}
 
             >
                 <div className="max-w-6xl mx-auto px-4 text-center text-white">
@@ -147,7 +147,7 @@ export default function CoursesPage() {
                 </div>
             </div>
         }>
-            <CoursesPageContent />
+            <CoursesPageContent/>
         </Suspense>
     );
 }
