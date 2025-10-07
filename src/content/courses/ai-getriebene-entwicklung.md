@@ -8,7 +8,7 @@ duration: 2
 durationUnit: "Hours"
 featured: true
 type: "Rave"
-backgroundImageUrl: "/gradient_background_a_3_24.jpg"
+backgroundImageUrl: "/bg-ai.jpg"
 ---
 
 ## Description

@@ -18,55 +18,53 @@ const CONTENT_DIR = path.join(__dirname, '../src/content');
 
 console.log('Starting markdown inlining process...');
 
-// Function to recursively process objects looking for body arrays
+// Function to recursively process objects looking for arrays with markdown blocks
 function processBodyElements(obj, filePath) {
   let hasChanges = false;
-  
+
   if (Array.isArray(obj)) {
+    // Check if this array contains markdown blocks
+    let hasMarkdownBlocks = false;
     obj.forEach((item, index) => {
-      if (processBodyElements(item, filePath)) {
+      if (item && typeof item === 'object' && item.type === 'markdown' && item.file) {
+        hasMarkdownBlocks = true;
+        console.log(`    - Inlining markdown from: ${item.file}`);
+
+        try {
+          // Read the markdown file
+          const markdownPath = path.join(__dirname, '..', item.file);
+          const markdownContent = fs.readFileSync(markdownPath, 'utf-8');
+
+          // Add content field alongside existing file field, keep type as markdown
+          obj[index] = {
+            type: 'markdown',
+            file: item.file,
+            content: markdownContent
+          };
+
+          console.log(`    ✓ Successfully inlined markdown (${markdownContent.length} characters)`);
+          hasChanges = true;
+        } catch (error) {
+          console.error(`    ✗ Failed to read markdown file: ${item.file}`, error.message);
+          // Keep the original structure as fallback
+        }
+      } else if (processBodyElements(item, filePath)) {
         hasChanges = true;
       }
     });
-  } else if (typeof obj === 'object' && obj !== null) {
-    // Check if this object has a 'body' property that's an array
-    if (obj.body && Array.isArray(obj.body)) {
-      console.log(`  Found body array with ${obj.body.length} blocks`);
-      
-      obj.body.forEach((block, blockIndex) => {
-        if (block.type === 'markdown' && block.file) {
-          console.log(`    - Inlining markdown from: ${block.file}`);
-          
-          try {
-            // Read the markdown file
-            const markdownPath = path.join(__dirname, '..', block.file);
-            const markdownContent = fs.readFileSync(markdownPath, 'utf-8');
-            
-            // Add content field alongside existing file field, keep type as markdown
-            obj.body[blockIndex] = {
-              type: 'markdown',
-              file: block.file,
-              content: markdownContent
-            };
-            
-            console.log(`    ✓ Successfully inlined markdown (${markdownContent.length} characters)`);
-            hasChanges = true;
-          } catch (error) {
-            console.error(`    ✗ Failed to read markdown file: ${block.file}`, error.message);
-            // Keep the original structure as fallback
-          }
-        }
-      });
+
+    if (hasMarkdownBlocks) {
+      console.log(`  Found array with ${obj.length} blocks`);
     }
-    
-    // Recursively process other properties
+  } else if (typeof obj === 'object' && obj !== null) {
+    // Recursively process all properties
     Object.keys(obj).forEach(key => {
       if (processBodyElements(obj[key], filePath)) {
         hasChanges = true;
       }
     });
   }
-  
+
   return hasChanges;
 }
 

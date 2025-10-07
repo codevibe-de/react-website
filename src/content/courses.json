@@ -25,7 +25,7 @@
     "durationUnit": "Hours",
     "featured": true,
     "type": "Rave",
-    "backgroundImageUrl": "/gradient_background_a_3_24.jpg"
+    "backgroundImageUrl": "/bg-ai.jpg"
   },
   {
     "id": "G-01",
@@ -81,7 +81,7 @@
     "durationUnit": "Days",
     "featured": false,
     "type": "Seminar",
-    "backgroundImageUrl": "/v960-ning-05.jpg"
+    "backgroundImageUrl": "/bg-java.jpg"
   },
   {
     "id": "K-01",
@@ -110,5 +110,33 @@
     "featured": true,
     "type": "Seminar",
     "backgroundImageUrl": "/blue-grainy-gradient-background-soft-transitions-cover-pc-wallpapers-brands-social-media-horizontal.jpg"
+  },
+  {
+    "id": "S-01",
+    "title": "Spring Grundlagen",
+    "summary": "Erfahren Sie die Konzepte von leichtgewichtigen Anwendungen mit Spring/Spring-Boot",
+    "description": {
+      "type": "markdown",
+      "content": "In diesem Seminar lernen Sie die grundlegenden Konzepte der Programmierung von leichtgewichtigen Anwendungen mit\nSpring/Spring-Boot kennen.\n\nDas Seminar baut auf der ursprünglichen Motivation des Spring Frameworks auf und führt die grundlegenden Konzepte\nanhand der Philosophie des Frameworks ausführlich ein.\n\nDie Teilnehmer:innen lernen eine einfache Anwendung kennen und erweitern diese nach und nach um gelernte Spring und\nSpring-Boot Konzepte.\nSo entsteht ein übergreifender Spannungsbogen – und eine Best-Practice-Blaupause, die durch den öffentlichen verfügbaren\nSource-Code auch nachträglich zur Verfügung steht.\n\nDurch Übungen am Ende jedes Themas sowie sporadische Lernspiele wird ein langfristiger Lerneffekt erreicht.\n\nSie erhalten vorab ein Exemplar eines ausgewählten Fachbuchs."
+    },
+    "goal": {
+      "type": "markdown",
+      "content": "Die Teilnehmer:innen sind nach Abschluss des Seminars in der Lage, Spring-basierte Anwendungen zu verstehen und\nweiterzuentwickeln.\n\nDurch das Verständnis von grundlegenden Spring Konzepten sind sie befähigt, eigenständig nach Lösungen im Internet zu\nsuchen und diese in Projekten zu verwirklichen."
+    },
+    "targetAudience": {
+      "type": "markdown",
+      "content": "Dieser Kurs richtet sich an:\n\n- Software-Entwickler:innen mit Java Kenntnissen\n- Architekten"
+    },
+    "outline": {
+      "type": "markdown",
+      "content": "1. Einführung: Geschichte, Ziele, Philosophie Spring Framework\n2. Das Übungsprojekt kennenlernen\n3. Konzeption eines Bean Containers\n4. Entwicklung eines Bean Containers\n5. Kernbestandteile des Spring Frameworks\n6. Grundlagen AOP\n7. Grundlagen Ressourcen\n8. Grundlagen Spring Expression Language\n9. auf Wunsch: XML-basierte Bean-Definition\n10. Annotations-basierte Bean-Definition\n11. Spring Boot Grundlagen\n12. Spring Boot Autoconfiguration Interna\n13. JDBC\n14. Web-Anwendungen verstehen und deployen\n15. RESTful API Basiswissen"
+    },
+    "priceSingle": 1490,
+    "priceInhouse": 5595,
+    "duration": 3,
+    "durationUnit": "Days",
+    "featured": true,
+    "type": "Seminar",
+    "backgroundImageUrl": "/bg-spring.jpg"
   }
 ]

@@ -8,7 +8,7 @@ duration: 4
 durationUnit: "Days"
 featured: false
 type: "Seminar"
-backgroundImageUrl: "/v960-ning-05.jpg"
+backgroundImageUrl: "/bg-java.jpg"
 ---
 
 ## Description
