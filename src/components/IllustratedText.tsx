@@ -1,5 +1,6 @@
 import {TextBlock} from "@/types/TextBlock";
 import TextBlockRenderer from "@/components/TextBlockRenderer";
+import Image from "next/image";
 
 type ContentWithImagesProps = {
     headLine: string;
@@ -47,10 +48,14 @@ export default function IllustratedText({
                                     className={`aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10 ${
                                         index % 2 === 1 ? '-mt-8 lg:-mt-40' : ''
                                     }`}>
-                                    <img
+                                    <Image
                                         alt=""
                                         src={url}
-                                        className="block size-full object-cover"
+                                        width={400}
+                                        height={400}
+                                        sizes="(max-width: 640px) 50vw, (max-width: 1024px) 25vw, 320px"
+                                        className="w-full h-full object-cover"
+                                        quality={90}
                                     />
                                 </div>
                             ))}
