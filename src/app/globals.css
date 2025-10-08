@@ -119,7 +119,7 @@ body {
 }
 
 .course-card-bg {
-    animation: pan-right 5s ease-in-out forwards;
+    animation: pan-right 7s ease-in-out forwards;
     animation-play-state: paused;
 }
 

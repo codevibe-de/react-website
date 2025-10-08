@@ -166,5 +166,33 @@
     "featured": true,
     "type": "Seminar",
     "backgroundImageUrl": "/bg-spring.jpg"
+  },
+  {
+    "id": "X-01",
+    "title": "Core Concepts of Software",
+    "summary": "Software verstehen, statt nur Code zu schreiben – Denkweisen, Prinzipien und Werkzeuge, um als Junior im KI-Zeitalter zu überleben.",
+    "description": {
+      "type": "markdown",
+      "content": "Dieser Kurs vermittelt die zentralen Konzepte, die jede Softwareentwicklerin und jeder Softwareentwickler verstehen sollte, \nbevor Tools und Frameworks ins Spiel kommen.  \n\nEr zeigt, wie Software entsteht, warum Abstraktion so mächtig ist und wie man komplexe Probleme in handhabbare Teilprobleme zerlegt.  \nZiel ist, ein mentales Modell von „Software“ zu entwickeln – als System aus Ideen, Strukturen und Entscheidungen.\n\nWir lernen Software auch im Entstehungsprozess kennen: von der Anforderung über Architektur und Design bis hin zu Implementierung, Test und Betrieb."
+    },
+    "goal": {
+      "type": "markdown",
+      "content": "Teilnehmende lernen, wie man wie ein Software Engineer denkt: abstrakt, systematisch und lösungsorientiert.\n\nSie verstehen, was hinter Begriffen wie „Anforderung“, „Architektur“, „Schnittstelle“ oder „Test“ steht – und wie diese zusammenspielen, um Software von hoher Qualität zu schaffen."
+    },
+    "targetAudience": {
+      "type": "markdown",
+      "content": "Juniors, Quereinsteiger:innen, Auszubildende (FIAE), Coding-Bootcamp-Absolvent:innen und alle, die den Sprung vom „Coden“ zum „Entwickeln“ schaffen wollen."
+    },
+    "outline": {
+      "type": "markdown",
+      "content": "- \n- Was Software wirklich ist – von Idee bis System\n- Abstraktion, Modelle & mentale Landkarten\n- Divide & Conquer: Probleme zerlegen und lösen\n- Entwicklungsmethoden: Wasserfall, V-Modell, Agile, DevOps, XP\n- Phasen der Softwareentwicklung\n- Denken in Zuständen, Datenflüssen und Modulen\n- Der Code als Ausdruck von Designentscheidungen\n- Zusammenarbeit mit KI: Lernen, Verstehen, Kontrollieren"
+    },
+    "priceSingle": 1840,
+    "priceInhouse": 5070,
+    "duration": 3,
+    "durationUnit": "Days",
+    "featured": true,
+    "type": "Seminar",
+    "backgroundImageUrl": "/bg-concepts.jpg"
   }
 ]
