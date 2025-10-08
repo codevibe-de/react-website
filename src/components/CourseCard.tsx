@@ -14,7 +14,7 @@ export default function CourseCard({course}: CourseCardProps) {
             <div className="border border-gray-200 rounded-lg shadow-lg hover:shadow-xl hover:border-gray-400 transition-all duration-300 cursor-pointer bg-white h-full flex flex-col overflow-hidden">
                 {course.backgroundImageUrl && (
                     <div
-                        className="relative w-full h-16 rounded-t-lg flex items-start justify-start p-3 course-card-bg"
+                        className="relative w-full h-16 rounded-t-lg flex items-center justify-start p-3 course-card-bg"
                         style={{
                             backgroundImage: `url(${course.backgroundImageUrl})`,
                             backgroundSize: '200%',
