@@ -13,26 +13,32 @@ backgroundImageUrl: "/bg-concepts.jpg"
 
 ## Description
 
-Dieser Kurs vermittelt die zentralen Konzepte, die jede Softwareentwicklerin und jeder Softwareentwickler verstehen sollte, 
-bevor Tools und Frameworks ins Spiel kommen.  
+Dieser Kurs vermittelt zentrale Konzepte und Grundlagen, die jede Softwareentwicklerin und jeder Softwareentwickler
+verstehen sollte, bevor insbesondere KI-Tools und komplexe Frameworks ins Spiel kommen.
 
-Er zeigt, wie Software entsteht, warum Abstraktion so mächtig ist und wie man komplexe Probleme in handhabbare Teilprobleme zerlegt.  
+Er zeigt, wie Software entsteht, was abstraktes Denken ist und wie man komplexe Probleme in handhabbare
+Teilprobleme zerlegt.  
 Ziel ist, ein mentales Modell von „Software“ zu entwickeln – als System aus Ideen, Strukturen und Entscheidungen.
 
-Wir lernen Software auch im Entstehungsprozess kennen: von der Anforderung über Architektur und Design bis hin zu Implementierung, Test und Betrieb.
+Wir lernen Software auch im Entstehungsprozess kennen: von der Anforderung über Architektur und Design bis hin zu
+Implementierung, Test und Betrieb.
 
 ## Goal
 
 Teilnehmende lernen, wie man wie ein Software Engineer denkt: abstrakt, systematisch und lösungsorientiert.
 
-Sie verstehen, was hinter Begriffen wie „Anforderung“, „Architektur“, „Schnittstelle“ oder „Test“ steht – und wie diese zusammenspielen, um Software von hoher Qualität zu schaffen.
+Sie verstehen, was hinter Begriffen wie „Anforderung“, „Architektur“, „Schnittstelle“ oder „Test“ steht – und wie diese
+zusammenspielen, um Software von hoher Qualität zu schaffen.
 
 ## Target Audience
 
-Juniors, Quereinsteiger:innen, Auszubildende (FIAE), Coding-Bootcamp-Absolvent:innen und alle, die den Sprung vom „Coden“ zum „Entwickeln“ schaffen wollen.
+- Juniors
+- Quereinsteiger:innen
+- Auszubildende (FIAE)
+- Coding-Bootcamp-Absolvent:innen und alle, die den Sprung vom „Coden“ zum „Entwickeln“ schaffen wollen
 
 ## Outline
-- 
+
 - Was Software wirklich ist – von Idee bis System
 - Abstraktion, Modelle & mentale Landkarten
 - Divide & Conquer: Probleme zerlegen und lösen
