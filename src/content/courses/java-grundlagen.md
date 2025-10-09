@@ -1,5 +1,6 @@
 ---
 id: "J-01"
+rank: 30
 title: "Java Grundlagen"
 summary: "Dieses Seminar führt Entwickler:innen in die Welt der Anwendungsentwicklung mit Java ein."
 priceSingle: 1790

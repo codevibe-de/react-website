@@ -1,6 +1,7 @@
 [
   {
     "id": "T-101",
+    "rank": 80,
     "title": "KI-getriebene Entwicklung",
     "summary": "Kompakte Tech-Tour der KI-gestützten Entwicklung mit Claude Code und Codex",
     "description": {
@@ -29,6 +30,7 @@
   },
   {
     "id": "G-01",
+    "rank": 20,
     "title": "Git Version Control",
     "summary": "Meistern Sie Git - das bevorzugte Tool für Versionskontrolle von Quellcode",
     "description": {
@@ -53,10 +55,40 @@
     "durationUnit": "Days",
     "featured": false,
     "type": "Seminar",
-    "backgroundImageUrl": "/OAK41G0.jpg"
+    "backgroundImageUrl": "/8113076.jpg"
+  },
+  {
+    "id": "J-03",
+    "rank": 40,
+    "title": "Java 8 – funktionale Programmierung",
+    "summary": "Mit Expertenwissen zu Lambdas und Streams schalten Sie den Entwicklungs-Turbo ein.",
+    "description": {
+      "type": "markdown",
+      "content": "Mit Java 8 ist Oracle ein großer Wurf gelungen. Die Version punktet in vielen Bereichen, insbesondere aber bietet sie alles, um mittels funktionaler Programmierung eleganten und leicht wartbaren Code zu schreiben.\n\nSie erhalten vorab ein Exemplar des Fachbuchs „Funktionale Programmierung in Java“ vom dpunkt Verlag."
+    },
+    "goal": {
+      "type": "markdown",
+      "content": "Professionelle Entwicklung von funktional orientierten Java-Anwendungen"
+    },
+    "targetAudience": {
+      "type": "markdown",
+      "content": "Software-Entwickler:innen mit guten Java Kenntnissen, z. B. aus Java Grundlagen und Java Erweiterungen"
+    },
+    "outline": {
+      "type": "markdown",
+      "content": "1. Lambdas im Detail\n2. Neuerungen bzgl. Interfaces\n3. Funktionale Interfaces\n4. Erweiterung der Standardbibliothek\n5. Streams\n6. Date & Time API\n7. Neuerungen bzgl. Concurrency"
+    },
+    "priceSingle": 0,
+    "priceInhouse": 0,
+    "duration": 2,
+    "durationUnit": "Days",
+    "featured": false,
+    "type": "Seminar",
+    "backgroundImageUrl": "/bg-java.jpg"
   },
   {
     "id": "J-01",
+    "rank": 30,
     "title": "Java Grundlagen",
     "summary": "Dieses Seminar führt Entwickler:innen in die Welt der Anwendungsentwicklung mit Java ein.",
     "description": {
@@ -85,6 +117,7 @@
   },
   {
     "id": "K-01",
+    "rank": 50,
     "title": "Kotlin Grundlagen",
     "summary": "Erlernen Sie die Grundlagen der modernen Programmiersprache Kotlin",
     "description": {
@@ -113,6 +146,7 @@
   },
   {
     "id": "S-01",
+    "rank": 60,
     "title": "Spring Grundlagen",
     "summary": "Erfahren Sie die Konzepte von leichtgewichtigen Anwendungen mit Spring/Spring-Boot",
     "description": {
@@ -141,6 +175,7 @@
   },
   {
     "id": "S-04",
+    "rank": 70,
     "title": "Spring AI",
     "summary": "Moderne KI-Anwendungen mit dem Spring-Ökosystem.",
     "description": {
@@ -169,6 +204,7 @@
   },
   {
     "id": "X-01",
+    "rank": 10,
     "title": "Core Concepts of Software",
     "summary": "Software verstehen, statt nur Code zu schreiben – Denkweisen, Prinzipien und Werkzeuge, um als Junior im KI-Zeitalter zu überleben.",
     "description": {
@@ -187,9 +223,9 @@
       "type": "markdown",
       "content": "- Was Software wirklich ist – von Idee bis System\n- Abstraktion, Modelle & mentale Landkarten\n- Divide & Conquer: Probleme zerlegen und lösen\n- Entwicklungsmethoden: Wasserfall, V-Modell, Agile, DevOps, XP\n- Phasen der Softwareentwicklung\n- Denken in Zuständen, Datenflüssen und Modulen\n- Der Code als Ausdruck von Designentscheidungen\n- Zusammenarbeit mit KI: Lernen, Verstehen, Kontrollieren"
     },
-    "priceSingle": 1840,
-    "priceInhouse": 5070,
-    "duration": 3,
+    "priceSingle": 1290,
+    "priceInhouse": 3580,
+    "duration": 2,
     "durationUnit": "Days",
     "featured": true,
     "type": "Seminar",

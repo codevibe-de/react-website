@@ -12,6 +12,7 @@ export enum DurationUnit {
 
 export interface Course {
     id: string;
+    rank: number;
     title: string;
     summary?: string;
     description: TextBlock;

@@ -1,5 +1,6 @@
 ---
 id: "K-01"
+rank: 50
 title: "Kotlin Grundlagen"
 summary: "Erlernen Sie die Grundlagen der modernen Programmiersprache Kotlin"
 priceSingle: 1490

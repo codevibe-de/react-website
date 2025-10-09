@@ -70,6 +70,7 @@ function parseCourseMd(filePath) {
 
   const course = {
     id: metadata.id,
+    rank: metadata.rank || 999,
     title: metadata.title,
     summary: metadata.summary,
     description: markdownToTextBlock(sections.description),

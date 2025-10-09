@@ -1,5 +1,6 @@
 ---
 id: "S-04"
+rank: 70
 title: "Spring AI"
 summary: "Moderne KI-Anwendungen mit dem Spring-Ökosystem."
 priceSingle: 1190

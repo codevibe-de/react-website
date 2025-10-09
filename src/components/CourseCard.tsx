@@ -17,7 +17,7 @@ export default function CourseCard({course}: CourseCardProps) {
                         className="relative w-full h-16 rounded-t-lg flex items-center justify-start p-3 course-card-bg"
                         style={{
                             backgroundImage: `url(${course.backgroundImageUrl})`,
-                            backgroundSize: '200%',
+                            backgroundSize: '140%',
                             backgroundPosition: '0% center',
                             backgroundRepeat: 'no-repeat'
                         }}

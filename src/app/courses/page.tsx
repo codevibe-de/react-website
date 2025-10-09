@@ -46,6 +46,9 @@ function CoursesPageContent() {
             });
         }
 
+        // Sort by rank (ascending)
+        courses = courses.sort((a, b) => a.rank - b.rank);
+
         return courses;
     }, [allCourses, searchTerm]);
 
