@@ -25,7 +25,7 @@ export default function NavbarRight({navLinks, transparentNav}: NavbarProps) {
     return (
         <Disclosure as="nav"
                     className={`fixed top-0 inset-x-0 z-50 
-                    ${scrolled ? 'bg-white text-gray-900 shadow-sm' : 'bg-transparent text-white'} transition-colors duration-400
+                    ${scrolled ? 'bg-white text-gray-900 shadow-md' : 'bg-transparent text-white'} transition-colors duration-400
                     ${transparentNav ? '' : 'sticky'}
         `}>
             <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">

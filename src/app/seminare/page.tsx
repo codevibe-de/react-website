@@ -4,9 +4,8 @@ import {Suspense, useEffect, useMemo, useState} from 'react';
 import {useSearchParams} from 'next/navigation';
 import CourseCard from '@/components/CourseCard';
 import BlankPageLayout from "@/layouts/BlankPageLayout";
-import Banner from "@/components/Banner";
-import BodyContainer from "@/layouts/BodyContainer";
 import {pageDataService} from "@/lib/PageDataService";
+import BodyContent from "@/components/BodyContent";
 
 function CoursesPageContent() {
     const [searchTerm, setSearchTerm] = useState('');
@@ -54,30 +53,21 @@ function CoursesPageContent() {
 
     return (
         <BlankPageLayout navLinks={pageData.topNavLinks} footerLinks={pageData.footerNavLinks} transparentNav={false}>
-            <Banner
-                backgroundImageUrl={'/abstract-image-with-curved-shapes-blend-light-pink-hues-that-create-mesmerizing-background-generative-ai.jpg'}
-                topGradient={false} height={'20vh'} overlayTransparency={10}
-
-            >
-                <div className="max-w-6xl mx-auto px-4 text-center text-white">
-                    <h1 className="text-3xl sm:text-4xl md:text-5xl font-family-outfit text-shadow-lg">
-                        Unsere Kurse
-                    </h1>
-                    <p className="text-lg sm:text-xl mt-4 md:text-2xl max-w-3xl mx-auto text-shadow-md">
-                        Entdecken Sie unser umfassendes Angebot an Entwicklerschulungen
-                    </p>
+            <div className="bg-white border-b-2 border-gray-100 py-2">
+                <div className="max-w-6xl py-8 mx-auto px-4">
+                    <h2 className="mt-2 text-3xl sm:text-4xl font-semibold tracking-tight text-pretty text-body-light text-center">
+                        Unsere Seminare
+                    </h2>
                 </div>
-            </Banner>
-            <BodyContainer>
-                <div className="max-w-6xl mx-auto">
-                    <div className="mb-8 flex flex-col items-center">
+                <div className="max-w-6xl mx-auto px-4 pb-8">
+                    <div className="flex flex-col items-center">
                         <div className="relative max-w-md w-full mb-2">
                             <input
                                 type="text"
                                 placeholder="Stichwortsuche..."
                                 value={searchTerm}
                                 onChange={(e) => setSearchTerm(e.target.value)}
-                                className="search-input w-full px-4 py-2 pr-10 border border-gray-400 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent bg-white"
+                                className="text-center search-input w-full px-4 py-2 pr-10 border border-gray-400 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent bg-white"
                             />
                             {searchTerm && (
                                 <button
@@ -118,12 +108,12 @@ function CoursesPageContent() {
                             </button>
                         </div>
                     </div>
+                </div>
+            </div>
 
-                    <div className="mb-4 text-gray-600">
-                        {filteredCourses.length} {filteredCourses.length === 1 ? 'Kurs gefunden' : 'Kurse gefunden'}
-                    </div>
-
-                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="bg-gray-50 py-6">
+                <BodyContent>
+                    <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
                         {filteredCourses.map(course => (
                             <CourseCard key={course.id} course={course}/>
                         ))}
@@ -131,12 +121,12 @@ function CoursesPageContent() {
 
                     {filteredCourses.length === 0 && (
                         <div className="text-center py-12">
-                            <p className="text-gray-500 text-lg">Keine Kurse gefunden. Versuchen Sie andere
+                            <p className="text-gray-500 text-lg">Kein Seminar gefunden. Versuchen Sie andere
                                 Suchbegriffe.</p>
                         </div>
                     )}
-                </div>
-            </BodyContainer>
+                </BodyContent>
+            </div>
         </BlankPageLayout>
     );
 }
@@ -146,7 +136,7 @@ export default function CoursesPage() {
         <Suspense fallback={
             <div className="min-h-screen bg-gray-50 flex items-center justify-center">
                 <div className="text-center">
-                    <div className="animate-pulse text-gray-500">Kurse werden geladen...</div>
+                    <div className="animate-pulse text-gray-500">Seminare werden geladen...</div>
                 </div>
             </div>
         }>

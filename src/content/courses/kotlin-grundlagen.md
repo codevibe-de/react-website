@@ -9,7 +9,7 @@ duration: 3
 durationUnit: "Days"
 featured: true
 type: "Seminar"
-backgroundImageUrl: "/blue-grainy-gradient-background-soft-transitions-cover-pc-wallpapers-brands-social-media-horizontal.jpg"
+backgroundImageUrl: "/bg-kotlin2.png"
 ---
 
 ## Description

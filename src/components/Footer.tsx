@@ -18,7 +18,7 @@ export default function Footer({navLinks = []}: FooterProps) {
                     </div>
 
                     <div>
-                        <h4 className="font-semibold mb-4 text-white">Kurse</h4>
+                        <h4 className="font-semibold mb-4 text-white">Seminare</h4>
                         <ul className="space-y-2">
                             {navLinks
                                 .filter(link => link.section === 'offerings')

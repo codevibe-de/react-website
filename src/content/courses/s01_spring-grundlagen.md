@@ -9,7 +9,7 @@ duration: 3
 durationUnit: "Days"
 featured: false
 type: "Seminar"
-backgroundImageUrl: "/bg-spring.jpg"
+backgroundImageUrl: "/bg-spring2.png"
 ---
 
 ## Description

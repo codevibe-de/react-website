@@ -18,7 +18,7 @@ function extractCourseIdFromSlug(slug: string): string {
 }
 
 function createEmailSubject(course: Course): string {
-    return `Anfrage für Kurs: ${course.id} - ${course.title}`;
+    return `Anfrage für Seminar: ${course.id} - ${course.title}`;
 }
 
 const pageData = pageDataService.getCoursesPageData();
@@ -45,13 +45,13 @@ export default async function CourseDetailPage({params}: CourseDetailPageProps) 
         <BlankPageLayout navLinks={pageData.topNavLinks} footerLinks={pageData.footerNavLinks}>
             <Banner
                 backgroundImageUrl={course.backgroundImageUrl || '/abstract-image-with-curved-shapes-blend-light-pink-hues-that-create-mesmerizing-background-generative-ai.jpg'}
-                overlayTransparency={8}>
+                overlayTransparency={8} topGradient={false}>
                 <div className="max-w-6xl mx-auto px-4 text-center text-white">
                     <h1 className="text-3xl sm:text-4xl md:text-5xl font-family-outfit text-shadow-lg">
                         {course.title}
                     </h1>
                     <p className="text-lg sm:text-xl mt-4 md:text-2xl max-w-3xl mx-auto text-shadow-md">
-                        Detaillierte Informationen zum Kurs
+                        Detaillierte Informationen zum Seminar
                     </p>
                 </div>
             </Banner>
@@ -75,14 +75,14 @@ export default async function CourseDetailPage({params}: CourseDetailPageProps) 
                         </section>
 
                         <section>
-                            <h2 className="text-2xl font-bold mb-4">Kursübersicht</h2>
+                            <h2 className="text-2xl font-bold mb-4">Seminarübersicht</h2>
                             <TextBlockComponent textBlock={course.outline} className="text-gray-700 leading-relaxed"/>
                         </section>
                     </div>
 
                     <div className="lg:col-span-1">
                         <div className="bg-white rounded-lg shadow-lg p-6 sticky top-4">
-                            <h3 className="text-xl font-bold mb-4">Kursinformationen</h3>
+                            <h3 className="text-xl font-bold mb-4">Seminarinformationen</h3>
 
                             <div className="space-y-4 mb-6">
                                 <div>
@@ -115,7 +115,7 @@ export default async function CourseDetailPage({params}: CourseDetailPageProps) 
                             <a href={emailHref}
                                className="w-full bg-primary text-white py-3 px-4 rounded-lg font-semibold hover:bg-primary-700 transition-colors text-center block"
                             >
-                                Kurs anfragen
+                                Seminar anfragen
                             </a>
 
                             <p className="text-sm text-gray-500 mt-3 text-center">

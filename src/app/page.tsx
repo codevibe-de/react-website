@@ -37,7 +37,7 @@ export default function Home() {
 
                 <div className="max-w-6xl py-12 mx-auto px-4">
                     <h2 className="mt-2 text-3xl sm:text-4xl font-semibold tracking-tight text-pretty text-body-light text-center">
-                        Neue Kurse
+                        Neue Seminare
                     </h2>
                     <div className="flex flex-wrap justify-center gap-8 mt-12">
                         {homePageData.featuredCourses.map(course => (

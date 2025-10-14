@@ -10,7 +10,7 @@ export default function CourseCard({course}: CourseCardProps) {
     const courseSlug = `${course.id.toLowerCase()}-${course.title.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '')}`;
 
     return (
-        <Link href={`/courses/${courseSlug}`} className="block h-full group">
+        <Link href={`/seminare/${courseSlug}`} className="block h-full group">
             <div className="border border-gray-200 rounded-lg shadow-lg hover:shadow-xl hover:border-gray-400 transition-all duration-300 cursor-pointer bg-white h-full flex flex-col overflow-hidden">
                 {course.backgroundImageUrl && (
                     <div
@@ -52,7 +52,7 @@ export default function CourseCard({course}: CourseCardProps) {
                         </div>
                     )}
                     <h3 className="text-xl font-semibold mb-2 text-body-light group-hover:text-primary-700 transition-colors">{course.title}</h3>
-                    <p className="text-gray-600 mb-4">{course.summary || 'Kurs verfügbar'}</p>
+                    <p className="text-gray-600 mb-4">{course.summary}</p>
                 </div>
 
                 <div className="mt-auto">

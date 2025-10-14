@@ -5,7 +5,7 @@ title: "Java 8 – funktionale Programmierung"
 summary: "Mit Expertenwissen zu Lambdas und Streams schalten Sie den Entwicklungs-Turbo ein."
 duration: 2
 durationUnit: "Days"
-backgroundImageUrl: "/bg-java.jpg"
+backgroundImageUrl: "/bg-java2.png"
 oldUrl: "https://www.codevibe.de/534/java_8/"
 ---
 

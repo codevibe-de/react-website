@@ -9,7 +9,7 @@ duration: 2
 durationUnit: "Hours"
 featured: true
 type: "Rave"
-backgroundImageUrl: "/bg-ai.jpg"
+backgroundImageUrl: "/bg-ai2.png"
 ---
 
 ## Description

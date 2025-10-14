@@ -2,9 +2,9 @@
   "title": "The Great Home Page",
   "hero": {
     "title": "Developer Skills für die KI-Revolution",
-    "subtitle": "Unsere Kurse verbinden KI mit den Grundlagen und Konzepten moderner Programmiersprachen.",
+    "subtitle": "Unsere Fortbildungen verbinden KI mit den Grundlagen und Konzepten moderner Programmiersprachen.",
     "cta": {
-      "label": "Alle Kurse",
+      "label": "Alle Seminare",
       "href": "/courses",
       "classes": "bg-blue-600 text-white hover:bg-indigo-700 focus:ring-black-500"
     },

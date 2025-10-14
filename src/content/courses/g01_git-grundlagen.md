@@ -9,7 +9,7 @@ duration: 2
 durationUnit: "Days"
 featured: false
 type: "Seminar"
-backgroundImageUrl: "/8113076.jpg"
+backgroundImageUrl: "/bg-tools2.png"
 ---
 
 ## Description

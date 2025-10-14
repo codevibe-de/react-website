@@ -26,7 +26,7 @@
     "durationUnit": "Hours",
     "featured": true,
     "type": "Rave",
-    "backgroundImageUrl": "/bg-ai.jpg"
+    "backgroundImageUrl": "/bg-ai2.png"
   },
   {
     "id": "G-01",
@@ -55,7 +55,7 @@
     "durationUnit": "Days",
     "featured": false,
     "type": "Seminar",
-    "backgroundImageUrl": "/8113076.jpg"
+    "backgroundImageUrl": "/bg-tools2.png"
   },
   {
     "id": "J-03",
@@ -84,7 +84,7 @@
     "durationUnit": "Days",
     "featured": false,
     "type": "Seminar",
-    "backgroundImageUrl": "/bg-java.jpg"
+    "backgroundImageUrl": "/bg-java2.png"
   },
   {
     "id": "J-01",
@@ -113,7 +113,7 @@
     "durationUnit": "Days",
     "featured": false,
     "type": "Seminar",
-    "backgroundImageUrl": "/bg-java.jpg"
+    "backgroundImageUrl": "/bg-java2.png"
   },
   {
     "id": "K-01",
@@ -142,7 +142,7 @@
     "durationUnit": "Days",
     "featured": true,
     "type": "Seminar",
-    "backgroundImageUrl": "/blue-grainy-gradient-background-soft-transitions-cover-pc-wallpapers-brands-social-media-horizontal.jpg"
+    "backgroundImageUrl": "/bg-kotlin2.png"
   },
   {
     "id": "S-01",
@@ -171,7 +171,7 @@
     "durationUnit": "Days",
     "featured": false,
     "type": "Seminar",
-    "backgroundImageUrl": "/bg-spring.jpg"
+    "backgroundImageUrl": "/bg-spring2.png"
   },
   {
     "id": "S-04",
@@ -200,7 +200,7 @@
     "durationUnit": "Days",
     "featured": true,
     "type": "Seminar",
-    "backgroundImageUrl": "/bg-spring.jpg"
+    "backgroundImageUrl": "/bg-spring2.png"
   },
   {
     "id": "X-01",
@@ -229,6 +229,6 @@
     "durationUnit": "Days",
     "featured": true,
     "type": "Seminar",
-    "backgroundImageUrl": "/bg-concepts.jpg"
+    "backgroundImageUrl": "/bg-concepts2.png"
   }
 ]
