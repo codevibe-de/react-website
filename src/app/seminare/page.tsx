@@ -114,7 +114,7 @@ function CoursesPageContent() {
 
             <div className="bg-gray-50 py-6">
                 <BodyContent>
-                    <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+                    <div className="grid px-6 sm:px-0 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
                         {filteredCourses.map(course => (
                             <CourseCard key={course.id} course={course}/>
                         ))}
