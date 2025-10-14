@@ -1,34 +1,5 @@
 [
   {
-    "id": "T-101",
-    "rank": 80,
-    "title": "KI-getriebene Entwicklung",
-    "summary": "Kompakte Tech-Tour der KI-gestützten Entwicklung mit Claude Code und Codex",
-    "description": {
-      "type": "markdown",
-      "content": "In diesem Rave (Mikroseminar) erhalten Sie eine kompakte Tour durch die aktuelle Technologielandschaft der KI-gestützten\nSoftwareentwicklung – mit besonderem Fokus auf agentische Entwicklungs-Tools.\n\nNach einem kurzen Überblick über die Grundlagen von Sprachmodellen sowie bisheriger Tools und Entwicklungsumgebungen\nsteigen wir direkt in die Praxis ein: Sie lernen den Einsatz der aktuell populärsten Werkzeuge wie Claude Code \n(Anthropic) und Codex (OpenAI) kennen.\n\nEin weiterer Schwerpunkt liegt auf dem Thema Context Engineering mit MCP-Servern. Hier zeigen wir, mit welchen Strategien sich\n„AI-driven Development“ effektiv gestalten lässt – und wie sich diese Ansätze in Richtung autonomes, kreatives Coding\nweiterentwickeln."
-    },
-    "goal": {
-      "type": "markdown",
-      "content": "Nach diesem Seminar sind die Teilnehmer in der Lage:\n\n- Moderne KI-Tools zur deutlichen Beschleunigung der Entwicklungsarbeit zu nutzen\n- Die Qualität ihres Codes durch KI-Unterstützung zu steigern\n- Mehr Freude am Entwickeln durch intelligente KI-Assistenz zu haben\n- Claude Code und Codex professionell zu verwenden\n- Das Model Context Protocol zu verstehen und anzuwenden"
-    },
-    "targetAudience": {
-      "type": "markdown",
-      "content": "Dieser Kurs richtet sich an:\n\n- Software-Entwickler:innen aller Erfahrungsstufen\n- Entwicklungsteams, die ihre Produktivität steigern möchten\n- Tech-Leads, die KI-Tools in ihre Workflows integrieren wollen\n- Alle, die neugierig auf die Zukunft der Softwareentwicklung sind\n\nGrundkenntnisse in der Softwareentwicklung sind von Vorteil, aber nicht zwingend erforderlich."
-    },
-    "outline": {
-      "type": "markdown",
-      "content": "- **Einführung (30 Minuten)**\n    - Motivation, Chancen und Risiken\n    - Überblick über aktuelle Sprachmodelle\n    - Geschichte der KI-gestützten Entwicklung\n    - Chat-basierte vs. agentive Tools\n\n- **Claude Code (45 Minuten)**\n    - Überblick und Funktionsweise\n    - Installation & Setup\n    - Praktische Anwendungsbeispiele\n    - Best Practices\n\n- **Model Context Protocol (20 Minuten)**\n    - Grundlagen und Konzepte\n    - Setup und Verwendung in Claude Code\n    - Erweiterte Konfigurationsmöglichkeiten\n\n- **Codex (25 Minuten)**\n    - Überblick und Einsatzgebiete\n    - Installation & Setup\n    - Praktische Verwendung\n    - Integration in bestehende Workflows\n\n**Im Kurspreis enthalten:**\n\n- Teilnahmegebühr\n- Elektronische Handout-Version\n- Praxisnahe Beispiele und Übungen"
-    },
-    "priceSingle": 140,
-    "priceInhouse": 690,
-    "duration": 2,
-    "durationUnit": "Hours",
-    "featured": true,
-    "type": "Rave",
-    "backgroundImageUrl": "/bg-ai2.png"
-  },
-  {
     "id": "G-01",
     "rank": 20,
     "title": "Git Version Control",
@@ -201,6 +172,64 @@
     "featured": true,
     "type": "Seminar",
     "backgroundImageUrl": "/bg-spring2.png"
+  },
+  {
+    "id": "T-100",
+    "rank": 80,
+    "title": "Git Crash Course",
+    "summary": "Zweistündiger Power-Kurs zu den Grundlagen und Potentialen von Git",
+    "description": {
+      "type": "markdown",
+      "content": "Dieses kompakte Git-Rave vermittelt in nur zwei Stunden ein echtes Verständnis dafür, wie Git „denkt“.  \n\nStatt Befehle auswendig zu lernen, verstehen die Teilnehmenden die internen Mechanismen: wie Commits, Branches und Merges wirklich funktionieren, was im Staging-Bereich passiert und wie Git seinen Objektgraphen aufbaut. \n\nWir erklären die vier architektonischen Schichten von Git anhand zahlreicher Beispiele und Demonstrationen und bauen\nsomit nachhaltiges Wissen auf.\n\nDarüber hinaus werden fortgeschrittene Funktionen vorgestellt, die im Alltag selten genutzt, aber extrem mächtig sind – von Rebase und Cherry-Pick bis hin zu Worktrees und reflog."
+    },
+    "goal": {
+      "type": "markdown",
+      "content": "Teilnehmende verstehen die internen Konzepte von Git und können Änderungen, Branches und Historien sicher und bewusst steuern.  \nSie lernen, wie sie Git effizienter, sicherer und kreativer einsetzen, um Entwicklungsprozesse zu beschleunigen und Fehler schnell zu korrigieren."
+    },
+    "targetAudience": {
+      "type": "markdown",
+      "content": "Softwareentwickler:innen, die Git bereits nutzen, aber es endlich **wirklich verstehen** möchten.  \nIdeal für alle, die ihre täglichen Git-Workflows stabilisieren und erweitern wollen."
+    },
+    "outline": {
+      "type": "markdown",
+      "content": "- **Git im Überblick**\n    - Git als Key-Value Store, Content Tracker und Versionskontrollsystem\n    - Von zentral zu verteilt: Wie Git mit Repositories arbeitet\n    - Snapshots statt Deltas – warum Git keine Diffs speichert\n\n- **Git unter der Haube**\n    - Interner Datenspeicher: Worktree, Staging Area, Commit Log\n    - Objekttypen: blob, tree, commit\n    - Hashes verstehen: Inhalte statt Dateien tracken\n\n- **Grundlegende Kommandos**\n    - `git init`, `add`, `commit`, `status`\n    - Bedeutung der Staging Area\n    - Tree- und Commit-Strukturen lesen\n    - Konfiguration und globale Einstellungen\n\n- **Branching & Referenzen**\n    - Was Branches wirklich sind \n    - `git branch`, `switch`, `HEAD`\n    - Fast-Forward vs. Merge vs. Rebase – Szenarien und Unterschiede\n\n- **Verteilte Arbeitsweise**\n    - Lokale vs. Remote Repositories\n    - `git fetch`, `push`, `pull` – was wirklich passiert\n    - Bare Repositories und Synchronisation\n    - Konflikte verstehen und vermeiden\n\n- **Reset entzaubert**\n    - `--soft`, `--mixed`, `--hard` im Vergleich\n    - Wie Reset auf Worktree, Index und Commits wirkt\n    - Sicheres Rückgängigmachen von Änderungen\n\n- **Nützliche Tipps & Power Features**\n    - Git-Aliase für produktiveres Arbeiten\n    - Revisionen benennen (`HEAD~`, `HEAD^`, Hashes, Refs)\n    - Worktrees\n    - reflog\n    - bisect"
+    },
+    "priceSingle": 90,
+    "priceInhouse": 390,
+    "duration": 2,
+    "durationUnit": "Hours",
+    "featured": true,
+    "type": "Rave",
+    "backgroundImageUrl": "/bg-tools2.png"
+  },
+  {
+    "id": "T-101",
+    "rank": 80,
+    "title": "KI-getriebene Entwicklung",
+    "summary": "Kompakte Tech-Tour der KI-gestützten Entwicklung mit Claude Code und Codex",
+    "description": {
+      "type": "markdown",
+      "content": "In diesem Rave (Mikroseminar) erhalten Sie eine kompakte Tour durch die aktuelle Technologielandschaft der KI-gestützten\nSoftwareentwicklung – mit besonderem Fokus auf agentische Entwicklungs-Tools.\n\nNach einem kurzen Überblick über die Grundlagen von Sprachmodellen sowie bisheriger Tools und Entwicklungsumgebungen\nsteigen wir direkt in die Praxis ein: Sie lernen den Einsatz der aktuell populärsten Werkzeuge wie Claude Code \n(Anthropic) und Codex (OpenAI) kennen.\n\nEin weiterer Schwerpunkt liegt auf dem Thema Context Engineering mit MCP-Servern. Hier zeigen wir, mit welchen Strategien sich\n„AI-driven Development“ effektiv gestalten lässt – und wie sich diese Ansätze in Richtung autonomes, kreatives Coding\nweiterentwickeln."
+    },
+    "goal": {
+      "type": "markdown",
+      "content": "Nach diesem Seminar sind die Teilnehmer in der Lage:\n\n- Moderne KI-Tools zur deutlichen Beschleunigung der Entwicklungsarbeit zu nutzen\n- Die Qualität ihres Codes durch KI-Unterstützung zu steigern\n- Mehr Freude am Entwickeln durch intelligente KI-Assistenz zu haben\n- Claude Code und Codex professionell zu verwenden\n- Das Model Context Protocol zu verstehen und anzuwenden"
+    },
+    "targetAudience": {
+      "type": "markdown",
+      "content": "Dieser Kurs richtet sich an:\n\n- Software-Entwickler:innen aller Erfahrungsstufen\n- Entwicklungsteams, die ihre Produktivität steigern möchten\n- Tech-Leads, die KI-Tools in ihre Workflows integrieren wollen\n- Alle, die neugierig auf die Zukunft der Softwareentwicklung sind\n\nGrundkenntnisse in der Softwareentwicklung sind von Vorteil, aber nicht zwingend erforderlich."
+    },
+    "outline": {
+      "type": "markdown",
+      "content": "- **Einführung (30 Minuten)**\n    - Motivation, Chancen und Risiken\n    - Überblick über aktuelle Sprachmodelle\n    - Geschichte der KI-gestützten Entwicklung\n    - Chat-basierte vs. agentive Tools\n\n- **Claude Code (45 Minuten)**\n    - Überblick und Funktionsweise\n    - Installation & Setup\n    - Praktische Anwendungsbeispiele\n    - Best Practices\n\n- **Model Context Protocol (20 Minuten)**\n    - Grundlagen und Konzepte\n    - Setup und Verwendung in Claude Code\n    - Erweiterte Konfigurationsmöglichkeiten\n\n- **Codex (25 Minuten)**\n    - Überblick und Einsatzgebiete\n    - Installation & Setup\n    - Praktische Verwendung\n    - Integration in bestehende Workflows\n\n**Im Kurspreis enthalten:**\n\n- Teilnahmegebühr\n- Elektronische Handout-Version\n- Praxisnahe Beispiele und Übungen"
+    },
+    "priceSingle": 140,
+    "priceInhouse": 690,
+    "duration": 2,
+    "durationUnit": "Hours",
+    "featured": true,
+    "type": "Rave",
+    "backgroundImageUrl": "/bg-ai2.png"
   },
   {
     "id": "X-01",
