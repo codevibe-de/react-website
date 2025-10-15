@@ -1,7 +1,12 @@
 [
   {
-    "source": "/264/spring-grundlagen/",
-    "destination": "/courses/s-01-spring-grundlagen",
+    "source": "/264/spring-grundlagen",
+    "destination": "/seminare/s-01-spring-grundlagen",
+    "permanent": true
+  },
+  {
+    "source": "/a",
+    "destination": "/",
     "permanent": true
   }
 ]
