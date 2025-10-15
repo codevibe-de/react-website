@@ -3,8 +3,6 @@ id: "S-01"
 rank: 60
 title: "Spring Grundlagen"
 summary: "Erfahren Sie die Konzepte von leichtgewichtigen Anwendungen mit Spring/Spring-Boot"
-priceSingle: 1490
-priceInhouse: 5595
 duration: 3
 durationUnit: "Days"
 featured: false

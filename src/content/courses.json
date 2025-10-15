@@ -29,6 +29,36 @@
     "backgroundImageUrl": "/bg-golang2.png"
   },
   {
+    "id": "J-01",
+    "rank": 30,
+    "title": "Java Grundlagen",
+    "summary": "Dieses Seminar führt Entwickler:innen in die Welt der Anwendungsentwicklung mit Java ein.",
+    "description": {
+      "type": "markdown",
+      "content": "Dieses Seminar führt Entwickler:innen in die Welt der Anwendungsentwicklung mit Java ein.\n\nTheoretische Blöcke werden durch zahlreiche Übungen und die Arbeit an einem durchgehenden Kleinprojekt aufgelockert und somit nachhaltiges Können aufgebaut."
+    },
+    "goal": {
+      "type": "markdown",
+      "content": "Nach Abschluss dieses Kurses sind die Teilnehmer in der Lage:\n\n- Einfache Anwendungen eigenständig zu starten\n- Komplexere Anwendungen weiterzuentwickeln\n- Bestehenden Code zu testen und zu debuggen"
+    },
+    "targetAudience": {
+      "type": "markdown",
+      "content": "Dieser Kurs richtet sich an:\n\n- Anwendungsentwickler:innen mit wenig Java-Erfahrung aber grundlegenden Programmierkenntnissen\n- Entwickler, die in die Java-Programmierung einsteigen möchten"
+    },
+    "outline": {
+      "type": "markdown",
+      "content": "- **Einführung**\n  - Java-Geschichte und -Architektur\n  - Installation\n  - Dateiorganisation und Packages\n\n- **Grundlagen**\n  - Primitive Datentypen\n  - Variablen und Konstanten\n  - Operatoren und Ausdrücke\n  - Kontrollstrukturen (if, else, switch, Schleifen)\n\n- **Objektorientiertes Design**\n  - Klassen und Objekte\n  - Methoden und Konstruktoren\n  - Vererbung und Polymorphie\n  - Interfaces\n  - Exception Handling\n\n- **Erweiterte Themen**\n  - Collections (List, Set, Map)\n  - Enums und Annotations\n  - Dateiverarbeitung\n  - Datumsverwaltung\n  - Sortierung"
+    },
+    "priceSingle": 0,
+    "priceInhouse": 0,
+    "duration": 4,
+    "durationUnit": "Days",
+    "featured": false,
+    "type": "Seminar",
+    "backgroundImageUrl": "/bg-java2.png",
+    "pricing": "Low"
+  },
+  {
     "id": "J-03",
     "rank": 40,
     "title": "Java 8 – funktionale Programmierung",
@@ -55,36 +85,8 @@
     "durationUnit": "Days",
     "featured": false,
     "type": "Seminar",
-    "backgroundImageUrl": "/bg-java2.png"
-  },
-  {
-    "id": "J-01",
-    "rank": 30,
-    "title": "Java Grundlagen",
-    "summary": "Dieses Seminar führt Entwickler:innen in die Welt der Anwendungsentwicklung mit Java ein.",
-    "description": {
-      "type": "markdown",
-      "content": "Dieses Seminar führt Entwickler:innen in die Welt der Anwendungsentwicklung mit Java ein.\n\nTheoretische Blöcke werden durch zahlreiche Übungen und die Arbeit an einem durchgehenden Kleinprojekt aufgelockert und somit nachhaltiges Können aufgebaut."
-    },
-    "goal": {
-      "type": "markdown",
-      "content": "Nach Abschluss dieses Kurses sind die Teilnehmer in der Lage:\n\n- Einfache Anwendungen eigenständig zu starten\n- Komplexere Anwendungen weiterzuentwickeln\n- Bestehenden Code zu testen und zu debuggen"
-    },
-    "targetAudience": {
-      "type": "markdown",
-      "content": "Dieser Kurs richtet sich an:\n\n- Anwendungsentwickler:innen mit wenig Java-Erfahrung aber grundlegenden Programmierkenntnissen\n- Entwickler, die in die Java-Programmierung einsteigen möchten"
-    },
-    "outline": {
-      "type": "markdown",
-      "content": "- **Einführung**\n  - Java-Geschichte und -Architektur\n  - Installation\n  - Dateiorganisation und Packages\n\n- **Grundlagen**\n  - Primitive Datentypen\n  - Variablen und Konstanten\n  - Operatoren und Ausdrücke\n  - Kontrollstrukturen (if, else, switch, Schleifen)\n\n- **Objektorientiertes Design**\n  - Klassen und Objekte\n  - Methoden und Konstruktoren\n  - Vererbung und Polymorphie\n  - Interfaces\n  - Exception Handling\n\n- **Erweiterte Themen**\n  - Collections (List, Set, Map)\n  - Enums und Annotations\n  - Dateiverarbeitung\n  - Datumsverwaltung\n  - Sortierung"
-    },
-    "priceSingle": 1790,
-    "priceInhouse": 6290,
-    "duration": 4,
-    "durationUnit": "Days",
-    "featured": false,
-    "type": "Seminar",
-    "backgroundImageUrl": "/bg-java2.png"
+    "backgroundImageUrl": "/bg-java2.png",
+    "pricing": "Low"
   },
   {
     "id": "K-01",
@@ -107,11 +109,11 @@
       "type": "markdown",
       "content": "- **Tag 1: Kotlin Basics**\n  - Kotlin-Syntax und Grundlagen\n  - Variablen, Datentypen und Null Safety\n  - Control Flow (if, when, Schleifen)\n  - Funktionen und Lambda-Expressions\n\n- **Tag 2: Objektorientierte Programmierung**\n  - Klassen und Objekte\n  - Properties und Backing Fields\n  - Vererbung und Interfaces\n  - Data Classes und Sealed Classes\n\n- **Tag 3: Erweiterte Konzepte**\n  - Extension Functions und Properties\n  - Generics und Type Inference\n  - Collections und Functional Programming\n  - Coroutines Grundlagen\n  - Java-Interoperabilität"
     },
-    "priceSingle": 1490,
-    "priceInhouse": 5595,
+    "priceSingle": 0,
+    "priceInhouse": 0,
     "duration": 3,
     "durationUnit": "Days",
-    "featured": true,
+    "featured": false,
     "type": "Seminar",
     "backgroundImageUrl": "/bg-kotlin2.png"
   },
@@ -136,8 +138,37 @@
       "type": "markdown",
       "content": "1. Einführung: Geschichte, Ziele, Philosophie Spring Framework\n2. Das Übungsprojekt kennenlernen\n3. Konzeption eines Bean Containers\n4. Entwicklung eines Bean Containers\n5. Kernbestandteile des Spring Frameworks\n6. Grundlagen AOP\n7. Grundlagen Ressourcen\n8. Grundlagen Spring Expression Language\n9. auf Wunsch: XML-basierte Bean-Definition\n10. Annotations-basierte Bean-Definition\n11. Spring Boot Grundlagen\n12. Spring Boot Autoconfiguration Interna\n13. JDBC\n14. Web-Anwendungen verstehen und deployen\n15. RESTful API Basiswissen"
     },
-    "priceSingle": 1490,
-    "priceInhouse": 5595,
+    "priceSingle": 0,
+    "priceInhouse": 0,
+    "duration": 3,
+    "durationUnit": "Days",
+    "featured": false,
+    "type": "Seminar",
+    "backgroundImageUrl": "/bg-spring2.png"
+  },
+  {
+    "id": "S-02",
+    "rank": 60,
+    "title": "Spring Boot Aufbau",
+    "summary": "Bauen Sie Ihre Spring Kenntnisse aus und werden zum Kenner von Spring Data, RESTful, Security und Testing",
+    "description": {
+      "type": "markdown",
+      "content": "Basierend auf dem Seminar *Spring Grundlagen* lernen wir eine Vielzahl an Spring Boot basierten Technologien kennen, die\nfür die Entwicklung von performanten und leicht wartbaren Geschäftsanwendungen kritisch sind.\n\nIn diesem Seminar wird das Gelernte anhand eines fortlaufenden Übungsprojekts vertieft, sodass am Ende eine Blaupause\nentsteht, aus der Best Practices für eigene Projekte abgeleitet werden können.\n\nZu Beginn werden ausgewählte Grundlagen wiederholt – diese können bei Bedarf übersprungen und durch optionale Themen\nersetzt werden."
+    },
+    "goal": {
+      "type": "markdown",
+      "content": "Teilnehmende kennen sich mit vertiefenden Spring-Themen aus und sind in der Lage, architektonisch moderne Lösungen zu\nkonzipieren und zu entwickeln."
+    },
+    "targetAudience": {
+      "type": "markdown",
+      "content": "Software-Entwickler:innen mit Java und grundlegenden Spring-Kenntnissen."
+    },
+    "outline": {
+      "type": "markdown",
+      "content": "1. Einführung\n    * Geschichte, Ziele, Philosophie des Spring Frameworks\n    * Vorstellung des Übungsprojekts\n    * Planung eines Bean Containers\n    * Entwicklung eines Bean Containers\n    * Kernbestandteile des Spring Frameworks\n    * Annotations-basierte Bean-Definition\n    * Grundlagen zu Spring Boot\n2. Integrationstests, Slicing & Mocking\n3. Spring Data JPA\n4. Konfiguration\n5. DataSources & Transaktionen\n6. RESTful APIs (Basiswissen): Design, Controller-Programmierung\n7. RESTful API Testing: MockMvc, JsonPath, Matchers, JsonAssert\n8. Profile, Logging & Monitoring\n9. AOP\n10. RESTful API Erweitert: Model-Converter, Fehlerbehandlung, Message-Converter, Swagger\n11. Optionale Module\n    * Integration (file-basiert)\n    * Grundlagen von Spring Security"
+    },
+    "priceSingle": 0,
+    "priceInhouse": 0,
     "duration": 3,
     "durationUnit": "Days",
     "featured": false,
@@ -165,16 +196,46 @@
       "type": "markdown",
       "content": "1. Einführung in KI\n    - Zentrale Technologien\n    - Terminologie\n2. Einführung in Spring AI:\n    - Architektur und Ziele\n    - Integration mit Spring Boot\n    - Vergleich mit bestehenden KI-Frameworks\n3. Modellanbindung & API-Design:\n    - Unterstützung für gängige KI-Modelle (OpenAI, Anthropic, Microsoft, Amazon, Google, Ollama)\n    - Typen: Chat Completion, Embeddings, Text2Image, Speech, Moderation\n4. Vektordatenbanken & RAG:\n    - Anbindung an Vektorspeicher wie Chroma, Weaviate, PGVector, Redis etc.\n    - Nutzung der SQL-ähnlichen Filter-API für Metadatenabfragen\n5. Structured Outputs:\n    - Abbildung von KI-Ausgaben auf Java-POJOs\n    - Nutzung von ChatClient und Advisors API\n6. Tool- & Function Calling:\n    - Ausführung externer Funktionen auf Anfrage des KI-Modells\n    - Zugriff auf Live-Daten und Geschäftslogik\n7. Beobachtbarkeit und Evaluierung:\n    - Logging und Metriken für KI-Operationen\n    - Schutz vor Halluzinationen und inkonsistentem Output\n8. Anwendungsfälle:\n    - Chatbot über Dokumentation\n    - semantische Suche & Q&A\n    - Sprach- und Bildgenerierung\n    - Dokumenten-Injektion und ETL"
     },
-    "priceSingle": 1190,
-    "priceInhouse": 3880,
+    "priceSingle": 0,
+    "priceInhouse": 0,
     "duration": 2,
     "durationUnit": "Days",
     "featured": true,
     "type": "Seminar",
-    "backgroundImageUrl": "/bg-spring2.png"
+    "backgroundImageUrl": "/bg-spring2.png",
+    "pricing": "High"
   },
   {
     "id": "T-01",
+    "rank": 999,
+    "title": "Build-Automatisierung mit Maven",
+    "summary": "Automatisierte, effiziente und reproduzierbare Build-Prozesse mit Apache Maven.",
+    "description": {
+      "type": "markdown",
+      "content": "Maven ist neben Gradle eine der zentralen Lösungen zur Automatisierung von Build-Prozessen.\n\nIn diesem Seminar lernen Sie Maven von Grund auf kennen und verstehen sowohl die fundamentalen Konzepte als auch\nweiterführende Themen, mit denen Sie anspruchsvolle Build-Prozesse definieren und steuern können.\n\nDurch praktische Übungen und interaktive Lernspiele wird ein nachhaltiger Lerneffekt gefördert."
+    },
+    "goal": {
+      "type": "markdown",
+      "content": "Nach Abschluss des Seminars sind Themen wie transitive Abhängigkeiten, die Kopplung von Plugins an Buildphasen und\nMulti-Modul-Builds kein Buch mit sieben Siegeln, sondern wertvolles Werkzeugwissen."
+    },
+    "targetAudience": {
+      "type": "markdown",
+      "content": "Java-Entwickler:innen, die ihre Build-Prozesse professionalisieren möchten."
+    },
+    "outline": {
+      "type": "markdown",
+      "content": "1. Überblick und Grundlagen\n2. Das Project Object Model (POM)\n3. Properties\n4. settings.xml\n5. Dependencies und Dependency Management\n6. Plugins\n7. Profiles\n8. Archetypes\n9. Multi-Module Builds\n10. Releasing\n11. Sonstiges"
+    },
+    "priceSingle": 0,
+    "priceInhouse": 0,
+    "duration": 1,
+    "durationUnit": "Days",
+    "featured": false,
+    "type": "Seminar",
+    "backgroundImageUrl": "/bg-tools2.png"
+  },
+  {
+    "id": "T-02",
     "rank": 20,
     "title": "Git Version Control",
     "summary": "Meistern Sie Git - das bevorzugte Tool für Versionskontrolle von Quellcode",
@@ -223,8 +284,8 @@
       "type": "markdown",
       "content": "- **Git im Überblick**\n    - Git als Key-Value Store, Content Tracker und Versionskontrollsystem\n    - Von zentral zu verteilt: Wie Git mit Repositories arbeitet\n    - Snapshots statt Deltas – warum Git keine Diffs speichert\n\n- **Git unter der Haube**\n    - Interner Datenspeicher: Worktree, Staging Area, Commit Log\n    - Objekttypen: blob, tree, commit\n    - Hashes verstehen: Inhalte statt Dateien tracken\n\n- **Grundlegende Kommandos**\n    - `git init`, `add`, `commit`, `status`\n    - Bedeutung der Staging Area\n    - Tree- und Commit-Strukturen lesen\n    - Konfiguration und globale Einstellungen\n\n- **Branching & Referenzen**\n    - Was Branches wirklich sind \n    - `git branch`, `switch`, `HEAD`\n    - Fast-Forward vs. Merge vs. Rebase – Szenarien und Unterschiede\n\n- **Verteilte Arbeitsweise**\n    - Lokale vs. Remote Repositories\n    - `git fetch`, `push`, `pull` – was wirklich passiert\n    - Bare Repositories und Synchronisation\n    - Konflikte verstehen und vermeiden\n\n- **Reset entzaubert**\n    - `--soft`, `--mixed`, `--hard` im Vergleich\n    - Wie Reset auf Worktree, Index und Commits wirkt\n    - Sicheres Rückgängigmachen von Änderungen\n\n- **Nützliche Tipps & Power Features**\n    - Git-Aliase für produktiveres Arbeiten\n    - Revisionen benennen (`HEAD~`, `HEAD^`, Hashes, Refs)\n    - Worktrees\n    - reflog\n    - bisect"
     },
-    "priceSingle": 90,
-    "priceInhouse": 390,
+    "priceSingle": 0,
+    "priceInhouse": 0,
     "duration": 2,
     "durationUnit": "Hours",
     "featured": true,
@@ -252,13 +313,14 @@
       "type": "markdown",
       "content": "- **Einführung (30 Minuten)**\n    - Motivation, Chancen und Risiken\n    - Überblick über aktuelle Sprachmodelle\n    - Geschichte der KI-gestützten Entwicklung\n    - Chat-basierte vs. agentive Tools\n\n- **Claude Code (45 Minuten)**\n    - Überblick und Funktionsweise\n    - Installation & Setup\n    - Praktische Anwendungsbeispiele\n    - Best Practices\n\n- **Model Context Protocol (20 Minuten)**\n    - Grundlagen und Konzepte\n    - Setup und Verwendung in Claude Code\n    - Erweiterte Konfigurationsmöglichkeiten\n\n- **Codex (25 Minuten)**\n    - Überblick und Einsatzgebiete\n    - Installation & Setup\n    - Praktische Verwendung\n    - Integration in bestehende Workflows\n\n**Im Kurspreis enthalten:**\n\n- Teilnahmegebühr\n- Elektronische Handout-Version\n- Praxisnahe Beispiele und Übungen"
     },
-    "priceSingle": 140,
-    "priceInhouse": 690,
+    "priceSingle": 0,
+    "priceInhouse": 0,
     "duration": 2,
     "durationUnit": "Hours",
     "featured": true,
     "type": "Rave",
-    "backgroundImageUrl": "/bg-ai2.png"
+    "backgroundImageUrl": "/bg-ai2.png",
+    "pricing": "High"
   },
   {
     "id": "X-01",
@@ -281,8 +343,8 @@
       "type": "markdown",
       "content": "- Was Software wirklich ist – von Idee bis System\n- Abstraktion, Modelle & mentale Landkarten\n- Divide & Conquer: Probleme zerlegen und lösen\n- Entwicklungsmethoden: Wasserfall, V-Modell, Agile, DevOps, XP\n- Phasen der Softwareentwicklung\n- Denken in Zuständen, Datenflüssen und Modulen\n- Der Code als Ausdruck von Designentscheidungen\n- Zusammenarbeit mit KI: Lernen, Verstehen, Kontrollieren"
     },
-    "priceSingle": 1290,
-    "priceInhouse": 3580,
+    "priceSingle": 0,
+    "priceInhouse": 0,
     "duration": 2,
     "durationUnit": "Days",
     "featured": true,

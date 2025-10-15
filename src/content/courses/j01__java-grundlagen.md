@@ -3,8 +3,7 @@ id: "J-01"
 rank: 30
 title: "Java Grundlagen"
 summary: "Dieses Seminar führt Entwickler:innen in die Welt der Anwendungsentwicklung mit Java ein."
-priceSingle: 1790
-priceInhouse: 6290
+pricing: "LOW"
 duration: 4
 durationUnit: "Days"
 featured: false

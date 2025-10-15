@@ -10,6 +10,12 @@ export enum DurationUnit {
     Days = 'Days',
 }
 
+export enum PricingLevel {
+    Low = 'Low',
+    Medium = 'Medium',
+    High = 'High',
+}
+
 export interface Course {
     id: string;
     rank: number;
@@ -26,4 +32,5 @@ export interface Course {
     featured: boolean;
     type: CourseType;
     backgroundImageUrl?: string;
+    pricing?: PricingLevel;
 }

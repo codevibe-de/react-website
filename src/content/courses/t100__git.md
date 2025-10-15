@@ -3,8 +3,6 @@ id: "T-100"
 rank: 80
 title: "Git Crash Course"
 summary: "Zweistündiger Power-Kurs zu den Grundlagen und Potentialen von Git"
-priceSingle: 90
-priceInhouse: 390
 duration: 2
 durationUnit: "Hours"
 featured: true

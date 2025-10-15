@@ -63,6 +63,19 @@ function markdownToTextBlock(markdown) {
   };
 }
 
+function normalizePricingLevel(pricing) {
+  if (!pricing) return undefined;
+
+  const normalized = pricing.toLowerCase();
+
+  if (normalized === 'low') return 'Low';
+  if (normalized === 'medium') return 'Medium';
+  if (normalized === 'high') return 'High';
+
+  console.warn(`Unknown pricing level: ${pricing}. Expected: Low, Medium, or High.`);
+  return undefined;
+}
+
 function parseCourseMd(filePath) {
   const content = fs.readFileSync(filePath, 'utf-8');
   const { metadata, markdown } = parseFrontmatter(content);
@@ -83,7 +96,8 @@ function parseCourseMd(filePath) {
     durationUnit: metadata.durationUnit || 'Days',
     featured: metadata.featured || false,
     type: metadata.type || 'Seminar',
-    backgroundImageUrl: metadata.backgroundImageUrl
+    backgroundImageUrl: metadata.backgroundImageUrl,
+    pricing: normalizePricingLevel(metadata.pricing)
   };
 
   return course;

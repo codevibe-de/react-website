@@ -19,11 +19,11 @@ export default function IllustratedText({
                                         }: ContentWithImagesProps) {
     return (
         <div className="overflow-hidden bg-white py-12">
+            <h2 className="text-center mb-8 text-3xl sm:text-4xl font-semibold tracking-tight text-pretty text-body-light">
+                {headLine}
+            </h2>
             <div className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
                 <div className="max-w-4xl">
-                    <h2 className="mt-2 text-3xl sm:text-4xl font-semibold tracking-tight text-pretty text-body-light">
-                        {headLine}
-                    </h2>
                     <p className="mt-6 text-xl/8 text-balance text-gray-700">
                         {introText}
                     </p>

@@ -3,6 +3,7 @@ import {notFound} from 'next/navigation';
 import {getCourseById} from '@/lib/courses';
 import {Course, DurationUnit} from '@/types/Course';
 import {pageDataService} from "@/lib/PageDataService";
+import {PricingService} from "@/lib/PricingService";
 import BlankPageLayout from "@/layouts/BlankPageLayout";
 import Banner from "@/components/Banner";
 import TextBlockComponent from '@/components/TextBlockComponent';
@@ -98,18 +99,22 @@ export default async function CourseDetailPage({params}: CourseDetailPageProps) 
                                 <div>
                                     <span className="text-gray-600">Einzelperson:</span>
                                     <span className="font-semibold ml-2">
-                                        {course.priceSingle.toLocaleString()} €
+                                        {(() => {
+                                            const price = PricingService.getPricePerParticipant(course);
+                                            return price !== null ? `${price.toLocaleString()} €` : 'auf Anfrage';
+                                        })()}
                                     </span>
                                 </div>
 
-                                {course.priceInhouse && (
-                                    <div>
-                                        <span className="text-gray-600">Inhouse:</span>
-                                        <span className="font-semibold ml-2">
-                                          {course.priceInhouse.toLocaleString()} €
-                                        </span>
-                                    </div>
-                                )}
+                                <div>
+                                    <span className="text-gray-600">Inhouse:</span>
+                                    <span className="font-semibold ml-2">
+                                        {(() => {
+                                            const price = PricingService.getPriceInhouse(course);
+                                            return price !== null ? `${price.toLocaleString()} €` : 'Auf Anfrage';
+                                        })()}
+                                    </span>
+                                </div>
                             </div>
 
                             <a href={emailHref}

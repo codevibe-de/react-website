@@ -3,8 +3,6 @@ id: "X-01"
 rank: 10
 title: "Core Concepts of Software"
 summary: "Software verstehen, statt nur Code zu schreiben – Denkweisen, Prinzipien und Werkzeuge, um als Junior im KI-Zeitalter zu überleben."
-priceSingle: 1290
-priceInhouse: 3580
 duration: 2
 durationUnit: "Days"
 featured: true
