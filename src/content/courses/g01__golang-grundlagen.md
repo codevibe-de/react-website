@@ -1,5 +1,5 @@
 ---
-id: "G-01"
+id: "G01"
 title: "Golang Grundlagen"
 summary: "Lerne in diesem praxisnahen Grundlagenkurs, wie du mit Go moderne, performante und nebenläufige Anwendungen entwickelst."
 duration: 4

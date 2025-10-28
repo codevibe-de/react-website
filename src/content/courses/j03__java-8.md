@@ -1,5 +1,5 @@
 ---
-id: "J-03"
+id: "J03"
 rank: 40
 title: "Java 8 – funktionale Programmierung"
 summary: "Mit Expertenwissen zu Lambdas und Streams schalten Sie den Entwicklungs-Turbo ein."
@@ -7,7 +7,7 @@ pricing: "LOW"
 duration: 2
 durationUnit: "Days"
 backgroundImageUrl: "/bg-java2.png"
-oldUrl: "https://www.codevibe.de/534/java_8/"
+oldUrl: "/534/java_8/"
 ---
 
 ## Description

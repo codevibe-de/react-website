@@ -1,5 +1,5 @@
 ---
-id: "K-01"
+id: "K01"
 rank: 50
 title: "Kotlin Grundlagen"
 summary: "Erlernen Sie die Grundlagen der modernen Programmiersprache Kotlin"

@@ -1,5 +1,5 @@
 ---
-id: "T-02"
+id: "T02"
 rank: 20
 title: "Git Version Control"
 summary: "Meistern Sie Git - das bevorzugte Tool für Versionskontrolle von Quellcode"

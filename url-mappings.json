@@ -1,12 +1,27 @@
 [
   {
-    "source": "/264/spring-grundlagen",
-    "destination": "/seminare/s-01-spring-grundlagen",
+    "source": "/204/golang-grundlagen",
+    "destination": "/seminare/g01-golang-grundlagen",
     "permanent": true
   },
   {
-    "source": "/a",
-    "destination": "/",
+    "source": "/283/java-grundlagen",
+    "destination": "/seminare/j01-java-grundlagen",
+    "permanent": true
+  },
+  {
+    "source": "/379/build-automatisierung-mit-maven",
+    "destination": "/seminare/t01-maven",
+    "permanent": true
+  },
+  {
+    "source": "/526/java-erweiterungen",
+    "destination": "/seminare/j02-java-erweiterungen",
+    "permanent": true
+  },
+  {
+    "source": "/534/java_8/",
+    "destination": "/seminare/j03-java-8",
     "permanent": true
   }
 ]

@@ -1,5 +1,5 @@
 ---
-id: "T-01"
+id: "T01"
 title: "Build-Automatisierung mit Maven"
 summary: "Automatisierte, effiziente und reproduzierbare Build-Prozesse mit Apache Maven."
 duration: 1

@@ -1,5 +1,5 @@
 ---
-id: "S-02"
+id: "S02"
 rank: 60
 title: "Spring Boot Aufbau"
 summary: "Bauen Sie Ihre Spring Kenntnisse aus und werden zum Kenner von Spring Data, RESTful, Security und Testing"

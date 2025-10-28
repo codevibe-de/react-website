@@ -1,6 +1,6 @@
 [
   {
-    "id": "G-01",
+    "id": "G01",
     "rank": 999,
     "title": "Golang Grundlagen",
     "summary": "Lerne in diesem praxisnahen Grundlagenkurs, wie du mit Go moderne, performante und nebenläufige Anwendungen entwickelst.",
@@ -29,7 +29,7 @@
     "backgroundImageUrl": "/bg-golang2.png"
   },
   {
-    "id": "J-01",
+    "id": "J01",
     "rank": 30,
     "title": "Java Grundlagen",
     "summary": "Dieses Seminar führt Entwickler:innen in die Welt der Anwendungsentwicklung mit Java ein.",
@@ -59,7 +59,37 @@
     "pricing": "Low"
   },
   {
-    "id": "J-03",
+    "id": "J02",
+    "rank": 31,
+    "title": "Java Erweiterungen",
+    "summary": "Ihr nächster Schritt in die Welt der Entwicklung mit Java — vier Tage kompaktes Profi-Wissen.",
+    "description": {
+      "type": "markdown",
+      "content": "Mit diesem Seminar bauen Sie Ihr Java Wissen um weiterführende Konzepte aus.\n\nAnhand zahlreicher Übungsprojekte und Katas werden neue Konzepte eingeführt und nachhaltig gelernt."
+    },
+    "goal": {
+      "type": "markdown",
+      "content": "Verständnis und eigenständige Entwicklung von Anwendungen, die von komplexeren Konzepten der Sprache Gebrauch machen."
+    },
+    "targetAudience": {
+      "type": "markdown",
+      "content": "Software-Entwickler:innen mit Java-Kenntnissen, z.B. aus dem Seminar Java Grundlagen."
+    },
+    "outline": {
+      "type": "markdown",
+      "content": "1. Generische Datentypen\n2. Reflection\n3. weitere Klassenarten\n4. Sortieren und Suchen\n5. Streams\n6. Lambdas\n7. Multi-Threading\n8. Java I/O"
+    },
+    "priceSingle": 0,
+    "priceInhouse": 0,
+    "duration": 4,
+    "durationUnit": "Days",
+    "featured": false,
+    "type": "Seminar",
+    "backgroundImageUrl": "/bg-java2.png",
+    "pricing": "Low"
+  },
+  {
+    "id": "J03",
     "rank": 40,
     "title": "Java 8 – funktionale Programmierung",
     "summary": "Mit Expertenwissen zu Lambdas und Streams schalten Sie den Entwicklungs-Turbo ein.",
@@ -89,7 +119,7 @@
     "pricing": "Low"
   },
   {
-    "id": "K-01",
+    "id": "K01",
     "rank": 50,
     "title": "Kotlin Grundlagen",
     "summary": "Erlernen Sie die Grundlagen der modernen Programmiersprache Kotlin",
@@ -118,7 +148,7 @@
     "backgroundImageUrl": "/bg-kotlin2.png"
   },
   {
-    "id": "S-01",
+    "id": "S01",
     "rank": 60,
     "title": "Spring Grundlagen",
     "summary": "Erfahren Sie die Konzepte von leichtgewichtigen Anwendungen mit Spring/Spring-Boot",
@@ -147,7 +177,7 @@
     "backgroundImageUrl": "/bg-spring2.png"
   },
   {
-    "id": "S-02",
+    "id": "S02",
     "rank": 60,
     "title": "Spring Boot Aufbau",
     "summary": "Bauen Sie Ihre Spring Kenntnisse aus und werden zum Kenner von Spring Data, RESTful, Security und Testing",
@@ -176,7 +206,7 @@
     "backgroundImageUrl": "/bg-spring2.png"
   },
   {
-    "id": "S-04",
+    "id": "S04",
     "rank": 70,
     "title": "Spring AI",
     "summary": "Moderne KI-Anwendungen mit dem Spring-Ökosystem.",
@@ -206,7 +236,7 @@
     "pricing": "High"
   },
   {
-    "id": "T-01",
+    "id": "T01",
     "rank": 999,
     "title": "Build-Automatisierung mit Maven",
     "summary": "Automatisierte, effiziente und reproduzierbare Build-Prozesse mit Apache Maven.",
@@ -235,7 +265,7 @@
     "backgroundImageUrl": "/bg-tools2.png"
   },
   {
-    "id": "T-02",
+    "id": "T02",
     "rank": 20,
     "title": "Git Version Control",
     "summary": "Meistern Sie Git - das bevorzugte Tool für Versionskontrolle von Quellcode",
@@ -264,7 +294,7 @@
     "backgroundImageUrl": "/bg-tools2.png"
   },
   {
-    "id": "T-100",
+    "id": "T100",
     "rank": 80,
     "title": "Git Crash Course",
     "summary": "Zweistündiger Power-Kurs zu den Grundlagen und Potentialen von Git",
@@ -293,7 +323,7 @@
     "backgroundImageUrl": "/bg-tools2.png"
   },
   {
-    "id": "T-101",
+    "id": "T101",
     "rank": 80,
     "title": "KI-getriebene Entwicklung",
     "summary": "Kompakte Tech-Tour der KI-gestützten Entwicklung mit Claude Code und Codex",
@@ -323,7 +353,7 @@
     "pricing": "High"
   },
   {
-    "id": "X-01",
+    "id": "X01",
     "rank": 10,
     "title": "Core Concepts of Software",
     "summary": "Software verstehen, statt nur Code zu schreiben – Denkweisen, Prinzipien und Werkzeuge, um als Junior im KI-Zeitalter zu überleben.",

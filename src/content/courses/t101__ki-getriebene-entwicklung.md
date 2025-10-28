@@ -1,5 +1,5 @@
 ---
-id: "T-101"
+id: "T101"
 rank: 80
 title: "KI-getriebene Entwicklung"
 summary: "Kompakte Tech-Tour der KI-gestützten Entwicklung mit Claude Code und Codex"

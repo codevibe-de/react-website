@@ -7,6 +7,7 @@ interface CourseCardProps {
 }
 
 export default function CourseCard({course}: CourseCardProps) {
+    // Create slug using course ID without dash (e.g., "j01") followed by title
     const courseSlug = `${course.id.toLowerCase()}-${course.title.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '')}`;
 
     return (

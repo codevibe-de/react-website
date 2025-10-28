@@ -13,8 +13,8 @@ interface CourseDetailPageProps {
 }
 
 function extractCourseIdFromSlug(slug: string): string {
-    // Match course ID pattern like "j-01", "g-02", "k-01", etc. at the beginning of slug
-    const match = slug.match(/^([a-z]-\d+)/i);
+    // Match course ID pattern like "j01", "g02", "k01", etc. (without dash) at the beginning of slug
+    const match = slug.match(/^([a-z]\d+)/i);
     return match ? match[1].toUpperCase() : slug.split('-')[0].toUpperCase();
 }
 

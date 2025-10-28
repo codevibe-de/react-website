@@ -1,5 +1,5 @@
 ---
-id: "S-01"
+id: "S01"
 rank: 60
 title: "Spring Grundlagen"
 summary: "Erfahren Sie die Konzepte von leichtgewichtigen Anwendungen mit Spring/Spring-Boot"
