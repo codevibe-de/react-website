@@ -16,25 +16,25 @@ export class PricingService {
     // Key format: "{pricingLevel}_{durationInHours}"
     private static readonly pricingTable: PricingTable = {
         // Low pricing
-        'Low_2': { pricePerParticipant: 70, priceInhouse: 340 },
-        'Low_8': { pricePerParticipant: 590, priceInhouse: 1590 },
-        'Low_16': { pricePerParticipant: 1090, priceInhouse: 2990 },
-        'Low_24': { pricePerParticipant: 1560, priceInhouse: 4290 },
-        'Low_32': { pricePerParticipant: 1860, priceInhouse: 5390 },
+        'Low_2': {pricePerParticipant: 70, priceInhouse: 340},
+        'Low_8': {pricePerParticipant: 590, priceInhouse: 1590},
+        'Low_16': {pricePerParticipant: 1090, priceInhouse: 2990},
+        'Low_24': {pricePerParticipant: 1560, priceInhouse: 4290},
+        'Low_32': {pricePerParticipant: 1860, priceInhouse: 5390},
 
         // Medium pricing
-        'Medium_2': { pricePerParticipant: 90, priceInhouse: 390 },
-        'Medium_8': { pricePerParticipant: 690, priceInhouse: 1890 },
-        'Medium_16': { pricePerParticipant: 1290, priceInhouse: 3580 },
-        'Medium_24': { pricePerParticipant: 1840, priceInhouse: 5070 },
-        'Medium_32': { pricePerParticipant: 2190, priceInhouse: 6360 },
+        'Medium_2': {pricePerParticipant: 90, priceInhouse: 390},
+        'Medium_8': {pricePerParticipant: 690, priceInhouse: 1890},
+        'Medium_16': {pricePerParticipant: 1290, priceInhouse: 3580},
+        'Medium_24': {pricePerParticipant: 1840, priceInhouse: 5070},
+        'Medium_32': {pricePerParticipant: 2190, priceInhouse: 6360},
 
         // High pricing
-        'High_2': { pricePerParticipant: 130, priceInhouse: 590 },
-        'High_8': { pricePerParticipant: 860, priceInhouse: 2290 },
-        'High_16': { pricePerParticipant: 1590, priceInhouse: 4450 },
-        'High_24': { pricePerParticipant: 2290, priceInhouse: 6290 },
-        'High_32': { pricePerParticipant: 2690, priceInhouse: 7950 },
+        'High_2': {pricePerParticipant: 130, priceInhouse: 590},
+        'High_8': {pricePerParticipant: 860, priceInhouse: 2290},
+        'High_16': {pricePerParticipant: 1590, priceInhouse: 4450},
+        'High_24': {pricePerParticipant: 2290, priceInhouse: 6290},
+        'High_32': {pricePerParticipant: 2690, priceInhouse: 7950},
     };
 
     /**
@@ -61,7 +61,7 @@ export class PricingService {
     static getPricing(course: Course): PricingEntry | null {
         const durationInHours = this.convertToHours(course.duration, course.durationUnit);
         const key = this.getPricingKey(course.pricing ?? PricingLevel.Medium, durationInHours);
-console.log(key);
+        console.log(key);
         console.log(course);
         const pricing = this.pricingTable[key];
 

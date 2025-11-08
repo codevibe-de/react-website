@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import {Course, CourseType, DurationUnit} from '@/types/Course';
 import Badge from "@/components/Badge";
+import {PricingService} from "@/lib/PricingService";
 
 interface CourseCardProps {
     course: Course;
@@ -57,11 +58,20 @@ export default function CourseCard({course}: CourseCardProps) {
                 </div>
 
                 <div className="mt-auto">
-                    <div className="text-sm text-gray-500">
-                        {course.duration} {course.durationUnit === DurationUnit.Hours
-                        ? (course.duration === 1 ? 'Stunde' : 'Stunden')
-                        : (course.duration === 1 ? 'Tag' : 'Tage')
-                    }
+                    <div className="flex justify-between items-center text-xs text-gray-400">
+                        <span>#{course.id}</span>
+                        <span className="font-bold">
+                            {course.duration} {course.durationUnit === DurationUnit.Hours
+                            ? (course.duration === 1 ? 'Stunde' : 'Stunden')
+                            : (course.duration === 1 ? 'Tag' : 'Tage')
+                        }
+                        </span>
+                        <span>
+                            {(() => {
+                                const price = PricingService.getPricePerParticipant(course);
+                                return price !== null ? `€${price.toLocaleString('de-DE')}` : 'auf Anfrage';
+                            })()}
+                        </span>
                     </div>
                 </div>
                 </div>
