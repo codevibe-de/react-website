@@ -119,6 +119,66 @@
     "pricing": "Low"
   },
   {
+    "id": "J04",
+    "rank": 40,
+    "title": "Java 9-21",
+    "summary": "Die wichtigsten Neuerungen von Java 9 bis 21, für eine effiziente Code-Base.",
+    "description": {
+      "type": "markdown",
+      "content": "Nach den zahlreichen grundlegenden Neuerungen in Java 8 hat Oracle in Java 9 weitere faszinierende Aspekte wie\nModularisierung, Reactive Streams und das interne Logging-Framework eingeführt.\n\nDie darauf folgenden Java-Versionen zeigten sich vielleicht nicht so umfassend, werden jedoch nun halbjährlich\nveröffentlicht. Dadurch ergeben sich eine beträchtliche Anzahl interessanter Updates.\n\nMit den Veröffentlichungen von Java 17 und 21 stehen nun zusätzlich Long-Term-Support-Versionen zur Verfügung. Diese\nbieten sich als geeignete Kandidaten für ein Projekt-Upgrade an.\n\nIn diesem Seminar werden Ihnen die wichtigsten Neuerungen von Java 9 bis 21 vorgestellt, damit Sie Ihre\nEntwicklungsprozesse durch die Nutzung dieser neuen Features verbessern können.\n\nSie erhalten vorab entweder ein Exemplar des Fachbuchs „Java – die Neuerungen in Version 9 bis 14“ oder „Java – die\nNeuerungen in Version 17 LTS, 18 und 19“ vom dpunkt Verlag."
+    },
+    "goal": {
+      "type": "markdown",
+      "content": "Nach Abschluss dieses Kurses sind die Teilnehmer in der Lage:\n\n- Neue Sprachfeatures zu nutzen\n- Zeitgemäße, wartbare Java-Anwendungen zu entwickeln"
+    },
+    "targetAudience": {
+      "type": "markdown",
+      "content": "Dieser Kurs richtet sich an:\n\n- Software-Entwickler mit soliden Java-Grundlagen\n- Entwickler, die mit Java 8 vertraut sind"
+    },
+    "outline": {
+      "type": "markdown",
+      "content": "- **Release-Zyklus und versionsabhängige Neuerungen**\n    - Überblick über den Release-Zyklus\n    - Versionsabhängige Innovationen\n\n- **Syntax-Erweiterungen**\n    - Neue Syntax-Features\n\n- **Standard-API-Erweiterungen**\n    - Reactive Streams\n    - HTTP Client\n    - ProcessHandle\n    - StackWalker\n    - Logging API\n\n- **Individuelle Klassen-Updates**\n    - Updates einzelner Klassen\n\n- **Erweiterte Features**\n    - Pattern Matching\n    - Records\n    - Sealed Classes\n\n- **Modulsystem**\n    - Grundlagen des Modulsystems\n    - Tools (jlink, jdeps)"
+    },
+    "priceSingle": 0,
+    "priceInhouse": 0,
+    "duration": 2,
+    "durationUnit": "Days",
+    "featured": false,
+    "type": "Seminar",
+    "backgroundImageUrl": "/bg-java2.png",
+    "pricing": "Medium"
+  },
+  {
+    "id": "J05",
+    "rank": 50,
+    "title": "Testgetriebene Entwicklung (TDD)",
+    "summary": "Eine Java-basierte Einführung in eine der effektivsten Methoden zur Entwicklung robuster Software.",
+    "description": {
+      "type": "markdown",
+      "content": "Dieser Kurs führt in die testgetriebene Entwicklung nach dem Prinzip ein: „Schreibe nur Code, um einen fehlschlagenden Test zu reparieren.\"\n\nEr bietet eine umfassende Einführung in die TDD-Methodik mit Fokus auf die praktische Anwendung mit Java, JUnit 5 und verwandten Tools zur Erstellung robuster, wartbarer Software.\n\nDie Teilnehmer erhalten vorab ein Exemplar des Buches „Test Driven: TDD and Acceptance TDD for Java Developers\" vom Manning Verlag."
+    },
+    "goal": {
+      "type": "markdown",
+      "content": "Nach Abschluss dieses Kurses sind die Teilnehmer in der Lage:\n\n- Testgetriebene Entwicklung als positiven Ansatz zu erkennen\n- TDD effizient in ihrer täglichen Arbeit anzuwenden"
+    },
+    "targetAudience": {
+      "type": "markdown",
+      "content": "Dieser Kurs richtet sich an:\n\n- Software-Entwickler mit Java-Kenntnissen (z.B. aus Java-Grundlagen-Kursen)"
+    },
+    "outline": {
+      "type": "markdown",
+      "content": "- **Überblick**\n    - Ziele\n    - Terminologie\n    - TDD und Acceptance-Driven Development Konzepte\n\n- **Testing Framework Grundlagen**\n    - Grundlegende Konzepte\n\n- **JUnit 5 im Detail**\n    - Detaillierte Betrachtung von JUnit 5\n\n- **TDD-Prozess**\n    - Der testgetriebene Entwicklungsprozess\n    - Ablauf und best practices\n    - Antipatterns\n\n- **Acceptance-Driven Development Prozess**\n    - Akzeptanzgetriebene Entwicklung -- wie, warum, wann nicht?\n\n- **Refactoring**\n    - Refactoring-Techniken\n\n- **Mocking**\n    - Mock-Objekte und deren Einsatz\n\n- **Zusätzliche Testing-Tools**\n    - Weitere nützliche Tools für Tests\n    - Erstellung eigener Assertions"
+    },
+    "priceSingle": 0,
+    "priceInhouse": 0,
+    "duration": 2,
+    "durationUnit": "Days",
+    "featured": false,
+    "type": "Seminar",
+    "backgroundImageUrl": "/bg-java2.png",
+    "pricing": "Medium"
+  },
+  {
     "id": "K01",
     "rank": 50,
     "title": "Kotlin Grundlagen",
