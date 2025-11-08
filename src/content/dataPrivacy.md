@@ -23,6 +23,7 @@ Sie haben als Nutzer folgende Rechte:
 - Recht auf Datenübertragbarkeit
 
 Zusätzlich können Sie:
+
 - Ihre Einwilligung jederzeit widerrufen
 - Eine Beschwerde bei Aufsichtsbehörden einreichen
 
@@ -38,6 +39,7 @@ Bei jedem Besuch unserer Website werden automatisch folgende Daten erhoben:
 - IP-Adresse
 
 **Zwecke der Verarbeitung:**
+
 - Gewährleistung der Website-Verbindung
 - Sicherstellung der reibungslosen Website-Nutzung
 - Auswertung der Systemsicherheit und -stabilität
@@ -68,8 +70,11 @@ Bei jedem Besuch unserer Website werden automatisch folgende Daten erhoben:
 
 ## Widerspruchsrecht
 
-Sie haben das Recht, der Verarbeitung Ihrer personenbezogenen Daten zu widersprechen, sofern die Verarbeitung auf Grundlage eines berechtigten Interesses erfolgt. Bitte wenden Sie sich hierzu an die oben genannte Kontaktadresse.
+Sie haben das Recht, der Verarbeitung Ihrer personenbezogenen Daten zu widersprechen, sofern die Verarbeitung auf
+Grundlage eines berechtigten Interesses erfolgt. Bitte wenden Sie sich hierzu an die oben genannte Kontaktadresse.
 
 ## Änderungen dieser Datenschutzerklärung
 
-Wir behalten uns vor, diese Datenschutzerklärung anzupassen, damit sie stets den aktuellen rechtlichen Anforderungen entspricht oder um Änderungen unserer Leistungen in der Datenschutzerklärung umzusetzen. Für Ihren erneuten Besuch gilt dann die neue Datenschutzerklärung.
+Wir behalten uns vor, diese Datenschutzerklärung anzupassen, damit sie stets den aktuellen rechtlichen Anforderungen
+entspricht oder um Änderungen unserer Leistungen in der Datenschutzerklärung umzusetzen. Für Ihren erneuten Besuch gilt
+dann die neue Datenschutzerklärung.

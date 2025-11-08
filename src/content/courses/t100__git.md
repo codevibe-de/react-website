@@ -12,20 +12,23 @@ backgroundImageUrl: "/bg-tools2.png"
 
 ## Description
 
-Dieses kompakte Git-Rave vermittelt in nur zwei Stunden ein echtes Verständnis dafür, wie Git „denkt“.  
+Dieses kompakte Git-Rave vermittelt in nur zwei Stunden ein echtes Verständnis dafür, wie Git „denkt“.
 
-Statt Befehle auswendig zu lernen, verstehen die Teilnehmenden die internen Mechanismen: wie Commits, Branches und Merges wirklich funktionieren, was im Staging-Bereich passiert und wie Git seinen Objektgraphen aufbaut. 
+Statt Befehle auswendig zu lernen, verstehen die Teilnehmenden die internen Mechanismen: wie Commits, Branches und
+Merges wirklich funktionieren, was im Staging-Bereich passiert und wie Git seinen Objektgraphen aufbaut.
 
 Wir erklären die vier architektonischen Schichten von Git anhand zahlreicher Beispiele und Demonstrationen und bauen
 somit nachhaltiges Wissen auf.
 
-Darüber hinaus werden fortgeschrittene Funktionen vorgestellt, die im Alltag selten genutzt, aber extrem mächtig sind – von Rebase und Cherry-Pick bis hin zu Worktrees und reflog.
-
+Darüber hinaus werden fortgeschrittene Funktionen vorgestellt, die im Alltag selten genutzt, aber extrem mächtig sind –
+von Rebase und Cherry-Pick bis hin zu Worktrees und reflog.
 
 ## Goal
 
-Teilnehmende verstehen die internen Konzepte von Git und können Änderungen, Branches und Historien sicher und bewusst steuern.  
-Sie lernen, wie sie Git effizienter, sicherer und kreativer einsetzen, um Entwicklungsprozesse zu beschleunigen und Fehler schnell zu korrigieren.
+Teilnehmende verstehen die internen Konzepte von Git und können Änderungen, Branches und Historien sicher und bewusst
+steuern.  
+Sie lernen, wie sie Git effizienter, sicherer und kreativer einsetzen, um Entwicklungsprozesse zu beschleunigen und
+Fehler schnell zu korrigieren.
 
 ## Target Audience
 
@@ -51,7 +54,7 @@ Ideal für alle, die ihre täglichen Git-Workflows stabilisieren und erweitern w
     - Konfiguration und globale Einstellungen
 
 - **Branching & Referenzen**
-    - Was Branches wirklich sind 
+    - Was Branches wirklich sind
     - `git branch`, `switch`, `HEAD`
     - Fast-Forward vs. Merge vs. Rebase – Szenarien und Unterschiede
 

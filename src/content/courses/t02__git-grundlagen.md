@@ -14,11 +14,15 @@ backgroundImageUrl: "/bg-tools2.png"
 
 ## Description
 
-Git ist das bevorzugte Tool für die Versionskontrolle von Quellcode. Es punktet mit einem leichtgewichtigen Branching-Modell und verteilten Repositories.
+Git ist das bevorzugte Tool für die Versionskontrolle von Quellcode. Es punktet mit einem leichtgewichtigen
+Branching-Modell und verteilten Repositories.
 
-In diesem intensiven 2-tägigen Seminar lernen Sie Git von Grund auf kennen und verstehen die vier Kernschichten, die Git zu einem so mächtigen Werkzeug machen. Sie werden nicht nur die Grundbefehle beherrschen, sondern auch komplexe Workflows und Best Practices verstehen.
+In diesem intensiven 2-tägigen Seminar lernen Sie Git von Grund auf kennen und verstehen die vier Kernschichten, die Git
+zu einem so mächtigen Werkzeug machen. Sie werden nicht nur die Grundbefehle beherrschen, sondern auch komplexe
+Workflows und Best Practices verstehen.
 
-Der Kurs kombiniert theoretisches Verständnis mit praktischen Übungen und bereitet Sie darauf vor, Git professionell in Ihren Projekten einzusetzen.
+Der Kurs kombiniert theoretisches Verständnis mit praktischen Übungen und bereitet Sie darauf vor, Git professionell in
+Ihren Projekten einzusetzen.
 
 ## Goal
 
@@ -40,31 +44,33 @@ Dieser Kurs richtet sich an:
 - Teams, die das volle Potenzial von Git verstehen und nutzen möchten
 - Projektleiter, die Git-basierte Workflows implementieren wollen
 
-Grundkenntnisse in der Software-Entwicklung werden vorausgesetzt. Erste Erfahrungen mit Versionskontrolle sind hilfreich, aber nicht zwingend erforderlich.
+Grundkenntnisse in der Software-Entwicklung werden vorausgesetzt. Erste Erfahrungen mit Versionskontrolle sind
+hilfreich, aber nicht zwingend erforderlich.
 
 ## Outline
 
 - **Tag 1: Git Grundlagen und Kernkonzepte**
-  - Überblick und Einführung
-  - Erste Schritte mit Git
-  - Layer #1 – "Persistent Map"
-    - Objects verstehen
-    - Hash-Mechanismus
-  - Layer #2 – "Content Tracker"
-  - Layer #3 – "Revision Control System"
+    - Überblick und Einführung
+    - Erste Schritte mit Git
+    - Layer #1 – "Persistent Map"
+        - Objects verstehen
+        - Hash-Mechanismus
+    - Layer #2 – "Content Tracker"
+    - Layer #3 – "Revision Control System"
 
 - **Tag 2: Erweiterte Konzepte und Workflows**
-  - Layer #4 – "Distributed Revision Control System"
-  - Konfiguration und Anpassung
-  - Git Flows und Branching-Strategien
-  - Clients und Server-Setup
-  - Zusätzliche Themen:
-    - Stashing
-    - Reset-Strategien
-    - Git Hooks
-  - Best Practices und Troubleshooting
+    - Layer #4 – "Distributed Revision Control System"
+    - Konfiguration und Anpassung
+    - Git Flows und Branching-Strategien
+    - Clients und Server-Setup
+    - Zusätzliche Themen:
+        - Stashing
+        - Reset-Strategien
+        - Git Hooks
+    - Best Practices und Troubleshooting
 
 **Im Kurspreis enthalten:**
+
 - Vollständige Verpflegung
 - Elektronische Kursmaterialien
 - Fachbuch zum Nachschlagen

@@ -14,11 +14,14 @@ oldUrl: "/597/testgetriebene-entwicklung-java"
 
 ## Description
 
-Dieser Kurs führt in die testgetriebene Entwicklung nach dem Prinzip ein: „Schreibe nur Code, um einen fehlschlagenden Test zu reparieren."
+Dieser Kurs führt in die testgetriebene Entwicklung nach dem Prinzip ein: „Schreibe nur Code, um einen fehlschlagenden
+Test zu reparieren."
 
-Er bietet eine umfassende Einführung in die TDD-Methodik mit Fokus auf die praktische Anwendung mit Java, JUnit 5 und verwandten Tools zur Erstellung robuster, wartbarer Software.
+Er bietet eine umfassende Einführung in die TDD-Methodik mit Fokus auf die praktische Anwendung mit Java, JUnit 5 und
+verwandten Tools zur Erstellung robuster, wartbarer Software.
 
-Die Teilnehmer erhalten vorab ein Exemplar des Buches „Test Driven: TDD and Acceptance TDD for Java Developers" vom Manning Verlag.
+Die Teilnehmer erhalten vorab ein Exemplar des Buches „Test Driven: TDD and Acceptance TDD for Java Developers" vom
+Manning Verlag.
 
 ## Goal
 

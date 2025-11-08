@@ -16,7 +16,8 @@ backgroundImageUrl: "/bg-spring2.png"
 Spring AI ist ein praxisorientierter Einführungskurs für Softwareentwicklerinnen und -entwickler, die moderne
 KI-Anwendungen mit dem Spring-Ökosystem entwickeln möchten.
 
-Der Kurs vermittelt fundiertes Wissen über das neue Spring-AI-Framework und zeigt, wie sich etablierte Spring / Spring-Boot Konzepte
+Der Kurs vermittelt fundiertes Wissen über das neue Spring-AI-Framework und zeigt, wie sich etablierte Spring /
+Spring-Boot Konzepte
 und Technologien auf die KI-Domäne übertragen lassen.
 
 ## Goal

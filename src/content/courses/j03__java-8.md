@@ -11,17 +11,22 @@ oldUrl: "/534/java_8/"
 ---
 
 ## Description
-Mit Java 8 ist Oracle ein großer Wurf gelungen. Die Version punktet in vielen Bereichen, insbesondere aber bietet sie alles, um mittels funktionaler Programmierung eleganten und leicht wartbaren Code zu schreiben.
+
+Mit Java 8 ist Oracle ein großer Wurf gelungen. Die Version punktet in vielen Bereichen, insbesondere aber bietet sie
+alles, um mittels funktionaler Programmierung eleganten und leicht wartbaren Code zu schreiben.
 
 Sie erhalten vorab ein Exemplar des Fachbuchs „Funktionale Programmierung in Java“ vom dpunkt Verlag.
 
 ## Goal
+
 Professionelle Entwicklung von funktional orientierten Java-Anwendungen
 
 ## Target Audience
+
 Software-Entwickler:innen mit guten Java Kenntnissen, z. B. aus Java Grundlagen und Java Erweiterungen
 
 ## Outline
+
 1. Lambdas im Detail
 2. Neuerungen bzgl. Interfaces
 3. Funktionale Interfaces

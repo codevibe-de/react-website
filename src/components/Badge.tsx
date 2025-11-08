@@ -12,7 +12,7 @@ const colorClasses = {
     gray: 'bg-gray-100 text-gray-700 inset-ring-gray-600/20'
 };
 
-export default function Badge({ children, color = 'red' }: BadgeProps) {
+export default function Badge({children, color = 'red'}: BadgeProps) {
     return (
         <span
             className={`mr-1 inline-flex items-center rounded-full px-2 py-1 text-xs font-medium inset-ring ${colorClasses[color]}`}>

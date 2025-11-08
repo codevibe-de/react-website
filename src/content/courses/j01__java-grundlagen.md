@@ -16,7 +16,8 @@ oldUrl: "/283/java-grundlagen"
 
 Dieses Seminar führt Entwickler:innen in die Welt der Anwendungsentwicklung mit Java ein.
 
-Theoretische Blöcke werden durch zahlreiche Übungen und die Arbeit an einem durchgehenden Kleinprojekt aufgelockert und somit nachhaltiges Können aufgebaut.
+Theoretische Blöcke werden durch zahlreiche Übungen und die Arbeit an einem durchgehenden Kleinprojekt aufgelockert und
+somit nachhaltiges Können aufgebaut.
 
 ## Goal
 
@@ -36,26 +37,26 @@ Dieser Kurs richtet sich an:
 ## Outline
 
 - **Einführung**
-  - Java-Geschichte und -Architektur
-  - Installation
-  - Dateiorganisation und Packages
+    - Java-Geschichte und -Architektur
+    - Installation
+    - Dateiorganisation und Packages
 
 - **Grundlagen**
-  - Primitive Datentypen
-  - Variablen und Konstanten
-  - Operatoren und Ausdrücke
-  - Kontrollstrukturen (if, else, switch, Schleifen)
+    - Primitive Datentypen
+    - Variablen und Konstanten
+    - Operatoren und Ausdrücke
+    - Kontrollstrukturen (if, else, switch, Schleifen)
 
 - **Objektorientiertes Design**
-  - Klassen und Objekte
-  - Methoden und Konstruktoren
-  - Vererbung und Polymorphie
-  - Interfaces
-  - Exception Handling
+    - Klassen und Objekte
+    - Methoden und Konstruktoren
+    - Vererbung und Polymorphie
+    - Interfaces
+    - Exception Handling
 
 - **Erweiterte Themen**
-  - Collections (List, Set, Map)
-  - Enums und Annotations
-  - Dateiverarbeitung
-  - Datumsverwaltung
-  - Sortierung
+    - Collections (List, Set, Map)
+    - Enums und Annotations
+    - Dateiverarbeitung
+    - Datumsverwaltung
+    - Sortierung

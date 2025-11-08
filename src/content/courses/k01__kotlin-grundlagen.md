@@ -12,9 +12,12 @@ backgroundImageUrl: "/bg-kotlin2.png"
 
 ## Description
 
-Kotlin ist eine moderne, statisch typisierte Programmiersprache, die 100% interoperabel mit Java ist. In diesem Kurs lernen Sie alle wichtigen Grundlagen von Kotlin kennen - von der Syntax über objektorientierte Programmierung bis hin zu funktionalen Konzepten.
+Kotlin ist eine moderne, statisch typisierte Programmiersprache, die 100% interoperabel mit Java ist. In diesem Kurs
+lernen Sie alle wichtigen Grundlagen von Kotlin kennen - von der Syntax über objektorientierte Programmierung bis hin zu
+funktionalen Konzepten.
 
-Der Kurs kombiniert theoretisches Wissen mit praktischen Übungen und bietet Ihnen die Möglichkeit, Kotlin in realistischen Szenarien anzuwenden.
+Der Kurs kombiniert theoretisches Wissen mit praktischen Übungen und bietet Ihnen die Möglichkeit, Kotlin in
+realistischen Szenarien anzuwenden.
 
 ## Goal
 
@@ -40,20 +43,20 @@ Grundkenntnisse in Java oder einer ähnlichen Programmiersprache werden vorausge
 ## Outline
 
 - **Tag 1: Kotlin Basics**
-  - Kotlin-Syntax und Grundlagen
-  - Variablen, Datentypen und Null Safety
-  - Control Flow (if, when, Schleifen)
-  - Funktionen und Lambda-Expressions
+    - Kotlin-Syntax und Grundlagen
+    - Variablen, Datentypen und Null Safety
+    - Control Flow (if, when, Schleifen)
+    - Funktionen und Lambda-Expressions
 
 - **Tag 2: Objektorientierte Programmierung**
-  - Klassen und Objekte
-  - Properties und Backing Fields
-  - Vererbung und Interfaces
-  - Data Classes und Sealed Classes
+    - Klassen und Objekte
+    - Properties und Backing Fields
+    - Vererbung und Interfaces
+    - Data Classes und Sealed Classes
 
 - **Tag 3: Erweiterte Konzepte**
-  - Extension Functions und Properties
-  - Generics und Type Inference
-  - Collections und Functional Programming
-  - Coroutines Grundlagen
-  - Java-Interoperabilität
+    - Extension Functions und Properties
+    - Generics und Type Inference
+    - Collections und Functional Programming
+    - Coroutines Grundlagen
+    - Java-Interoperabilität

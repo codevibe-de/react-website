@@ -17,10 +17,11 @@ In diesem Rave (Mikroseminar) erhalten Sie eine kompakte Tour durch die aktuelle
 Softwareentwicklung – mit besonderem Fokus auf agentische Entwicklungs-Tools.
 
 Nach einem kurzen Überblick über die Grundlagen von Sprachmodellen sowie bisheriger Tools und Entwicklungsumgebungen
-steigen wir direkt in die Praxis ein: Sie lernen den Einsatz der aktuell populärsten Werkzeuge wie Claude Code 
+steigen wir direkt in die Praxis ein: Sie lernen den Einsatz der aktuell populärsten Werkzeuge wie Claude Code
 (Anthropic) und Codex (OpenAI) kennen.
 
-Ein weiterer Schwerpunkt liegt auf dem Thema Context Engineering mit MCP-Servern. Hier zeigen wir, mit welchen Strategien sich
+Ein weiterer Schwerpunkt liegt auf dem Thema Context Engineering mit MCP-Servern. Hier zeigen wir, mit welchen
+Strategien sich
 „AI-driven Development“ effektiv gestalten lässt – und wie sich diese Ansätze in Richtung autonomes, kreatives Coding
 weiterentwickeln.
 

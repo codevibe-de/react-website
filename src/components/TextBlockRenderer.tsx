@@ -1,12 +1,12 @@
 import ReactMarkdown from 'react-markdown';
-import { TextBlock } from '@/types/TextBlock';
+import {TextBlock} from '@/types/TextBlock';
 
 interface TextBlockRendererProps {
     block: TextBlock;
     className?: string;
 }
 
-export default function TextBlockRenderer({ block, className = '' }: TextBlockRendererProps) {
+export default function TextBlockRenderer({block, className = ''}: TextBlockRendererProps) {
     const combinedClasses = `${block.classes || ''} ${className}`.trim();
 
     if (block.type === 'paragraph' && block.content) {

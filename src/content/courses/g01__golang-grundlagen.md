@@ -10,11 +10,13 @@ oldUrl: "/204/golang-grundlagen"
 
 ## Description
 
-**Go (auch Golang genannt) ist eine moderne Programmiersprache, die Nebenläufigkeit, statische Typisierung und automatische
-Speicherbereinigung unterstützt. Sie zeichnet sich durch eine extrem kompakte Form/Syntax und schnelle Kompilierung aus.** 
+**Go (auch Golang genannt) ist eine moderne Programmiersprache, die Nebenläufigkeit, statische Typisierung und
+automatische
+Speicherbereinigung unterstützt. Sie zeichnet sich durch eine extrem kompakte Form/Syntax und schnelle Kompilierung aus.
+**
 
 Programmieren mit Go macht Spaß
-und ermöglicht schnelle Erfolgserlebnisse – insbesondere für Entwickler mit C, C++, Python und Java Erfahrung.  
+und ermöglicht schnelle Erfolgserlebnisse – insbesondere für Entwickler mit C, C++, Python und Java Erfahrung.
 
 Auch dank der einfachen Modularisierung erfreut sich Go einer wachsenden Community an Entwicklern, die zahlreiche
 Bibliotheken zur Verfügung stellen. Somit steht der Entwicklung von einfachen Kommandozeilenwerkzeugen bis hin zu

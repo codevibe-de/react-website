@@ -35,7 +35,7 @@ export default function IllustratedText({
                         </h2>
                         <div className="mt-6 text-base/7 text-gray-600">
                             {mainText.map((block, index) => (
-                                <TextBlockRenderer key={index} block={block} />
+                                <TextBlockRenderer key={index} block={block}/>
                             ))}
                         </div>
                     </div>

@@ -62,7 +62,8 @@ export default async function CourseDetailPage({params}: CourseDetailPageProps) 
                     <div className="lg:col-span-2 space-y-8">
                         <section>
                             <h2 className="text-2xl font-bold mb-4">Beschreibung</h2>
-                            <TextBlockComponent textBlock={course.description} className="text-gray-700 leading-relaxed"/>
+                            <TextBlockComponent textBlock={course.description}
+                                                className="text-gray-700 leading-relaxed"/>
                         </section>
 
                         <section>
@@ -72,7 +73,8 @@ export default async function CourseDetailPage({params}: CourseDetailPageProps) 
 
                         <section>
                             <h2 className="text-2xl font-bold mb-4">Zielgruppe</h2>
-                            <TextBlockComponent textBlock={course.targetAudience} className="text-gray-700 leading-relaxed"/>
+                            <TextBlockComponent textBlock={course.targetAudience}
+                                                className="text-gray-700 leading-relaxed"/>
                         </section>
 
                         <section>
