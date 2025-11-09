@@ -1,7 +1,7 @@
 ---
 id: "G01"
 title: "Golang Grundlagen"
-summary: "Lerne in diesem praxisnahen Grundlagenkurs, wie du mit Go moderne, performante und nebenläufige Anwendungen entwickelst."
+summary: "Go ist eine faszinierende Sprache, mit der sich performante und nebenläufige Anwendungen entwickeln lassen."
 duration: 4
 durationUnit: "Days"
 backgroundImageUrl: "/bg-golang2.png"

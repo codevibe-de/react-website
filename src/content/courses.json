@@ -3,10 +3,10 @@
     "id": "G01",
     "rank": 999,
     "title": "Golang Grundlagen",
-    "summary": "Lerne in diesem praxisnahen Grundlagenkurs, wie du mit Go moderne, performante und nebenläufige Anwendungen entwickelst.",
+    "summary": "Go ist eine faszinierende Sprache, mit der sich performante und nebenläufige Anwendungen entwickeln lassen.",
     "description": {
       "type": "markdown",
-      "content": "**Go (auch Golang genannt) ist eine moderne Programmiersprache, die Nebenläufigkeit, statische Typisierung und automatische\nSpeicherbereinigung unterstützt. Sie zeichnet sich durch eine extrem kompakte Form/Syntax und schnelle Kompilierung aus.** \n\nProgrammieren mit Go macht Spaß\nund ermöglicht schnelle Erfolgserlebnisse – insbesondere für Entwickler mit C, C++, Python und Java Erfahrung.  \n\nAuch dank der einfachen Modularisierung erfreut sich Go einer wachsenden Community an Entwicklern, die zahlreiche\nBibliotheken zur Verfügung stellen. Somit steht der Entwicklung von einfachen Kommandozeilenwerkzeugen bis hin zu\nRESTful APIs mit Datenbankanbindung nichts im Wege.\n\nIn diesem Training lernen Sie die Grundlagen von Go in Theorie und Praxis kennen. Wir entwickeln kleine Anwendungen und\nlernen so immer mehr über diese schöne Sprache. Am Ende des Trainings werden Sie die Freude der Entwicklung mit Go\nspüren können und mit viel Sicherheit Ihre eigenen Projekte angehen können.\n\nDurch Übungen am Ende jedes Themas sowie sporadische Lernspiele wird ein langfristiger Lerneffekt erreicht.\n\nSie erhalten vorab ein Exemplar des Fachbuchs „Go – Das Praxisbuch“ vom dpunkt Verlag."
+      "content": "**Go (auch Golang genannt) ist eine moderne Programmiersprache, die Nebenläufigkeit, statische Typisierung und\nautomatische\nSpeicherbereinigung unterstützt. Sie zeichnet sich durch eine extrem kompakte Form/Syntax und schnelle Kompilierung aus.\n**\n\nProgrammieren mit Go macht Spaß\nund ermöglicht schnelle Erfolgserlebnisse – insbesondere für Entwickler mit C, C++, Python und Java Erfahrung.\n\nAuch dank der einfachen Modularisierung erfreut sich Go einer wachsenden Community an Entwicklern, die zahlreiche\nBibliotheken zur Verfügung stellen. Somit steht der Entwicklung von einfachen Kommandozeilenwerkzeugen bis hin zu\nRESTful APIs mit Datenbankanbindung nichts im Wege.\n\nIn diesem Training lernen Sie die Grundlagen von Go in Theorie und Praxis kennen. Wir entwickeln kleine Anwendungen und\nlernen so immer mehr über diese schöne Sprache. Am Ende des Trainings werden Sie die Freude der Entwicklung mit Go\nspüren können und mit viel Sicherheit Ihre eigenen Projekte angehen können.\n\nDurch Übungen am Ende jedes Themas sowie sporadische Lernspiele wird ein langfristiger Lerneffekt erreicht.\n\nSie erhalten vorab ein Exemplar des Fachbuchs „Go – Das Praxisbuch“ vom dpunkt Verlag."
     },
     "goal": {
       "type": "markdown",
@@ -35,7 +35,7 @@
     "summary": "Dieses Seminar führt Entwickler:innen in die Welt der Anwendungsentwicklung mit Java ein.",
     "description": {
       "type": "markdown",
-      "content": "Dieses Seminar führt Entwickler:innen in die Welt der Anwendungsentwicklung mit Java ein.\n\nTheoretische Blöcke werden durch zahlreiche Übungen und die Arbeit an einem durchgehenden Kleinprojekt aufgelockert und somit nachhaltiges Können aufgebaut."
+      "content": "Dieses Seminar führt Entwickler:innen in die Welt der Anwendungsentwicklung mit Java ein.\n\nTheoretische Blöcke werden durch zahlreiche Übungen und die Arbeit an einem durchgehenden Kleinprojekt aufgelockert und\nsomit nachhaltiges Können aufgebaut."
     },
     "goal": {
       "type": "markdown",
@@ -47,7 +47,7 @@
     },
     "outline": {
       "type": "markdown",
-      "content": "- **Einführung**\n  - Java-Geschichte und -Architektur\n  - Installation\n  - Dateiorganisation und Packages\n\n- **Grundlagen**\n  - Primitive Datentypen\n  - Variablen und Konstanten\n  - Operatoren und Ausdrücke\n  - Kontrollstrukturen (if, else, switch, Schleifen)\n\n- **Objektorientiertes Design**\n  - Klassen und Objekte\n  - Methoden und Konstruktoren\n  - Vererbung und Polymorphie\n  - Interfaces\n  - Exception Handling\n\n- **Erweiterte Themen**\n  - Collections (List, Set, Map)\n  - Enums und Annotations\n  - Dateiverarbeitung\n  - Datumsverwaltung\n  - Sortierung"
+      "content": "- **Einführung**\n    - Java-Geschichte und -Architektur\n    - Installation\n    - Dateiorganisation und Packages\n\n- **Grundlagen**\n    - Primitive Datentypen\n    - Variablen und Konstanten\n    - Operatoren und Ausdrücke\n    - Kontrollstrukturen (if, else, switch, Schleifen)\n\n- **Objektorientiertes Design**\n    - Klassen und Objekte\n    - Methoden und Konstruktoren\n    - Vererbung und Polymorphie\n    - Interfaces\n    - Exception Handling\n\n- **Erweiterte Themen**\n    - Collections (List, Set, Map)\n    - Enums und Annotations\n    - Dateiverarbeitung\n    - Datumsverwaltung\n    - Sortierung"
     },
     "priceSingle": 0,
     "priceInhouse": 0,
@@ -95,7 +95,7 @@
     "summary": "Mit Expertenwissen zu Lambdas und Streams schalten Sie den Entwicklungs-Turbo ein.",
     "description": {
       "type": "markdown",
-      "content": "Mit Java 8 ist Oracle ein großer Wurf gelungen. Die Version punktet in vielen Bereichen, insbesondere aber bietet sie alles, um mittels funktionaler Programmierung eleganten und leicht wartbaren Code zu schreiben.\n\nSie erhalten vorab ein Exemplar des Fachbuchs „Funktionale Programmierung in Java“ vom dpunkt Verlag."
+      "content": "Mit Java 8 ist Oracle ein großer Wurf gelungen. Die Version punktet in vielen Bereichen, insbesondere aber bietet sie\nalles, um mittels funktionaler Programmierung eleganten und leicht wartbaren Code zu schreiben.\n\nSie erhalten vorab ein Exemplar des Fachbuchs „Funktionale Programmierung in Java“ vom dpunkt Verlag."
     },
     "goal": {
       "type": "markdown",
@@ -155,7 +155,7 @@
     "summary": "Eine Java-basierte Einführung in eine der effektivsten Methoden zur Entwicklung robuster Software.",
     "description": {
       "type": "markdown",
-      "content": "Dieser Kurs führt in die testgetriebene Entwicklung nach dem Prinzip ein: „Schreibe nur Code, um einen fehlschlagenden Test zu reparieren.\"\n\nEr bietet eine umfassende Einführung in die TDD-Methodik mit Fokus auf die praktische Anwendung mit Java, JUnit 5 und verwandten Tools zur Erstellung robuster, wartbarer Software.\n\nDie Teilnehmer erhalten vorab ein Exemplar des Buches „Test Driven: TDD and Acceptance TDD for Java Developers\" vom Manning Verlag."
+      "content": "Dieser Kurs führt in die testgetriebene Entwicklung nach dem Prinzip ein: „Schreibe nur Code, um einen fehlschlagenden\nTest zu reparieren.\"\n\nEr bietet eine umfassende Einführung in die TDD-Methodik mit Fokus auf die praktische Anwendung mit Java, JUnit 5 und\nverwandten Tools zur Erstellung robuster, wartbarer Software.\n\nDie Teilnehmer erhalten vorab ein Exemplar des Buches „Test Driven: TDD and Acceptance TDD for Java Developers\" vom\nManning Verlag."
     },
     "goal": {
       "type": "markdown",
@@ -179,13 +179,43 @@
     "pricing": "Medium"
   },
   {
+    "id": "J06",
+    "rank": 60,
+    "title": "Design Patterns mit Java",
+    "summary": "Das Seminar präsentiert 24 bewährte Entwurfsprinzipien und -muster mit Java.",
+    "description": {
+      "type": "markdown",
+      "content": "Das Seminar präsentiert bewährte Entwurfsprinzipien und -muster, die auf die Java-Softwareentwicklung anwendbar sind.\n\nDie Teilnehmer lernen anhand von 24 verschiedenen Patterns durch Theorie, reale Beispiele und praktische Übungen.\n\nEin Fachbuch („Entwurfsmuster von Kopf bis Fuß\" vom dpunkt Verlag) wird vorab zur Verfügung gestellt."
+    },
+    "goal": {
+      "type": "markdown",
+      "content": "Nach Abschluss dieses Kurses sind die Teilnehmer in der Lage:\n\n- Ein umfassendes Verständnis von Entwurfsprinzipien zu erlangen\n- Diese erfolgreich in Java-Anwendungen zu integrieren\n- Die Code-Qualität zu verbessern"
+    },
+    "targetAudience": {
+      "type": "markdown",
+      "content": "Dieser Kurs richtet sich an:\n\n- Software-Entwickler mit Java-Kenntnissen\n- Idealerweise Teilnehmer von einführenden Java-Kursen"
+    },
+    "outline": {
+      "type": "markdown",
+      "content": "- **Überblick & OOP/UML-Grundlagen**\n    - Einführung und Grundlagen\n\n- **Erzeugungsmuster (Creational Patterns)**\n    - Factory Method\n    - Singleton\n    - Multiton\n    - Builder\n    - Prototype\n    - Abstract Factory\n\n- **Strukturmuster (Structural Patterns)**\n    - Adapter\n    - Bridge\n    - Composite\n    - Decorator\n    - Facade\n    - Flyweight\n    - Proxy\n\n- **Verhaltensmuster (Behavioral Patterns)**\n    - Command\n    - Observer\n    - Visitor\n    - Interpreter\n    - Iterator\n    - Memento\n    - Template Method\n    - Strategy\n    - Mediator\n    - State\n    - Chain of Responsibility"
+    },
+    "priceSingle": 0,
+    "priceInhouse": 0,
+    "duration": 3,
+    "durationUnit": "Days",
+    "featured": false,
+    "type": "Seminar",
+    "backgroundImageUrl": "/bg-java2.png",
+    "pricing": "Medium"
+  },
+  {
     "id": "K01",
     "rank": 50,
     "title": "Kotlin Grundlagen",
-    "summary": "Erlernen Sie die Grundlagen der modernen Programmiersprache Kotlin",
+    "summary": "Steigen Sie ein in die effiziente JVM-Programmierung mit Kotlin.",
     "description": {
       "type": "markdown",
-      "content": "Kotlin ist eine moderne, statisch typisierte Programmiersprache, die 100% interoperabel mit Java ist. In diesem Kurs lernen Sie alle wichtigen Grundlagen von Kotlin kennen - von der Syntax über objektorientierte Programmierung bis hin zu funktionalen Konzepten.\n\nDer Kurs kombiniert theoretisches Wissen mit praktischen Übungen und bietet Ihnen die Möglichkeit, Kotlin in realistischen Szenarien anzuwenden."
+      "content": "Kotlin ist eine moderne, statisch typisierte Programmiersprache, die 100% interoperabel mit Java ist. In diesem Kurs\nlernen Sie alle wichtigen Grundlagen von Kotlin kennen - von der Syntax über objektorientierte Programmierung bis hin zu\nfunktionalen Konzepten.\n\nDer Kurs kombiniert theoretisches Wissen mit praktischen Übungen und bietet Ihnen die Möglichkeit, Kotlin in\nrealistischen Szenarien anzuwenden."
     },
     "goal": {
       "type": "markdown",
@@ -197,7 +227,7 @@
     },
     "outline": {
       "type": "markdown",
-      "content": "- **Tag 1: Kotlin Basics**\n  - Kotlin-Syntax und Grundlagen\n  - Variablen, Datentypen und Null Safety\n  - Control Flow (if, when, Schleifen)\n  - Funktionen und Lambda-Expressions\n\n- **Tag 2: Objektorientierte Programmierung**\n  - Klassen und Objekte\n  - Properties und Backing Fields\n  - Vererbung und Interfaces\n  - Data Classes und Sealed Classes\n\n- **Tag 3: Erweiterte Konzepte**\n  - Extension Functions und Properties\n  - Generics und Type Inference\n  - Collections und Functional Programming\n  - Coroutines Grundlagen\n  - Java-Interoperabilität"
+      "content": "- **Tag 1: Kotlin Basics**\n    - Kotlin-Syntax und Grundlagen\n    - Variablen, Datentypen und Null Safety\n    - Control Flow (if, when, Schleifen)\n    - Funktionen und Lambda-Expressions\n\n- **Tag 2: Objektorientierte Programmierung**\n    - Klassen und Objekte\n    - Properties und Backing Fields\n    - Vererbung und Interfaces\n    - Data Classes und Sealed Classes\n\n- **Tag 3: Erweiterte Konzepte**\n    - Extension Functions und Properties\n    - Generics und Type Inference\n    - Collections und Functional Programming\n    - Coroutines Grundlagen\n    - Java-Interoperabilität"
     },
     "priceSingle": 0,
     "priceInhouse": 0,
@@ -272,7 +302,7 @@
     "summary": "Moderne KI-Anwendungen mit dem Spring-Ökosystem.",
     "description": {
       "type": "markdown",
-      "content": "Spring AI ist ein praxisorientierter Einführungskurs für Softwareentwicklerinnen und -entwickler, die moderne\nKI-Anwendungen mit dem Spring-Ökosystem entwickeln möchten.\n\nDer Kurs vermittelt fundiertes Wissen über das neue Spring-AI-Framework und zeigt, wie sich etablierte Spring / Spring-Boot Konzepte\nund Technologien auf die KI-Domäne übertragen lassen."
+      "content": "Spring AI ist ein praxisorientierter Einführungskurs für Softwareentwicklerinnen und -entwickler, die moderne\nKI-Anwendungen mit dem Spring-Ökosystem entwickeln möchten.\n\nDer Kurs vermittelt fundiertes Wissen über das neue Spring-AI-Framework und zeigt, wie sich etablierte Spring /\nSpring-Boot Konzepte\nund Technologien auf die KI-Domäne übertragen lassen."
     },
     "goal": {
       "type": "markdown",
@@ -331,7 +361,7 @@
     "summary": "Meistern Sie Git - das bevorzugte Tool für Versionskontrolle von Quellcode",
     "description": {
       "type": "markdown",
-      "content": "Git ist das bevorzugte Tool für die Versionskontrolle von Quellcode. Es punktet mit einem leichtgewichtigen Branching-Modell und verteilten Repositories.\n\nIn diesem intensiven 2-tägigen Seminar lernen Sie Git von Grund auf kennen und verstehen die vier Kernschichten, die Git zu einem so mächtigen Werkzeug machen. Sie werden nicht nur die Grundbefehle beherrschen, sondern auch komplexe Workflows und Best Practices verstehen.\n\nDer Kurs kombiniert theoretisches Verständnis mit praktischen Übungen und bereitet Sie darauf vor, Git professionell in Ihren Projekten einzusetzen."
+      "content": "Git ist das bevorzugte Tool für die Versionskontrolle von Quellcode. Es punktet mit einem leichtgewichtigen\nBranching-Modell und verteilten Repositories.\n\nIn diesem intensiven 2-tägigen Seminar lernen Sie Git von Grund auf kennen und verstehen die vier Kernschichten, die Git\nzu einem so mächtigen Werkzeug machen. Sie werden nicht nur die Grundbefehle beherrschen, sondern auch komplexe\nWorkflows und Best Practices verstehen.\n\nDer Kurs kombiniert theoretisches Verständnis mit praktischen Übungen und bereitet Sie darauf vor, Git professionell in\nIhren Projekten einzusetzen."
     },
     "goal": {
       "type": "markdown",
@@ -339,11 +369,11 @@
     },
     "targetAudience": {
       "type": "markdown",
-      "content": "Dieser Kurs richtet sich an:\n\n- Software-Entwickler, die Git noch nicht umfassend genutzt haben\n- Entwickler, die nur Grundbefehle wie pull, commit und push kennen\n- Teams, die das volle Potenzial von Git verstehen und nutzen möchten\n- Projektleiter, die Git-basierte Workflows implementieren wollen\n\nGrundkenntnisse in der Software-Entwicklung werden vorausgesetzt. Erste Erfahrungen mit Versionskontrolle sind hilfreich, aber nicht zwingend erforderlich."
+      "content": "Dieser Kurs richtet sich an:\n\n- Software-Entwickler, die Git noch nicht umfassend genutzt haben\n- Entwickler, die nur Grundbefehle wie pull, commit und push kennen\n- Teams, die das volle Potenzial von Git verstehen und nutzen möchten\n- Projektleiter, die Git-basierte Workflows implementieren wollen\n\nGrundkenntnisse in der Software-Entwicklung werden vorausgesetzt. Erste Erfahrungen mit Versionskontrolle sind\nhilfreich, aber nicht zwingend erforderlich."
     },
     "outline": {
       "type": "markdown",
-      "content": "- **Tag 1: Git Grundlagen und Kernkonzepte**\n  - Überblick und Einführung\n  - Erste Schritte mit Git\n  - Layer #1 – \"Persistent Map\"\n    - Objects verstehen\n    - Hash-Mechanismus\n  - Layer #2 – \"Content Tracker\"\n  - Layer #3 – \"Revision Control System\"\n\n- **Tag 2: Erweiterte Konzepte und Workflows**\n  - Layer #4 – \"Distributed Revision Control System\"\n  - Konfiguration und Anpassung\n  - Git Flows und Branching-Strategien\n  - Clients und Server-Setup\n  - Zusätzliche Themen:\n    - Stashing\n    - Reset-Strategien\n    - Git Hooks\n  - Best Practices und Troubleshooting\n\n**Im Kurspreis enthalten:**\n- Vollständige Verpflegung\n- Elektronische Kursmaterialien\n- Fachbuch zum Nachschlagen\n- Bis zu 60 Minuten Remote-Coaching nach dem Training"
+      "content": "- **Tag 1: Git Grundlagen und Kernkonzepte**\n    - Überblick und Einführung\n    - Erste Schritte mit Git\n    - Layer #1 – \"Persistent Map\"\n        - Objects verstehen\n        - Hash-Mechanismus\n    - Layer #2 – \"Content Tracker\"\n    - Layer #3 – \"Revision Control System\"\n\n- **Tag 2: Erweiterte Konzepte und Workflows**\n    - Layer #4 – \"Distributed Revision Control System\"\n    - Konfiguration und Anpassung\n    - Git Flows und Branching-Strategien\n    - Clients und Server-Setup\n    - Zusätzliche Themen:\n        - Stashing\n        - Reset-Strategien\n        - Git Hooks\n    - Best Practices und Troubleshooting\n\n**Im Kurspreis enthalten:**\n\n- Vollständige Verpflegung\n- Elektronische Kursmaterialien\n- Fachbuch zum Nachschlagen\n- Bis zu 60 Minuten Remote-Coaching nach dem Training"
     },
     "priceSingle": 1100,
     "priceInhouse": 7500,
@@ -360,11 +390,11 @@
     "summary": "Zweistündiger Power-Kurs zu den Grundlagen und Potentialen von Git",
     "description": {
       "type": "markdown",
-      "content": "Dieses kompakte Git-Rave vermittelt in nur zwei Stunden ein echtes Verständnis dafür, wie Git „denkt“.  \n\nStatt Befehle auswendig zu lernen, verstehen die Teilnehmenden die internen Mechanismen: wie Commits, Branches und Merges wirklich funktionieren, was im Staging-Bereich passiert und wie Git seinen Objektgraphen aufbaut. \n\nWir erklären die vier architektonischen Schichten von Git anhand zahlreicher Beispiele und Demonstrationen und bauen\nsomit nachhaltiges Wissen auf.\n\nDarüber hinaus werden fortgeschrittene Funktionen vorgestellt, die im Alltag selten genutzt, aber extrem mächtig sind – von Rebase und Cherry-Pick bis hin zu Worktrees und reflog."
+      "content": "Dieses kompakte Git-Rave vermittelt in nur zwei Stunden ein echtes Verständnis dafür, wie Git „denkt“.\n\nStatt Befehle auswendig zu lernen, verstehen die Teilnehmenden die internen Mechanismen: wie Commits, Branches und\nMerges wirklich funktionieren, was im Staging-Bereich passiert und wie Git seinen Objektgraphen aufbaut.\n\nWir erklären die vier architektonischen Schichten von Git anhand zahlreicher Beispiele und Demonstrationen und bauen\nsomit nachhaltiges Wissen auf.\n\nDarüber hinaus werden fortgeschrittene Funktionen vorgestellt, die im Alltag selten genutzt, aber extrem mächtig sind –\nvon Rebase und Cherry-Pick bis hin zu Worktrees und reflog."
     },
     "goal": {
       "type": "markdown",
-      "content": "Teilnehmende verstehen die internen Konzepte von Git und können Änderungen, Branches und Historien sicher und bewusst steuern.  \nSie lernen, wie sie Git effizienter, sicherer und kreativer einsetzen, um Entwicklungsprozesse zu beschleunigen und Fehler schnell zu korrigieren."
+      "content": "Teilnehmende verstehen die internen Konzepte von Git und können Änderungen, Branches und Historien sicher und bewusst\nsteuern.  \nSie lernen, wie sie Git effizienter, sicherer und kreativer einsetzen, um Entwicklungsprozesse zu beschleunigen und\nFehler schnell zu korrigieren."
     },
     "targetAudience": {
       "type": "markdown",
@@ -372,7 +402,7 @@
     },
     "outline": {
       "type": "markdown",
-      "content": "- **Git im Überblick**\n    - Git als Key-Value Store, Content Tracker und Versionskontrollsystem\n    - Von zentral zu verteilt: Wie Git mit Repositories arbeitet\n    - Snapshots statt Deltas – warum Git keine Diffs speichert\n\n- **Git unter der Haube**\n    - Interner Datenspeicher: Worktree, Staging Area, Commit Log\n    - Objekttypen: blob, tree, commit\n    - Hashes verstehen: Inhalte statt Dateien tracken\n\n- **Grundlegende Kommandos**\n    - `git init`, `add`, `commit`, `status`\n    - Bedeutung der Staging Area\n    - Tree- und Commit-Strukturen lesen\n    - Konfiguration und globale Einstellungen\n\n- **Branching & Referenzen**\n    - Was Branches wirklich sind \n    - `git branch`, `switch`, `HEAD`\n    - Fast-Forward vs. Merge vs. Rebase – Szenarien und Unterschiede\n\n- **Verteilte Arbeitsweise**\n    - Lokale vs. Remote Repositories\n    - `git fetch`, `push`, `pull` – was wirklich passiert\n    - Bare Repositories und Synchronisation\n    - Konflikte verstehen und vermeiden\n\n- **Reset entzaubert**\n    - `--soft`, `--mixed`, `--hard` im Vergleich\n    - Wie Reset auf Worktree, Index und Commits wirkt\n    - Sicheres Rückgängigmachen von Änderungen\n\n- **Nützliche Tipps & Power Features**\n    - Git-Aliase für produktiveres Arbeiten\n    - Revisionen benennen (`HEAD~`, `HEAD^`, Hashes, Refs)\n    - Worktrees\n    - reflog\n    - bisect"
+      "content": "- **Git im Überblick**\n    - Git als Key-Value Store, Content Tracker und Versionskontrollsystem\n    - Von zentral zu verteilt: Wie Git mit Repositories arbeitet\n    - Snapshots statt Deltas – warum Git keine Diffs speichert\n\n- **Git unter der Haube**\n    - Interner Datenspeicher: Worktree, Staging Area, Commit Log\n    - Objekttypen: blob, tree, commit\n    - Hashes verstehen: Inhalte statt Dateien tracken\n\n- **Grundlegende Kommandos**\n    - `git init`, `add`, `commit`, `status`\n    - Bedeutung der Staging Area\n    - Tree- und Commit-Strukturen lesen\n    - Konfiguration und globale Einstellungen\n\n- **Branching & Referenzen**\n    - Was Branches wirklich sind\n    - `git branch`, `switch`, `HEAD`\n    - Fast-Forward vs. Merge vs. Rebase – Szenarien und Unterschiede\n\n- **Verteilte Arbeitsweise**\n    - Lokale vs. Remote Repositories\n    - `git fetch`, `push`, `pull` – was wirklich passiert\n    - Bare Repositories und Synchronisation\n    - Konflikte verstehen und vermeiden\n\n- **Reset entzaubert**\n    - `--soft`, `--mixed`, `--hard` im Vergleich\n    - Wie Reset auf Worktree, Index und Commits wirkt\n    - Sicheres Rückgängigmachen von Änderungen\n\n- **Nützliche Tipps & Power Features**\n    - Git-Aliase für produktiveres Arbeiten\n    - Revisionen benennen (`HEAD~`, `HEAD^`, Hashes, Refs)\n    - Worktrees\n    - reflog\n    - bisect"
     },
     "priceSingle": 0,
     "priceInhouse": 0,
@@ -389,7 +419,7 @@
     "summary": "Kompakte Tech-Tour der KI-gestützten Entwicklung mit Claude Code und Codex",
     "description": {
       "type": "markdown",
-      "content": "In diesem Rave (Mikroseminar) erhalten Sie eine kompakte Tour durch die aktuelle Technologielandschaft der KI-gestützten\nSoftwareentwicklung – mit besonderem Fokus auf agentische Entwicklungs-Tools.\n\nNach einem kurzen Überblick über die Grundlagen von Sprachmodellen sowie bisheriger Tools und Entwicklungsumgebungen\nsteigen wir direkt in die Praxis ein: Sie lernen den Einsatz der aktuell populärsten Werkzeuge wie Claude Code \n(Anthropic) und Codex (OpenAI) kennen.\n\nEin weiterer Schwerpunkt liegt auf dem Thema Context Engineering mit MCP-Servern. Hier zeigen wir, mit welchen Strategien sich\n„AI-driven Development“ effektiv gestalten lässt – und wie sich diese Ansätze in Richtung autonomes, kreatives Coding\nweiterentwickeln."
+      "content": "In diesem Rave (Mikroseminar) erhalten Sie eine kompakte Tour durch die aktuelle Technologielandschaft der KI-gestützten\nSoftwareentwicklung – mit besonderem Fokus auf agentische Entwicklungs-Tools.\n\nNach einem kurzen Überblick über die Grundlagen von Sprachmodellen sowie bisheriger Tools und Entwicklungsumgebungen\nsteigen wir direkt in die Praxis ein: Sie lernen den Einsatz der aktuell populärsten Werkzeuge wie Claude Code\n(Anthropic) und Codex (OpenAI) kennen.\n\nEin weiterer Schwerpunkt liegt auf dem Thema Context Engineering mit MCP-Servern. Hier zeigen wir, mit welchen\nStrategien sich\n„AI-driven Development“ effektiv gestalten lässt – und wie sich diese Ansätze in Richtung autonomes, kreatives Coding\nweiterentwickeln."
     },
     "goal": {
       "type": "markdown",

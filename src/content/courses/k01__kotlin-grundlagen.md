@@ -2,12 +2,13 @@
 id: "K01"
 rank: 50
 title: "Kotlin Grundlagen"
-summary: "Erlernen Sie die Grundlagen der modernen Programmiersprache Kotlin"
+summary: "Steigen Sie ein in die effiziente JVM-Programmierung mit Kotlin."
 duration: 3
 durationUnit: "Days"
 featured: false
 type: "Seminar"
 backgroundImageUrl: "/bg-kotlin2.png"
+oldUrl: "/411/kotlin-grundlagen"
 ---
 
 ## Description

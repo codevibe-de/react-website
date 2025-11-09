@@ -71,7 +71,7 @@ export default function CourseCard({course}: CourseCardProps) {
                             <span>
                             {(() => {
                                 const price = PricingService.getPricePerParticipant(course);
-                                return price !== null ? `€${price.toLocaleString('de-DE')}` : 'auf Anfrage';
+                                return price !== null ? `${price.toLocaleString('de-DE')} €` : 'auf Anfrage';
                             })()}
                         </span>
                         </div>
