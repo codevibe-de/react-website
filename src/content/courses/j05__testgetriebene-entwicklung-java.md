@@ -1,6 +1,6 @@
 ---
 id: "J05"
-rank: 50
+rank: 200
 title: "Testgetriebene Entwicklung (TDD)"
 summary: "Eine Java-basierte Einführung in eine der effektivsten Methoden zur Entwicklung robuster Software."
 pricing: "MEDIUM"

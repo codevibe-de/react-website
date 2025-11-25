@@ -1,9 +1,11 @@
 ---
 id: "G01"
+rank: 100
 title: "Golang Grundlagen"
 summary: "Go ist eine faszinierende Sprache, mit der sich performante und nebenläufige Anwendungen entwickeln lassen."
 duration: 4
 durationUnit: "Days"
+type: "Seminar"
 backgroundImageUrl: "/bg-golang2.png"
 oldUrl: "/204/golang-grundlagen"
 ---
@@ -12,8 +14,10 @@ oldUrl: "/204/golang-grundlagen"
 
 **Go (auch Golang genannt) ist eine moderne Programmiersprache, die Nebenläufigkeit, statische Typisierung und
 automatische
-Speicherbereinigung unterstützt. Sie zeichnet sich durch eine extrem kompakte Form/Syntax und schnelle Kompilierung aus.
-**
+Speicherbereinigung unterstützt.**
+
+Sie zeichnet sich durch eine extrem kompakte Form/Syntax und schnelle 
+Kompilierung aus.
 
 Programmieren mit Go macht Spaß
 und ermöglicht schnelle Erfolgserlebnisse – insbesondere für Entwickler mit C, C++, Python und Java Erfahrung.

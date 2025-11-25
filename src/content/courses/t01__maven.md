@@ -1,5 +1,6 @@
 ---
 id: "T01"
+rank: 100
 title: "Build-Automatisierung mit Maven"
 summary: "Automatisierte, effiziente und reproduzierbare Build-Prozesse mit Apache Maven."
 duration: 1

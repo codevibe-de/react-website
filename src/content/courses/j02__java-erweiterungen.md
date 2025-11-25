@@ -1,6 +1,6 @@
 ---
 id: "J02"
-rank: 31
+rank: 231
 title: "Java Erweiterungen"
 summary: "Ihr nächster Schritt in die Welt der Entwicklung mit Java — vier Tage kompaktes Profi-Wissen."
 pricing: "LOW"

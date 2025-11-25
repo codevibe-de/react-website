@@ -1,12 +1,11 @@
 ---
 id: "J01"
-rank: 30
+rank: 230
 title: "Java Grundlagen"
 summary: "Dieses Seminar führt Entwickler:innen in die Welt der Anwendungsentwicklung mit Java ein."
 pricing: "LOW"
 duration: 4
 durationUnit: "Days"
-featured: false
 type: "Seminar"
 backgroundImageUrl: "/bg-java2.png"
 oldUrl: "/283/java-grundlagen"

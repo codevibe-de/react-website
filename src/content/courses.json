@@ -1,12 +1,41 @@
 [
   {
+    "id": "F01",
+    "rank": 10,
+    "title": "Core Concepts of Software",
+    "summary": "Software verstehen, statt nur Code zu schreiben – Denkweisen, Prinzipien und Werkzeuge, um als Junior im KI-Zeitalter zu überleben.",
+    "description": {
+      "type": "markdown",
+      "content": "Dieser Kurs vermittelt zentrale Konzepte und Grundlagen, die jede Softwareentwicklerin und jeder Softwareentwickler\nverstehen sollte, bevor insbesondere KI-Tools und komplexe Frameworks ins Spiel kommen.\n\nEr zeigt, wie Software entsteht, was abstraktes Denken ist und wie man komplexe Probleme in handhabbare\nTeilprobleme zerlegt.  \nZiel ist, ein mentales Modell von „Software“ zu entwickeln – als System aus Ideen, Strukturen und Entscheidungen.\n\nWir lernen Software auch im Entstehungsprozess kennen: von der Anforderung über Architektur und Design bis hin zu\nImplementierung, Test und Betrieb."
+    },
+    "goal": {
+      "type": "markdown",
+      "content": "Teilnehmende lernen, wie man wie ein Software Engineer denkt: abstrakt, systematisch und lösungsorientiert.\n\nSie verstehen, was hinter Begriffen wie „Anforderung“, „Architektur“, „Schnittstelle“ oder „Test“ steht – und wie diese\nzusammenspielen, um Software von hoher Qualität zu schaffen."
+    },
+    "targetAudience": {
+      "type": "markdown",
+      "content": "- Juniors\n- Quereinsteiger:innen\n- Auszubildende (FIAE)\n- Coding-Bootcamp-Absolvent:innen und alle, die den Sprung vom „Coden“ zum „Entwickeln“ schaffen wollen"
+    },
+    "outline": {
+      "type": "markdown",
+      "content": "- Was Software wirklich ist – von Idee bis System\n- Abstraktion, Modelle & mentale Landkarten\n- Divide & Conquer: Probleme zerlegen und lösen\n- Entwicklungsmethoden: Wasserfall, V-Modell, Agile, DevOps, XP\n- Phasen der Softwareentwicklung\n- Denken in Zuständen, Datenflüssen und Modulen\n- Der Code als Ausdruck von Designentscheidungen\n- Zusammenarbeit mit KI: Lernen, Verstehen, Kontrollieren"
+    },
+    "priceSingle": 0,
+    "priceInhouse": 0,
+    "duration": 2,
+    "durationUnit": "Days",
+    "featured": true,
+    "type": "Seminar",
+    "backgroundImageUrl": "/bg-fundamentals2.png"
+  },
+  {
     "id": "G01",
-    "rank": 999,
+    "rank": 100,
     "title": "Golang Grundlagen",
     "summary": "Go ist eine faszinierende Sprache, mit der sich performante und nebenläufige Anwendungen entwickeln lassen.",
     "description": {
       "type": "markdown",
-      "content": "**Go (auch Golang genannt) ist eine moderne Programmiersprache, die Nebenläufigkeit, statische Typisierung und\nautomatische\nSpeicherbereinigung unterstützt. Sie zeichnet sich durch eine extrem kompakte Form/Syntax und schnelle Kompilierung aus.\n**\n\nProgrammieren mit Go macht Spaß\nund ermöglicht schnelle Erfolgserlebnisse – insbesondere für Entwickler mit C, C++, Python und Java Erfahrung.\n\nAuch dank der einfachen Modularisierung erfreut sich Go einer wachsenden Community an Entwicklern, die zahlreiche\nBibliotheken zur Verfügung stellen. Somit steht der Entwicklung von einfachen Kommandozeilenwerkzeugen bis hin zu\nRESTful APIs mit Datenbankanbindung nichts im Wege.\n\nIn diesem Training lernen Sie die Grundlagen von Go in Theorie und Praxis kennen. Wir entwickeln kleine Anwendungen und\nlernen so immer mehr über diese schöne Sprache. Am Ende des Trainings werden Sie die Freude der Entwicklung mit Go\nspüren können und mit viel Sicherheit Ihre eigenen Projekte angehen können.\n\nDurch Übungen am Ende jedes Themas sowie sporadische Lernspiele wird ein langfristiger Lerneffekt erreicht.\n\nSie erhalten vorab ein Exemplar des Fachbuchs „Go – Das Praxisbuch“ vom dpunkt Verlag."
+      "content": "**Go (auch Golang genannt) ist eine moderne Programmiersprache, die Nebenläufigkeit, statische Typisierung und\nautomatische\nSpeicherbereinigung unterstützt.**\n\nSie zeichnet sich durch eine extrem kompakte Form/Syntax und schnelle \nKompilierung aus.\n\nProgrammieren mit Go macht Spaß\nund ermöglicht schnelle Erfolgserlebnisse – insbesondere für Entwickler mit C, C++, Python und Java Erfahrung.\n\nAuch dank der einfachen Modularisierung erfreut sich Go einer wachsenden Community an Entwicklern, die zahlreiche\nBibliotheken zur Verfügung stellen. Somit steht der Entwicklung von einfachen Kommandozeilenwerkzeugen bis hin zu\nRESTful APIs mit Datenbankanbindung nichts im Wege.\n\nIn diesem Training lernen Sie die Grundlagen von Go in Theorie und Praxis kennen. Wir entwickeln kleine Anwendungen und\nlernen so immer mehr über diese schöne Sprache. Am Ende des Trainings werden Sie die Freude der Entwicklung mit Go\nspüren können und mit viel Sicherheit Ihre eigenen Projekte angehen können.\n\nDurch Übungen am Ende jedes Themas sowie sporadische Lernspiele wird ein langfristiger Lerneffekt erreicht.\n\nSie erhalten vorab ein Exemplar des Fachbuchs „Go – Das Praxisbuch“ vom dpunkt Verlag."
     },
     "goal": {
       "type": "markdown",
@@ -30,7 +59,7 @@
   },
   {
     "id": "J01",
-    "rank": 30,
+    "rank": 230,
     "title": "Java Grundlagen",
     "summary": "Dieses Seminar führt Entwickler:innen in die Welt der Anwendungsentwicklung mit Java ein.",
     "description": {
@@ -60,7 +89,7 @@
   },
   {
     "id": "J02",
-    "rank": 31,
+    "rank": 231,
     "title": "Java Erweiterungen",
     "summary": "Ihr nächster Schritt in die Welt der Entwicklung mit Java — vier Tage kompaktes Profi-Wissen.",
     "description": {
@@ -90,7 +119,7 @@
   },
   {
     "id": "J03",
-    "rank": 40,
+    "rank": 240,
     "title": "Java 8 – funktionale Programmierung",
     "summary": "Mit Expertenwissen zu Lambdas und Streams schalten Sie den Entwicklungs-Turbo ein.",
     "description": {
@@ -120,7 +149,7 @@
   },
   {
     "id": "J04",
-    "rank": 40,
+    "rank": 240,
     "title": "Java 9-21",
     "summary": "Die wichtigsten Neuerungen von Java 9 bis 21, für eine effiziente Code-Base.",
     "description": {
@@ -150,7 +179,7 @@
   },
   {
     "id": "J05",
-    "rank": 50,
+    "rank": 200,
     "title": "Testgetriebene Entwicklung (TDD)",
     "summary": "Eine Java-basierte Einführung in eine der effektivsten Methoden zur Entwicklung robuster Software.",
     "description": {
@@ -180,7 +209,7 @@
   },
   {
     "id": "J06",
-    "rank": 60,
+    "rank": 160,
     "title": "Design Patterns mit Java",
     "summary": "Das Seminar präsentiert 24 bewährte Entwurfsprinzipien und -muster mit Java.",
     "description": {
@@ -210,7 +239,7 @@
   },
   {
     "id": "K01",
-    "rank": 50,
+    "rank": 150,
     "title": "Kotlin Grundlagen",
     "summary": "Steigen Sie ein in die effiziente JVM-Programmierung mit Kotlin.",
     "description": {
@@ -327,7 +356,7 @@
   },
   {
     "id": "T01",
-    "rank": 999,
+    "rank": 100,
     "title": "Build-Automatisierung mit Maven",
     "summary": "Automatisierte, effiziente und reproduzierbare Build-Prozesse mit Apache Maven.",
     "description": {
@@ -375,8 +404,37 @@
       "type": "markdown",
       "content": "- **Tag 1: Git Grundlagen und Kernkonzepte**\n    - Überblick und Einführung\n    - Erste Schritte mit Git\n    - Layer #1 – \"Persistent Map\"\n        - Objects verstehen\n        - Hash-Mechanismus\n    - Layer #2 – \"Content Tracker\"\n    - Layer #3 – \"Revision Control System\"\n\n- **Tag 2: Erweiterte Konzepte und Workflows**\n    - Layer #4 – \"Distributed Revision Control System\"\n    - Konfiguration und Anpassung\n    - Git Flows und Branching-Strategien\n    - Clients und Server-Setup\n    - Zusätzliche Themen:\n        - Stashing\n        - Reset-Strategien\n        - Git Hooks\n    - Best Practices und Troubleshooting\n\n**Im Kurspreis enthalten:**\n\n- Vollständige Verpflegung\n- Elektronische Kursmaterialien\n- Fachbuch zum Nachschlagen\n- Bis zu 60 Minuten Remote-Coaching nach dem Training"
     },
-    "priceSingle": 1100,
-    "priceInhouse": 7500,
+    "priceSingle": 0,
+    "priceInhouse": 0,
+    "duration": 2,
+    "durationUnit": "Days",
+    "featured": false,
+    "type": "Seminar",
+    "backgroundImageUrl": "/bg-tools2.png"
+  },
+  {
+    "id": "T04",
+    "rank": 100,
+    "title": "Intellij IDEA für Java Entwickler",
+    "summary": "Werden Sie zum Intellij IDEA Profi! Mit diesem Seminar steigern Sie deutlich Ihre Entwickler-Effektivität",
+    "description": {
+      "type": "markdown",
+      "content": "Die Entwicklungsumgebung Intellij IDEA (Community oder Ultimate) ist für viele Software-Entwickler:innen das Mittel der\nWahl, um Quelltexte zu erstellen, zu überarbeiten und analysieren zu lassen.\n\nIn diesem Seminar erhalten Sie einen Überblick über alle für Java-Entwickler:innen relevanten Features. Wir beleuchten\nderen Zusammenhänge und tauchen in die konkrete Nutzung und deren Details ein.\n\nWerden Sie zum Intellij-Profi, der über eine Vielzahl an hilfreichen Features wesentlich schneller (und mit mehr Spaß!)\nans Ziel kommt.\n\nAnhand zahlreicher Übungen wird das Gelernte vertieft und Tastenkombinationen memoriert."
+    },
+    "goal": {
+      "type": "markdown",
+      "content": "Die Teilnehmenden haben nach Abschluss des Seminars ein gesamthaftes Verständnis der IDE gewonnen und können effektiver,\neffizienter und mit mehr Freude ihrer täglichen Arbeit nachgehen."
+    },
+    "targetAudience": {
+      "type": "markdown",
+      "content": "Dieser Kurs richtet sich an:\n\n- Software-Entwickler:innen mit Java Kenntnissen"
+    },
+    "outline": {
+      "type": "markdown",
+      "content": "1. Einführung\n2. Projekt, Module, Build-Systeme\n3. Code Viewing, Navigation & Generation\n4. Inspections, Intentions, Templates\n5. Run & Debug\n6. Testing\n7. Refactoring\n8. Git Tools (auch Multi-Repo)\n9. Spring Tools und weitere Plugins"
+    },
+    "priceSingle": 0,
+    "priceInhouse": 0,
     "duration": 2,
     "durationUnit": "Days",
     "featured": false,
@@ -385,7 +443,7 @@
   },
   {
     "id": "T100",
-    "rank": 80,
+    "rank": 21,
     "title": "Git Crash Course",
     "summary": "Zweistündiger Power-Kurs zu den Grundlagen und Potentialen von Git",
     "description": {
@@ -441,34 +499,5 @@
     "type": "Rave",
     "backgroundImageUrl": "/bg-ai2.png",
     "pricing": "High"
-  },
-  {
-    "id": "X01",
-    "rank": 10,
-    "title": "Core Concepts of Software",
-    "summary": "Software verstehen, statt nur Code zu schreiben – Denkweisen, Prinzipien und Werkzeuge, um als Junior im KI-Zeitalter zu überleben.",
-    "description": {
-      "type": "markdown",
-      "content": "Dieser Kurs vermittelt zentrale Konzepte und Grundlagen, die jede Softwareentwicklerin und jeder Softwareentwickler\nverstehen sollte, bevor insbesondere KI-Tools und komplexe Frameworks ins Spiel kommen.\n\nEr zeigt, wie Software entsteht, was abstraktes Denken ist und wie man komplexe Probleme in handhabbare\nTeilprobleme zerlegt.  \nZiel ist, ein mentales Modell von „Software“ zu entwickeln – als System aus Ideen, Strukturen und Entscheidungen.\n\nWir lernen Software auch im Entstehungsprozess kennen: von der Anforderung über Architektur und Design bis hin zu\nImplementierung, Test und Betrieb."
-    },
-    "goal": {
-      "type": "markdown",
-      "content": "Teilnehmende lernen, wie man wie ein Software Engineer denkt: abstrakt, systematisch und lösungsorientiert.\n\nSie verstehen, was hinter Begriffen wie „Anforderung“, „Architektur“, „Schnittstelle“ oder „Test“ steht – und wie diese\nzusammenspielen, um Software von hoher Qualität zu schaffen."
-    },
-    "targetAudience": {
-      "type": "markdown",
-      "content": "- Juniors\n- Quereinsteiger:innen\n- Auszubildende (FIAE)\n- Coding-Bootcamp-Absolvent:innen und alle, die den Sprung vom „Coden“ zum „Entwickeln“ schaffen wollen"
-    },
-    "outline": {
-      "type": "markdown",
-      "content": "- Was Software wirklich ist – von Idee bis System\n- Abstraktion, Modelle & mentale Landkarten\n- Divide & Conquer: Probleme zerlegen und lösen\n- Entwicklungsmethoden: Wasserfall, V-Modell, Agile, DevOps, XP\n- Phasen der Softwareentwicklung\n- Denken in Zuständen, Datenflüssen und Modulen\n- Der Code als Ausdruck von Designentscheidungen\n- Zusammenarbeit mit KI: Lernen, Verstehen, Kontrollieren"
-    },
-    "priceSingle": 0,
-    "priceInhouse": 0,
-    "duration": 2,
-    "durationUnit": "Days",
-    "featured": true,
-    "type": "Seminar",
-    "backgroundImageUrl": "/bg-concepts2.png"
   }
 ]

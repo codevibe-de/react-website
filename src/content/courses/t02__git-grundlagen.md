@@ -3,13 +3,12 @@ id: "T02"
 rank: 20
 title: "Git Version Control"
 summary: "Meistern Sie Git - das bevorzugte Tool für Versionskontrolle von Quellcode"
-priceSingle: 1100
-priceInhouse: 7500
 duration: 2
 durationUnit: "Days"
 featured: false
 type: "Seminar"
 backgroundImageUrl: "/bg-tools2.png"
+oldUrl: "/441/seminartemplate-3"
 ---
 
 ## Description

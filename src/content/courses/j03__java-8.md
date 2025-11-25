@@ -1,6 +1,6 @@
 ---
 id: "J03"
-rank: 40
+rank: 240
 title: "Java 8 – funktionale Programmierung"
 summary: "Mit Expertenwissen zu Lambdas und Streams schalten Sie den Entwicklungs-Turbo ein."
 pricing: "LOW"

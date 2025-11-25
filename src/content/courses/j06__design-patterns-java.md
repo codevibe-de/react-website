@@ -1,6 +1,6 @@
 ---
 id: "J06"
-rank: 60
+rank: 160
 title: "Design Patterns mit Java"
 summary: "Das Seminar präsentiert 24 bewährte Entwurfsprinzipien und -muster mit Java."
 pricing: "MEDIUM"

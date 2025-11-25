@@ -1,6 +1,6 @@
 ---
 id: "T100"
-rank: 80
+rank: 21
 title: "Git Crash Course"
 summary: "Zweistündiger Power-Kurs zu den Grundlagen und Potentialen von Git"
 duration: 2

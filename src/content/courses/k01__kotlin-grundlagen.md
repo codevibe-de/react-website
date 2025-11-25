@@ -1,6 +1,6 @@
 ---
 id: "K01"
-rank: 50
+rank: 150
 title: "Kotlin Grundlagen"
 summary: "Steigen Sie ein in die effiziente JVM-Programmierung mit Kotlin."
 duration: 3
