@@ -16,7 +16,7 @@ export default function DataPrivacyPage() {
                     <TextBlockComponent
                         textBlock={block} className="prose prose-lg max-w-none py-6"
                         key={i}/>
-                ))};
+                ))}
             </BodyContainer>
         </BlankPageLayout>
     );

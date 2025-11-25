@@ -4,8 +4,8 @@ import TextBlockComponent from '@/components/TextBlockComponent';
 import BlankPageLayout from "@/layouts/BlankPageLayout";
 import BodyContainer from "@/layouts/BodyContainer";
 
-export default function DataPrivacyPage() {
-    const pageData = pageDataService.getPageData('/impressum')
+export default function TermsConditionsPage() {
+    const pageData = pageDataService.getPageData('/agb')
     if (!pageData) {
         notFound();
     }

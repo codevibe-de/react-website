@@ -40,6 +40,11 @@
       "section": "company"
     },
     {
+      "label": "AGB",
+      "href": "/agb",
+      "section": "company"
+    },
+    {
       "label": "sales@codevibe.de",
       "href": "mailto:sales@codevibe.de",
       "section": "contact"

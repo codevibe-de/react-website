@@ -3,6 +3,7 @@ import coursesPageJson from '@/content/coursesPage.json';
 import commonPageDataJson from '@/content/commonPageData.json';
 import imprintPageData from '@/content/imprintPage.json' assert {type: 'json'};
 import dataPrivacyPageData from '@/content/dataPrivacy.json' assert {type: 'json'};
+import termsConditionsPageData from '@/content/termsConditions.json' assert {type: 'json'};
 import coursesData from '@/content/courses.json' assert {type: 'json'};
 
 import {CoursesPageData, HomePageData, PageData} from "@/types/pageTypes";
@@ -54,6 +55,10 @@ class PageDataService {
             case 'datenschutz':
                 pageData.title = dataPrivacyPageData.title;
                 pageData.body = dataPrivacyPageData.body;
+                return pageData;
+            case 'agb':
+                pageData.title = termsConditionsPageData.title;
+                pageData.body = termsConditionsPageData.body;
                 return pageData;
             default:
                 return undefined;
