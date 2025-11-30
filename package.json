@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "prep": "node scripts/inline-markdown.js && node scripts/parse-course-markdown.js",
-    "build": "node scripts/inline-markdown.js && node scripts/parse-course-markdown.js && next build",
+    "prep": "node scripts/inline-markdown.js && node scripts/parse-course-markdown.js && node scripts/generate-url-mappings.js",
+    "build": "node scripts/inline-markdown.js && node scripts/parse-course-markdown.js && node scripts/generate-url-mappings.js && next build",
     "start": "next start",
     "lint": "next lint"
   },
