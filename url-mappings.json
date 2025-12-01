@@ -5,13 +5,43 @@
     "permanent": true
   },
   {
+    "source": "/264/spring-grundlagen",
+    "destination": "/seminare/s01-spring-grundlagen",
+    "permanent": true
+  },
+  {
+    "source": "/267/intellij-idea-fuer-java-entwickler",
+    "destination": "/seminare/t04--intellij_idea",
+    "permanent": true
+  },
+  {
     "source": "/283/java-grundlagen",
     "destination": "/seminare/j01-java-grundlagen",
     "permanent": true
   },
   {
+    "source": "/312/spring-aufbau",
+    "destination": "/seminare/s02-spring-boot-aufbau",
+    "permanent": true
+  },
+  {
     "source": "/379/build-automatisierung-mit-maven",
     "destination": "/seminare/t01-maven",
+    "permanent": true
+  },
+  {
+    "source": "/411/kotlin-grundlagen",
+    "destination": "/seminare/k01-kotlin-grundlagen",
+    "permanent": true
+  },
+  {
+    "source": "/441/seminartemplate-3",
+    "destination": "/seminare/t02-git-grundlagen",
+    "permanent": true
+  },
+  {
+    "source": "/484/java_9-21",
+    "destination": "/seminare/j04-java-9-21",
     "permanent": true
   },
   {
@@ -22,6 +52,21 @@
   {
     "source": "/534/java_8/",
     "destination": "/seminare/j03-java-8",
+    "permanent": true
+  },
+  {
+    "source": "/597/testgetriebene-entwicklung-java",
+    "destination": "/seminare/j05-testgetriebene-entwicklung-java",
+    "permanent": true
+  },
+  {
+    "source": "/609/testgetriebene-entwicklung-java-2",
+    "destination": "/seminare/j06-design-patterns-java",
+    "permanent": true
+  },
+  {
+    "source": "/datenschutzerklaerung",
+    "destination": "/datenschutz",
     "permanent": true
   }
 ]

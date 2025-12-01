@@ -13,6 +13,7 @@ const path = require('path');
 
 // Paths
 const COURSES_DIR = path.join(__dirname, '../src/content/courses');
+const ADDITIONAL_MAPPINGS_FILE = path.join(__dirname, '../additional-url-mappings.json');
 const OUTPUT_FILE = path.join(__dirname, '../url-mappings.json');
 
 /**
@@ -57,6 +58,32 @@ function filenameToSlug(filename) {
     .replace('.md', '')
     .replace(/__/, '-') // Replace only the first __ separator with -
     .toLowerCase();
+}
+
+/**
+ * Load additional URL mappings from file
+ */
+function loadAdditionalMappings() {
+  if (!fs.existsSync(ADDITIONAL_MAPPINGS_FILE)) {
+    console.log('ℹ️  No additional-url-mappings.json found, skipping\n');
+    return [];
+  }
+
+  try {
+    const content = fs.readFileSync(ADDITIONAL_MAPPINGS_FILE, 'utf-8');
+    const mappings = JSON.parse(content);
+
+    if (!Array.isArray(mappings)) {
+      console.warn('⚠️  additional-url-mappings.json must contain an array');
+      return [];
+    }
+
+    console.log(`📁 Loaded ${mappings.length} additional mappings\n`);
+    return mappings;
+  } catch (error) {
+    console.warn(`⚠️  Error reading additional mappings: ${error.message}`);
+    return [];
+  }
 }
 
 /**
@@ -110,19 +137,28 @@ function main() {
   console.log('Generating URL mappings from course files...\n');
 
   try {
-    const mappings = generateUrlMappings();
+    // Generate mappings from course files
+    const courseMappings = generateUrlMappings();
+
+    // Load additional mappings
+    const additionalMappings = loadAdditionalMappings();
+
+    // Merge all mappings (additional mappings come first for priority)
+    const allMappings = [...additionalMappings, ...courseMappings];
 
     // Sort mappings by source URL for consistency
-    mappings.sort((a, b) => a.source.localeCompare(b.source));
+    allMappings.sort((a, b) => a.source.localeCompare(b.source));
 
     // Write to file with pretty formatting
     fs.writeFileSync(
       OUTPUT_FILE,
-      JSON.stringify(mappings, null, 2) + '\n',
+      JSON.stringify(allMappings, null, 2) + '\n',
       'utf-8'
     );
 
-    console.log(`\n✅ Successfully generated ${mappings.length} URL mappings`);
+    console.log(`\n✅ Successfully generated ${allMappings.length} URL mappings`);
+    console.log(`   - ${courseMappings.length} from course files`);
+    console.log(`   - ${additionalMappings.length} from additional mappings`);
     console.log(`📝 Written to: ${OUTPUT_FILE}`);
 
   } catch (error) {
