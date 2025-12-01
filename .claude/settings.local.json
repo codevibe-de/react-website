@@ -11,7 +11,9 @@
       "mcp__playwright__browser_console_messages",
       "mcp__playwright__browser_take_screenshot",
       "Bash(node scripts/generate-url-mappings.js:*)",
-      "Bash(node scripts/parse-course-markdown.js:*)"
+      "Bash(node scripts/parse-course-markdown.js:*)",
+      "Bash(convert:*)",
+      "Bash(magick:*)"
     ],
     "deny": []
   }
