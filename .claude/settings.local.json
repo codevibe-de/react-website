@@ -13,7 +13,8 @@
       "Bash(node scripts/generate-url-mappings.js:*)",
       "Bash(node scripts/parse-course-markdown.js:*)",
       "Bash(convert:*)",
-      "Bash(magick:*)"
+      "Bash(magick:*)",
+      "Bash(curl:*)"
     ],
     "deny": []
   }

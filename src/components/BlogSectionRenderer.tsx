@@ -1,5 +1,7 @@
 import {BlogSection, BlogSectionType} from '@/types/BlogPost';
 import Image from 'next/image';
+import React from 'react';
+import CodeBlock from './CodeBlock';
 
 interface BlogSectionRendererProps {
     section: BlogSection;
@@ -8,7 +10,7 @@ interface BlogSectionRendererProps {
 export default function BlogSectionRenderer({section}: BlogSectionRendererProps) {
     switch (section.type) {
         case BlogSectionType.Heading:
-            const HeadingTag = `h${section.level}` as keyof JSX.IntrinsicElements;
+            const HeadingTag = `h${section.level}` as keyof React.JSX.IntrinsicElements;
             const headingClasses = {
                 1: 'text-4xl font-bold mt-8 mb-4 text-gray-900',
                 2: 'text-3xl font-bold mt-6 mb-3 text-gray-900',
@@ -33,18 +35,11 @@ export default function BlogSectionRenderer({section}: BlogSectionRendererProps)
 
         case BlogSectionType.Code:
             return (
-                <div className="my-6">
-                    <pre className="bg-gray-900 text-gray-100 p-4 rounded-lg overflow-x-auto">
-                        <code className={`language-${section.language}`}>
-                            {section.code}
-                        </code>
-                    </pre>
-                    {section.caption && (
-                        <p className="text-sm text-gray-500 mt-2 text-center italic">
-                            {section.caption}
-                        </p>
-                    )}
-                </div>
+                <CodeBlock
+                    code={section.code}
+                    language={section.language}
+                    caption={section.caption}
+                />
             );
 
         case BlogSectionType.Image:
