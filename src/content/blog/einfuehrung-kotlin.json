@@ -1,0 +1,87 @@
+{
+  "slug": "einfuehrung-kotlin",
+  "title": "Einführung in Kotlin: Moderne JVM-Programmierung",
+  "excerpt": "Kotlin hat sich als moderne Alternative zu Java etabliert. In diesem Artikel zeigen wir die wichtigsten Features und warum Kotlin die Entwicklung so viel angenehmer macht.",
+  "author": "Codevibe Team",
+  "publishedAt": "2026-02-15",
+  "coverImage": "/blurry-background-new-darker.jpg",
+  "tags": ["Kotlin", "JVM", "Programmierung"],
+  "sections": [
+    {
+      "type": "heading",
+      "level": 1,
+      "content": "Warum Kotlin?"
+    },
+    {
+      "type": "paragraph",
+      "content": "Kotlin ist eine moderne Programmiersprache, die von JetBrains entwickelt wurde und vollständig mit Java kompatibel ist. Sie kombiniert objektorientierte und funktionale Programmierparadigmen und macht die Entwicklung sowohl produktiver als auch sicherer."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "content": "Null Safety - Schluss mit NullPointerExceptions"
+    },
+    {
+      "type": "paragraph",
+      "content": "Eines der herausragenden Features von Kotlin ist das Null-Safety-System. Im Gegensatz zu Java unterscheidet Kotlin auf Typ-Ebene zwischen nullbaren und nicht-nullbaren Referenzen."
+    },
+    {
+      "type": "code",
+      "language": "kotlin",
+      "code": "// Nicht-nullbarer Typ\nvar name: String = \"Kotlin\"\n// name = null // Kompilierfehler!\n\n// Nullbarer Typ\nvar nullableName: String? = \"Kotlin\"\nnullableName = null // OK\n\n// Safe Call Operator\nval length = nullableName?.length\n\n// Elvis Operator\nval displayName = nullableName ?: \"Unbekannt\"",
+      "caption": "Kotlin's Null-Safety Features im Überblick"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "content": "Prägnante Syntax"
+    },
+    {
+      "type": "paragraph",
+      "content": "Kotlin reduziert Boilerplate-Code erheblich. Vergleichen Sie diese Data Class mit dem Java-Äquivalent:"
+    },
+    {
+      "type": "code",
+      "language": "kotlin",
+      "code": "data class Person(\n    val name: String,\n    val age: Int\n)",
+      "caption": "Eine komplette Data Class in Kotlin - inkl. equals(), hashCode(), toString() und copy()"
+    },
+    {
+      "type": "paragraph",
+      "content": "Diese 4 Zeilen ersetzen in Java etwa 50 Zeilen Code mit Gettern, Settern, equals(), hashCode() und toString() Methoden."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "content": "Extension Functions"
+    },
+    {
+      "type": "paragraph",
+      "content": "Extension Functions erlauben es, bestehende Klassen mit neuen Funktionen zu erweitern, ohne die Klasse zu ändern oder Vererbung zu nutzen:"
+    },
+    {
+      "type": "code",
+      "language": "kotlin",
+      "code": "fun String.isEmail(): Boolean {\n    return this.contains(\"@\") && this.contains(\".\")\n}\n\n// Verwendung\nval email = \"info@codevibe.de\"\nif (email.isEmail()) {\n    println(\"Gültige E-Mail\")\n}"
+    },
+    {
+      "type": "image",
+      "src": "/codevibe-logo.png",
+      "alt": "Codevibe Logo",
+      "caption": "Bei Codevibe lernen Sie Kotlin von Grund auf"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "content": "Fazit"
+    },
+    {
+      "type": "paragraph",
+      "content": "Kotlin bietet eine moderne, sichere und prägnante Syntax, die die Produktivität erhöht und gleichzeitig die Wartbarkeit verbessert. Durch die vollständige Java-Interoperabilität können bestehende Java-Projekte schrittweise migriert werden."
+    },
+    {
+      "type": "paragraph",
+      "content": "In unseren Kotlin-Kursen bei Codevibe lernen Sie nicht nur die Syntax, sondern auch Best Practices und fortgeschrittene Techniken für die moderne JVM-Entwicklung."
+    }
+  ]
+}
