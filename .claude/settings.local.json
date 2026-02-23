@@ -14,7 +14,8 @@
       "Bash(node scripts/parse-course-markdown.js:*)",
       "Bash(convert:*)",
       "Bash(magick:*)",
-      "Bash(curl:*)"
+      "Bash(curl:*)",
+      "Bash(npm run:*)"
     ],
     "deny": []
   }

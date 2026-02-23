@@ -5,7 +5,11 @@
   "author": "Codevibe Team",
   "publishedAt": "2026-02-10",
   "coverImage": "/blurry-background-new-darker.jpg",
-  "tags": ["Git", "DevOps", "Team"],
+  "tags": [
+    "Git",
+    "DevOps",
+    "Team"
+  ],
   "sections": [
     {
       "type": "heading",

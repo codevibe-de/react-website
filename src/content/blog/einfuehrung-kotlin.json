@@ -5,7 +5,11 @@
   "author": "Codevibe Team",
   "publishedAt": "2026-02-15",
   "coverImage": "/blurry-background-new-darker.jpg",
-  "tags": ["Kotlin", "JVM", "Programmierung"],
+  "tags": [
+    "Kotlin",
+    "JVM",
+    "Programmierung"
+  ],
   "sections": [
     {
       "type": "heading",
