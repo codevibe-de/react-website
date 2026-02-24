@@ -499,5 +499,35 @@
     "type": "Rave",
     "backgroundImageUrl": "/bg-ai2.png",
     "pricing": "High"
+  },
+  {
+    "id": "T10",
+    "rank": 75,
+    "title": "Agentische Entwicklung mit Claude Code und Codex",
+    "summary": "Werden Sie zum Experten für agentische KI-Entwicklung – mit Claude Code und Codex in der Praxis.",
+    "description": {
+      "type": "markdown",
+      "content": "Dieses praxisorientierte Seminar vermittelt fundiertes Wissen über den Einsatz der autonomen Coding-Agenten Claude Code (Anthropic) und Codex (OpenAI).\n\nEin besonderer Schwerpunkt liegt auf Context Engineering und dem Model Context Protocol (MCP) – von der Architektur über Implementierungsbeispiele bis zur Server-Integration.\n\nAm Ende des Seminars entwickeln die Teilnehmenden ein vollständiges Softwareprojekt mit Backend und Frontend, inklusive automatisierter Tests, Dokumentation und Deployment-Prozessen."
+    },
+    "goal": {
+      "type": "markdown",
+      "content": "Die Teilnehmenden entwickeln ein tiefes Verständnis für KI-gestützte Softwareentwicklung und lernen, ihre Workflows gezielt mit agentischen Tools zu optimieren.\n\nSie erwerben praktisches Know-how, um Coding-Agenten strategisch und operativ in Projekten einzusetzen – mit einem klaren Blick auf Einsatzmöglichkeiten und Grenzen."
+    },
+    "targetAudience": {
+      "type": "markdown",
+      "content": "- Softwareentwickler:innen mit Backend- oder Frontend-Erfahrung\n- Solutions Architects\n- KI-Engineers\n- Technische Projektleiter:innen\n- Innovation- und R&D-Teams\n- Alle, die Coding-Agenten evaluieren oder einsetzen möchten\n\nVoraussetzungen: Berufliche Entwicklungserfahrung sowie Grundkenntnisse in modernen IDEs und API-Design."
+    },
+    "outline": {
+      "type": "markdown",
+      "content": "- **Tag 1 – Grundlagen & Einstieg**\n    - Einführung in agentische Entwicklung\n    - Claude Code und Codex im Überblick\n    - Installation und Konfiguration der Agenten\n    - Praktische Anwendungsbeispiele\n    - Context Engineering: Grundlagen und Strategien\n    - Model Context Protocol: Architektur und Konzepte\n\n- **Tag 2 – Vertiefung & Praxisprojekt**\n    - MCP-Server: Implementierungsbeispiele\n    - Integration populärer MCP-Server\n    - Details und Best Practices zu Skills, Agenten und Plugins\n    - Entwicklung eines vollständigen Softwareprojekts (Backend + Frontend)\n    - Ausblick"
+    },
+    "priceSingle": 0,
+    "priceInhouse": 0,
+    "duration": 2,
+    "durationUnit": "Days",
+    "featured": true,
+    "type": "Seminar",
+    "backgroundImageUrl": "/bg-ai2.png",
+    "pricing": "Medium"
   }
 ]
