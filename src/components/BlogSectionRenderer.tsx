@@ -2,6 +2,7 @@ import {BlogSection, BlogSectionType} from '@/types/BlogPost';
 import Image from 'next/image';
 import React from 'react';
 import CodeBlock from './CodeBlock';
+import ReactMarkdown from 'react-markdown';
 
 interface BlogSectionRendererProps {
     section: BlogSection;
@@ -28,9 +29,15 @@ export default function BlogSectionRenderer({section}: BlogSectionRendererProps)
 
         case BlogSectionType.Paragraph:
             return (
-                <p className="text-gray-700 leading-relaxed mb-4 text-lg">
+                <ReactMarkdown
+                    components={{
+                        p({children}) {
+                            return <p className="text-gray-700 leading-relaxed mb-4 text-lg">{children}</p>;
+                        }
+                    }}
+                >
                     {section.content}
-                </p>
+                </ReactMarkdown>
             );
 
         case BlogSectionType.Code:

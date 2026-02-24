@@ -126,7 +126,10 @@ export default async function CourseDetailPage({params}: CourseDetailPageProps) 
                             </a>
 
                             <p className="text-sm text-gray-500 mt-3 text-center">
-                                Kontaktieren Sie uns für Termine und weitere Informationen
+                                Kontaktieren Sie uns für Termine und weitere Informationen.
+                            </p>
+                            <p className="text-sm text-gray-500 mt-3 text-center">
+                                Inhouse-Preise gelten für bis zu 8 Teilnehmende zzgl. Reisekosten.
                             </p>
                         </div>
                     </div>

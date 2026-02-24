@@ -17,7 +17,7 @@ export default function BlogCard({post}: BlogCardProps) {
         <Link href={`/blog/${post.slug}`} className="block group">
             <article className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 h-full flex flex-col">
                 {post.coverImage && (
-                    <div className="relative h-48 w-full overflow-hidden">
+                    <div className="relative h-24 w-full overflow-hidden">
                         <Image
                             src={post.coverImage}
                             alt={post.title}
